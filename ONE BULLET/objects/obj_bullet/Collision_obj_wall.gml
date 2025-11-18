@@ -1,4 +1,3 @@
-// Stop bullet when it hits a wall
 speed = 0;
 hspeed = 0;
 vspeed = 0;
