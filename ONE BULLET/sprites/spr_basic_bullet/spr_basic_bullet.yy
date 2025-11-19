@@ -3,9 +3,15 @@
   "%Name":"spr_basic_bullet",
   "bboxMode":0,
   "bbox_bottom":39,
+<<<<<<< Updated upstream
   "bbox_left":23,
   "bbox_right":41,
   "bbox_top":25,
+=======
+  "bbox_left":25,
+  "bbox_right":38,
+  "bbox_top":20,
+>>>>>>> Stashed changes
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
