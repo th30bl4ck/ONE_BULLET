@@ -53,6 +53,8 @@
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_score_manager","path":"objects/obj_score_manager/obj_score_manager.yy",},},
+    {"id":{"name":"obj_scorepopup","path":"objects/obj_scorepopup/obj_scorepopup.yy",},},
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
