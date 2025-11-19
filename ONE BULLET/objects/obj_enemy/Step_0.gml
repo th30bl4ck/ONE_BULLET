@@ -8,3 +8,4 @@ if (place_meeting(x, y, obj_player)) {
     // Restart for now
     game_restart();
 }
+
