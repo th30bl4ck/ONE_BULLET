@@ -1,3 +1,5 @@
-state = "fired"; // "fired" or "returning"
+state = "fired"; 
 speed = 10;
-image_angle = direction;
+image_angle = direction; 
+owner = other; // or however you assign owner
+solid = false;
