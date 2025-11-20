@@ -6,3 +6,7 @@ with (obj_player) {
     can_shoot = true;
     bullet_id = noone;
 }
+
+var p = instance_create_layer(x, y, layer, obj_scorepopup);
+p.value = 10;
+

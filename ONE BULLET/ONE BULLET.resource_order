@@ -30,6 +30,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_button_parent","order":1,"path":"objects/obj_button_parent/obj_button_parent.yy",},
+    {"name":"obj_score_manager","order":1,"path":"objects/obj_score_manager/obj_score_manager.yy",},
+    {"name":"obj_scorepopup","order":2,"path":"objects/obj_scorepopup/obj_scorepopup.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"starting_room","order":1,"path":"rooms/starting_room/starting_room.yy",},
   ],
