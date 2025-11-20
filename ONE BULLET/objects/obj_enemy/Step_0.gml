@@ -9,3 +9,9 @@ if (place_meeting(x, y, obj_player)) {
     game_restart();
 }
 
+// Face direction of player
+if (obj_player.x > x) {
+    image_xscale = 1;    // Face right
+} else {
+    image_xscale = -1;   // Face left
+}
