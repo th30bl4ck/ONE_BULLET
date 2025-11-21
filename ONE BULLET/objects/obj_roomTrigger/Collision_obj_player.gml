@@ -1,4 +1,3 @@
-// Collision Event with player
-global.next_room = second_room;      // target room
-global.spawn_object = obj_spawnPoint; // corresponding spawn point in that room
+global.spawn_object = spawnObject; // uses your object variable
+global.next_room = second_room;
 room_goto(global.next_room);
