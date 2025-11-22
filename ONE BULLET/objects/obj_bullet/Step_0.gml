@@ -11,3 +11,7 @@ if (state == "stuck") {
         instance_destroy();
     }
 }
+
+image_angle = point_direction(0, 0, hspeed, vspeed);
+
+image_angle = direction - 90;

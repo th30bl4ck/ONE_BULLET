@@ -1,4 +1,14 @@
-move_speed = 3;
+move_speed = 2;
 can_shoot = true;
 bullet_id = noone;
 shoot_layer = "Instances"; // Make sure this matches your room layer
+
+dash_speed = 12;
+dash_time = 8;           // how long the dash lasts (frames)
+dash_timer = 0;
+
+dash_cooldown = 40;      // how long before you can dash again
+dash_cd_timer = 0;
+
+is_dashing = false;
+dash_dir = 0;
