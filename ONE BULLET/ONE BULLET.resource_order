@@ -34,5 +34,8 @@
     {"name":"obj_scorepopup","order":2,"path":"objects/obj_scorepopup/obj_scorepopup.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"starting_room","order":1,"path":"rooms/starting_room/starting_room.yy",},
+    {"name":"horizontal","order":2,"path":"sprites/horizontal/horizontal.yy",},
+    {"name":"hrizont","order":1,"path":"sprites/hrizont/hrizont.yy",},
+    {"name":"idl_player","order":1,"path":"sprites/idl_player/idl_player.yy",},
   ],
 }
