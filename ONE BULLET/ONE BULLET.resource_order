@@ -43,5 +43,6 @@
     {"name":"second_room","order":2,"path":"rooms/second_room/second_room.yy",},
     {"name":"settings_room","order":3,"path":"rooms/settings_room/settings_room.yy",},
     {"name":"starting_room","order":1,"path":"rooms/starting_room/starting_room.yy",},
+    {"name":"RoomUI","order":16,"path":"roomui/RoomUI/RoomUI.yy",},
   ],
 }
