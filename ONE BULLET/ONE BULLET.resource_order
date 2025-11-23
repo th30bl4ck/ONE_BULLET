@@ -40,6 +40,7 @@
     {"name":"obj_settings_button","order":3,"path":"objects/obj_settings_button/obj_settings_button.yy",},
     {"name":"obj_slideTransition","order":4,"path":"objects/obj_slideTransition/obj_slideTransition.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"pause_machanic_object","order":5,"path":"objects/pause_machanic_object/pause_machanic_object.yy",},
     {"name":"second_room","order":2,"path":"rooms/second_room/second_room.yy",},
     {"name":"settings_room","order":3,"path":"rooms/settings_room/settings_room.yy",},
     {"name":"starting_room","order":1,"path":"rooms/starting_room/starting_room.yy",},
