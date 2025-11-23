@@ -65,6 +65,7 @@
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_spawnpoint","path":"objects/obj_spawnpoint/obj_spawnpoint.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"pause_machanic_object","path":"objects/pause_machanic_object/pause_machanic_object.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
     {"id":{"name":"second_room","path":"rooms/second_room/second_room.yy",},},
     {"id":{"name":"settings_room","path":"rooms/settings_room/settings_room.yy",},},
