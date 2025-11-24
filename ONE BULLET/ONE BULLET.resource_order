@@ -31,6 +31,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_button_parent","order":1,"path":"objects/obj_button_parent/obj_button_parent.yy",},
+    {"name":"obj_global_set","order":7,"path":"objects/obj_global_set/obj_global_set.yy",},
     {"name":"obj_play_button","order":2,"path":"objects/obj_play_button/obj_play_button.yy",},
     {"name":"obj_quit_button","order":4,"path":"objects/obj_quit_button/obj_quit_button.yy",},
     {"name":"obj_roomTrigger","order":3,"path":"objects/obj_roomTrigger/obj_roomTrigger.yy",},
@@ -40,6 +41,7 @@
     {"name":"obj_settings_button","order":3,"path":"objects/obj_settings_button/obj_settings_button.yy",},
     {"name":"obj_slideTransition","order":4,"path":"objects/obj_slideTransition/obj_slideTransition.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"obj_XP_bar","order":6,"path":"objects/obj_XP_bar/obj_XP_bar.yy",},
     {"name":"obj_XP","order":1,"path":"objects/obj_XP/obj_XP.yy",},
     {"name":"pause_machanic_object","order":5,"path":"objects/pause_machanic_object/pause_machanic_object.yy",},
     {"name":"second_room","order":2,"path":"rooms/second_room/second_room.yy",},
