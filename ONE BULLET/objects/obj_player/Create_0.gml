@@ -12,3 +12,5 @@ dash_cd_timer = 0;
 
 is_dashing = false;
 dash_dir = 0;
+
+global.player = id;
