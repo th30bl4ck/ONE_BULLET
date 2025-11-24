@@ -21,6 +21,7 @@
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
     {"name":"bullet_sprites","order":6,"path":"folders/Sprites/bullet_sprites.yy",},
     {"name":"enemy_sprites","order":2,"path":"folders/Sprites/enemy_sprites.yy",},
+    {"name":"tot sprites","order":7,"path":"folders/Sprites/tot sprites.yy",},
     {"name":"main_menu_sprites","order":3,"path":"folders/Sprites/main_menu_sprites.yy",},
     {"name":"player_sprites","order":1,"path":"folders/Sprites/player_sprites.yy",},
     {"name":"starting_room_sprites","order":4,"path":"folders/Sprites/starting_room_sprites.yy",},
@@ -44,7 +45,5 @@
     {"name":"second_room","order":2,"path":"rooms/second_room/second_room.yy",},
     {"name":"settings_room","order":3,"path":"rooms/settings_room/settings_room.yy",},
     {"name":"starting_room","order":1,"path":"rooms/starting_room/starting_room.yy",},
-    {"name":"RoomUI","order":15,"path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"spr_XP","order":1,"path":"sprites/spr_XP/spr_XP.yy",},
   ],
 }
