@@ -44,7 +44,7 @@
     {"name":"second_room","order":2,"path":"rooms/second_room/second_room.yy",},
     {"name":"settings_room","order":3,"path":"rooms/settings_room/settings_room.yy",},
     {"name":"starting_room","order":1,"path":"rooms/starting_room/starting_room.yy",},
-    {"name":"RoomUI","order":15,"path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"spr_XP","order":1,"path":"sprites/spr_XP/spr_XP.yy",},
+    {"name":"RoomUI","order":16,"path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"Sprite10","order":1,"path":"sprites/Sprite10/Sprite10.yy",},
   ],
 }
