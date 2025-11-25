@@ -23,7 +23,6 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"bullet_sprites","order":6,"path":"folders/Sprites/bullet_sprites.yy",},
     {"name":"enemy_sprites","order":2,"path":"folders/Sprites/enemy_sprites.yy",},
-    {"name":"tot sprites","order":7,"path":"folders/Sprites/tot sprites.yy",},
     {"name":"main_menu_sprites","order":3,"path":"folders/Sprites/main_menu_sprites.yy",},
     {"name":"player_sprites","order":1,"path":"folders/Sprites/player_sprites.yy",},
     {"name":"starting_room_sprites","order":4,"path":"folders/Sprites/starting_room_sprites.yy",},
