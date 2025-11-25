@@ -14,3 +14,10 @@ is_dashing = false;
 dash_dir = 0;
 
 global.player = id;
+
+state = "alive";
+death_zoom = 1; // camera zoom
+
+min_cam_scale = 1; // this will be calculated after the first frame
+
+input_locked = false;
