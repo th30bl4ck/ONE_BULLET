@@ -64,6 +64,8 @@ if (state == "dying") {
 // EVERYTHING BELOW THIS POINT ONLY RUNS IF NOT DYING
 // ======================================================
 
+if (invuln > 0) invuln -= 1;
+
 
 // ===== Movement Lock =====
 if (input_locked) {
@@ -153,3 +155,5 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
     can_shoot = false;
 }
 
+// Smooth HP bar transition
+hp_display = lerp(hp_display, hp, 0.1);

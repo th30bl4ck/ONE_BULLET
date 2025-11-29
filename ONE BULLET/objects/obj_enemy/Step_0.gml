@@ -8,7 +8,19 @@ y += lengthdir_y(move_speed, direction);
 
 if (place_meeting(x, y, obj_player)) {
     with (obj_player) {
-        if (state != "dying") {
+
+        // only take damage if not invulnerable
+        if (invuln <= 0) {
+            hp -= 1;
+            invuln = 30; // half-second of safety
+
+            // optional knockback
+            // hspeed = (other.x - x) * 0.2;
+            // vspeed = (other.y - y) * 0.2;
+        }
+
+        // if HP is zero or below → start death
+        if (hp <= 0) {
             state = "dying";
             sprite_index = spr_player_death;
             image_index = 0;
