@@ -29,3 +29,11 @@ death_cam_w = 0;
 death_cam_h = 0;
 
 death_cam_locked = false;
+
+max_hp = 5;
+hp = max_hp;
+
+invuln = 0;
+
+// this is the SMOOTHING value
+hp_display = hp; 
