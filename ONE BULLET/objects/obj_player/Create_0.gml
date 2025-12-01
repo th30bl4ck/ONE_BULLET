@@ -21,3 +21,19 @@ death_zoom = 1; // camera zoom
 min_cam_scale = 1; // this will be calculated after the first frame
 
 input_locked = false;
+
+death_cam_x = 0;
+death_cam_y = 0;
+
+death_cam_w = 0;
+death_cam_h = 0;
+
+death_cam_locked = false;
+
+max_hp = 5;
+hp = max_hp;
+
+invuln = 0;
+
+// this is the SMOOTHING value
+hp_display = hp; 
