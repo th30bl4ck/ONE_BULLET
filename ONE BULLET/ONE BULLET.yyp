@@ -93,6 +93,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_XP","path":"sprites/spr_XP/spr_XP.yy",},},
+    {"id":{"name":"tile_set","path":"sprites/tile_set/tile_set.yy",},},
     {"id":{"name":"used_medkit","path":"sprites/used_medkit/used_medkit.yy",},},
   ],
   "resourceType":"GMProject",
