@@ -5,6 +5,7 @@
     {"name":"rollershoes","order":1,"path":"sprites/rollershoes/rollershoes.yy",},
     {"name":"spooger_attk","order":1,"path":"sprites/spooger_attk/spooger_attk.yy",},
     {"name":"spooger_bullet","order":2,"path":"sprites/spooger_bullet/spooger_bullet.yy",},
+    {"name":"stickysock","order":3,"path":"sprites/stickysock/stickysock.yy",},
     {"name":"tile_set","order":1,"path":"sprites/tile_set/tile_set.yy",},
   ],
 }
