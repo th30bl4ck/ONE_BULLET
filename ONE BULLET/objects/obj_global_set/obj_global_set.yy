@@ -8,8 +8,8 @@
   "name":"obj_global_set",
   "overriddenProperties":[],
   "parent":{
-    "name":"invisable_objects",
-    "path":"folders/Objects/starting_room_objects/invisable_objects.yy",
+    "name":"universal_objects",
+    "path":"folders/Objects/universal_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

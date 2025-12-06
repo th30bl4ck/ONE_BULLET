@@ -1,8 +1,17 @@
 {
   "FolderOrderSettings":[
+    {"name":"universal_objects","order":1,"path":"folders/Objects/universal_objects.yy",},
     {"name":"tileset_sprites","order":1,"path":"folders/Sprites/tileset_sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_global_set","order":1,"path":"objects/obj_global_set/obj_global_set.yy",},
+    {"name":"obj_pause_machanic","order":2,"path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},
+    {"name":"obj_room2_changer","order":1,"path":"objects/obj_room2_changer/obj_room2_changer.yy",},
+    {"name":"obj_score_manager","order":3,"path":"objects/obj_score_manager/obj_score_manager.yy",},
+    {"name":"obj_scorepopup","order":4,"path":"objects/obj_scorepopup/obj_scorepopup.yy",},
+    {"name":"obj_slideTransition","order":5,"path":"objects/obj_slideTransition/obj_slideTransition.yy",},
+    {"name":"obj_spawner","order":6,"path":"objects/obj_spawner/obj_spawner.yy",},
+    {"name":"obj_XP_bar","order":7,"path":"objects/obj_XP_bar/obj_XP_bar.yy",},
     {"name":"spooger_attk","order":1,"path":"sprites/spooger_attk/spooger_attk.yy",},
     {"name":"spooger_bullet","order":2,"path":"sprites/spooger_bullet/spooger_bullet.yy",},
   ],
