@@ -11,8 +11,10 @@ if (state == "dying") {
 
     // Kill enemies
     with (obj_enemy) instance_destroy();
-
-    var cam = view_camera[0];
+    with (obj_XP) instance_destroy(); 
+    with (obj_XP_bar) instance_destroy();
+   
+     var cam = view_camera[0];
 
     if (!death_cam_locked) {
         death_cam_x = camera_get_view_x(cam);
@@ -56,6 +58,8 @@ if (state == "dying") {
         game_restart();
     }
 
+    hp_display = 0;
+    
     exit;
 }
 
@@ -65,6 +69,7 @@ if (state == "dying") {
 // ======================================================
 
 if (invuln > 0) invuln -= 1;
+if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
 
 // ===== Movement Lock =====
@@ -76,17 +81,6 @@ if (input_locked) {
 
 
 
-// ----- Movement (8-way) -----
-var mx = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var my = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-var spd = point_distance(0,0,mx,my);
-if (spd > 0) {
-    var dir = point_direction(0,0,mx,my);
-    x += lengthdir_x(move_speed * spd, dir);
-    y += lengthdir_y(move_speed * spd, dir);
-}
-
-
 // ----------------------
 // Basic movement
 // ----------------------
@@ -95,10 +89,9 @@ var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 if (!is_dashing) {
     var dir = point_direction(0,0, h, v);
-    var spd = move_speed;
     if (h != 0 || v != 0) {
-        x += lengthdir_x(spd, dir);
-        y += lengthdir_y(spd, dir);
+        x += lengthdir_x(move_speed, dir);
+        y += lengthdir_y(move_speed, dir);
     }
 }
 
@@ -157,3 +150,17 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
 
 // Smooth HP bar transition
 hp_display = lerp(hp_display, hp, 0.1);
+
+if (global.levelup_active)
+{
+    if (keyboard_check_pressed(ord("1")))
+    {
+        scr_apply_upgrade(global.choice_1);
+        close_levelup_menu();
+    }
+    if (keyboard_check_pressed(ord("2")))
+    {
+        scr_apply_upgrade(global.choice_2);
+        close_levelup_menu();
+    }
+}

@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"pause_machanic_object",
+  "%Name":"obj_pause_machanic",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"pause_machanic_object",
+  "name":"obj_pause_machanic",
   "overriddenProperties":[],
   "parent":{
-    "name":"invisable_objects",
-    "path":"folders/Objects/starting_room_objects/invisable_objects.yy",
+    "name":"universal_objects",
+    "path":"folders/Objects/universal_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

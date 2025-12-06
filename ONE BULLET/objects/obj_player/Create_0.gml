@@ -1,4 +1,4 @@
-move_speed = 2;
+move_speed = 3;
 can_shoot = true;
 bullet_id = noone;
 shoot_layer = "Instances"; // Make sure this matches your room layer
@@ -36,4 +36,7 @@ hp = max_hp;
 invuln = 0;
 
 // this is the SMOOTHING value
-hp_display = hp; 
+hp_display = hp;
+
+// hit flash
+hit_flash_timer = 0;
