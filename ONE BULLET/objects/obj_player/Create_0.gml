@@ -36,4 +36,7 @@ hp = max_hp;
 invuln = 0;
 
 // this is the SMOOTHING value
-hp_display = hp; 
+hp_display = hp;
+
+// hit flash
+hit_flash_timer = 0;
