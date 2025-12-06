@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"setting_objects","order":2,"path":"folders/Objects/setting_objects.yy",},
     {"name":"universal_objects","order":1,"path":"folders/Objects/universal_objects.yy",},
     {"name":"tileset_sprites","order":1,"path":"folders/Sprites/tileset_sprites.yy",},
   ],
