@@ -69,6 +69,7 @@ if (state == "dying") {
 // ======================================================
 
 if (invuln > 0) invuln -= 1;
+if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
 
 // ===== Movement Lock =====
