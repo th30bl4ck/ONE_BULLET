@@ -7,7 +7,9 @@ text_lines = [
     "",
     "Left click to shoot",
     "",
-    "Walk on to bullet to collect"
+    "Walk on to bullet to collect",
+    "",
+    "ESC to pause"
 ];
 
 visible_on_room_start = true;
