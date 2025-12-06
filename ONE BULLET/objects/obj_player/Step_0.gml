@@ -76,17 +76,6 @@ if (input_locked) {
 
 
 
-// ----- Movement (8-way) -----
-var mx = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var my = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-var spd = point_distance(0,0,mx,my);
-if (spd > 0) {
-    var dir = point_direction(0,0,mx,my);
-    x += lengthdir_x(move_speed * spd, dir);
-    y += lengthdir_y(move_speed * spd, dir);
-}
-
-
 // ----------------------
 // Basic movement
 // ----------------------
@@ -95,10 +84,9 @@ var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 if (!is_dashing) {
     var dir = point_direction(0,0, h, v);
-    var spd = move_speed;
     if (h != 0 || v != 0) {
-        x += lengthdir_x(spd, dir);
-        y += lengthdir_y(spd, dir);
+        x += lengthdir_x(move_speed, dir);
+        y += lengthdir_y(move_speed, dir);
     }
 }
 
