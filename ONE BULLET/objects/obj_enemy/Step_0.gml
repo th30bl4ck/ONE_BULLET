@@ -13,6 +13,7 @@ if (place_meeting(x, y, obj_player)) {
         if (invuln <= 0) {
             hp -= 1;
             invuln = 30; // half-second of safety
+            hit_flash_timer = 15;
 
             // optional knockback
             // hspeed = (other.x - x) * 0.2;
