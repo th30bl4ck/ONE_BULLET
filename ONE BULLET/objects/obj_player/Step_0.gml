@@ -11,8 +11,10 @@ if (state == "dying") {
 
     // Kill enemies
     with (obj_enemy) instance_destroy();
-
-    var cam = view_camera[0];
+    with (obj_XP) instance_destroy(); 
+    with (obj_XP_bar) instance_destroy();
+   
+     var cam = view_camera[0];
 
     if (!death_cam_locked) {
         death_cam_x = camera_get_view_x(cam);
@@ -56,6 +58,8 @@ if (state == "dying") {
         game_restart();
     }
 
+    hp_display = 0;
+    
     exit;
 }
 
