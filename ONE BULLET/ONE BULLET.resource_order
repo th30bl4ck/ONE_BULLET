@@ -1,5 +1,4 @@
 {
-  "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"gunpowder","order":2,"path":"sprites/gunpowder/gunpowder.yy",},
     {"name":"rollershoes","order":1,"path":"sprites/rollershoes/rollershoes.yy",},
