@@ -82,6 +82,8 @@
     {"id":{"name":"settings_room","path":"rooms/settings_room/settings_room.yy",},},
     {"id":{"name":"starting_room","path":"rooms/starting_room/starting_room.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},
+    {"id":{"name":"door","path":"sprites/door/door.yy",},},
     {"id":{"name":"gunpowder","path":"sprites/gunpowder/gunpowder.yy",},},
     {"id":{"name":"horizontal","path":"sprites/horizontal/horizontal.yy",},},
     {"id":{"name":"hrizont","path":"sprites/hrizont/hrizont.yy",},},
