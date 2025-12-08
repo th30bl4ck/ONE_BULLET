@@ -10,10 +10,11 @@ if (state == "dying") {
     vspeed = 0;
 
     // Kill enemies
-    with (obj_enemy) instance_destroy();
+    with (obj_enemy_walker) instance_destroy();
     with (obj_XP) instance_destroy(); 
     with (obj_XP_bar) instance_destroy();
-   
+    with (obj_enemy_dasher) instance_destroy();
+    
      var cam = view_camera[0];
 
     if (!death_cam_locked) {
