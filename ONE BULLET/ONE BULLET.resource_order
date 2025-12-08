@@ -1,7 +1,14 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"spooger_sprites","order":1,"path":"folders/Sprites/enemy_sprites/spooger_sprites.yy",},
+  ],
   "ResourceOrderSettings":[
+    {"name":"obj_enemy_dasher","order":1,"path":"objects/obj_enemy_dasher/obj_enemy_dasher.yy",},
+    {"name":"spawn_enemy_at_edge","order":1,"path":"scripts/spawn_enemy_at_edge/spawn_enemy_at_edge.yy",},
     {"name":"boxx","order":2,"path":"sprites/boxx/boxx.yy",},
     {"name":"door","order":1,"path":"sprites/door/door.yy",},
+    {"name":"spooger_bullet","order":1,"path":"sprites/spooger_bullet/spooger_bullet.yy",},
+    {"name":"spooger_walk","order":2,"path":"sprites/spooger_walk/spooger_walk.yy",},
+    {"name":"spr_dasher","order":2,"path":"sprites/spr_dasher/spr_dasher.yy",},
   ],
 }
