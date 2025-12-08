@@ -47,8 +47,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"enemy_sprites",
-    "path":"folders/Sprites/enemy_sprites.yy",
+    "name":"spooger_sprites",
+    "path":"folders/Sprites/enemy_sprites/spooger_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
