@@ -33,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_enemy_dasher",
+    "path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
