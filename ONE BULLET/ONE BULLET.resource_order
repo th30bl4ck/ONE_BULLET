@@ -9,6 +9,7 @@
     {"name":"door","order":1,"path":"sprites/door/door.yy",},
     {"name":"spooger_bullet","order":1,"path":"sprites/spooger_bullet/spooger_bullet.yy",},
     {"name":"spooger_walk","order":2,"path":"sprites/spooger_walk/spooger_walk.yy",},
+    {"name":"spr_back","order":1,"path":"sprites/spr_back/spr_back.yy",},
     {"name":"spr_dasher","order":2,"path":"sprites/spr_dasher/spr_dasher.yy",},
   ],
 }

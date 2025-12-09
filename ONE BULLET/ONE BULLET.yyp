@@ -97,6 +97,7 @@
     {"id":{"name":"spooger_attk","path":"sprites/spooger_attk/spooger_attk.yy",},},
     {"id":{"name":"spooger_bullet","path":"sprites/spooger_bullet/spooger_bullet.yy",},},
     {"id":{"name":"spooger_walk","path":"sprites/spooger_walk/spooger_walk.yy",},},
+    {"id":{"name":"spr_back","path":"sprites/spr_back/spr_back.yy",},},
     {"id":{"name":"spr_basic_bullet","path":"sprites/spr_basic_bullet/spr_basic_bullet.yy",},},
     {"id":{"name":"spr_basic_button","path":"sprites/spr_basic_button/spr_basic_button.yy",},},
     {"id":{"name":"spr_basic_enemy","path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},},
