@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"starting_room_sprites",
-    "path":"folders/Sprites/starting_room_sprites.yy",
+    "name":"tileset_sprites",
+    "path":"folders/Sprites/tileset_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

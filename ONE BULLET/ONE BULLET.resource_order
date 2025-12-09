@@ -1,6 +1,14 @@
 {
   "FolderOrderSettings":[
+    {"name":"enemy_sprites","order":1,"path":"folders/Sprites/enemy_sprites.yy",},
     {"name":"spooger_sprites","order":1,"path":"folders/Sprites/enemy_sprites/spooger_sprites.yy",},
+    {"name":"Items","order":2,"path":"folders/Sprites/Items.yy",},
+    {"name":"main_menu_sprites","order":3,"path":"folders/Sprites/main_menu_sprites.yy",},
+    {"name":"player_sprites","order":4,"path":"folders/Sprites/player_sprites.yy",},
+    {"name":"starting_room_sprites","order":5,"path":"folders/Sprites/starting_room_sprites.yy",},
+    {"name":"tileset_sprites","order":6,"path":"folders/Sprites/tileset_sprites.yy",},
+    {"name":"tot_sprites","order":8,"path":"folders/Sprites/tot_sprites.yy",},
+    {"name":"wepon_sprites","order":7,"path":"folders/Sprites/wepon_sprites.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_enemy_dasher","order":1,"path":"objects/obj_enemy_dasher/obj_enemy_dasher.yy",},
@@ -10,5 +18,6 @@
     {"name":"spooger_bullet","order":1,"path":"sprites/spooger_bullet/spooger_bullet.yy",},
     {"name":"spooger_walk","order":2,"path":"sprites/spooger_walk/spooger_walk.yy",},
     {"name":"spr_dasher","order":2,"path":"sprites/spr_dasher/spr_dasher.yy",},
+    {"name":"tile_set","order":1,"path":"sprites/tile_set/tile_set.yy",},
   ],
 }
