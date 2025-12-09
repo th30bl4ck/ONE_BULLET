@@ -33,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_dasher",
-    "path":"sprites/spr_dasher/spr_dasher.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
