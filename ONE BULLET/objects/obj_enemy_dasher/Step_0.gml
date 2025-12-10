@@ -28,12 +28,19 @@ if (state == "chase") {
 // =====================
 else if (state == "charge") {
 
+    // Flash red while charging
+    image_blend = (charge_timer mod 6 < 3) ? c_red : c_white;
+
     charge_timer--;
 
     if (charge_timer <= 0) {
+        // Reset colour before dashing
+        image_blend = c_white;
+
         state = "dash";
     }
 }
+
 
 // =====================
 // DASH STATE (rapid movement)
@@ -48,6 +55,7 @@ else if (state == "dash") {
     if (point_distance(x, y, dash_target_x, dash_target_y) < 8) {
         state = "cooldown";
         cooldown_timer = cooldown_time;
+        image_blend = c_white;
     }
 }
 
