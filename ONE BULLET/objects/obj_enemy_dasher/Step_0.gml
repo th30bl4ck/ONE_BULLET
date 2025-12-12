@@ -1,3 +1,5 @@
+if (global.note_open) exit;
+
 var px = obj_player.x;
 var py = obj_player.y;
 var dist = point_distance(x, y, px, py);
@@ -126,4 +128,5 @@ with (obj_enemy_dasher)
         }
     }
 }
+
 

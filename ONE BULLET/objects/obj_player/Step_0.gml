@@ -1,3 +1,5 @@
+if (global.note_open) exit;
+
 // =========================
 // DEATH SEQUENCE 
 // =========================
@@ -166,5 +168,5 @@ if (global.levelup_active)
     }
 }
 
-if (global.note_open) exit;
+
 
