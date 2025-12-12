@@ -165,3 +165,6 @@ if (global.levelup_active)
         close_levelup_menu();
     }
 }
+
+if (global.note_open) exit;
+
