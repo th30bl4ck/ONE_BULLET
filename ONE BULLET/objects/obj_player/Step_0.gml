@@ -75,6 +75,32 @@ if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
 
+// =========================
+// LEVEL UP MENU (PAUSE)
+// =========================
+if (global.levelup_active)
+{
+    // Freeze player movement
+    hspeed = 0;
+    vspeed = 0;
+    is_dashing = false;
+
+    if (keyboard_check_pressed(ord("1")))
+    {
+        scr_apply_upgrade(global.choice_1);
+        close_levelup_menu();
+    }
+
+    if (keyboard_check_pressed(ord("2")))
+    {
+        scr_apply_upgrade(global.choice_2);
+        close_levelup_menu();
+    }
+
+    exit;
+}
+
+
 // ===== Movement Lock =====
 if (input_locked) {
     hspeed = 0;
@@ -153,20 +179,3 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
 
 // Smooth HP bar transition
 hp_display = lerp(hp_display, hp, 0.1);
-
-if (global.levelup_active)
-{
-    if (keyboard_check_pressed(ord("1")))
-    {
-        scr_apply_upgrade(global.choice_1);
-        close_levelup_menu();
-    }
-    if (keyboard_check_pressed(ord("2")))
-    {
-        scr_apply_upgrade(global.choice_2);
-        close_levelup_menu();
-    }
-}
-
-
-

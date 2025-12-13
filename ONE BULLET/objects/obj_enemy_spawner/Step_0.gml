@@ -1,6 +1,8 @@
 //------------------------------------
 // WAVE NOT ACTIVE → WAIT + START WAVE
 //------------------------------------
+if (global.levelup_active) exit;
+
 if (!wave_in_progress)
 {
     wave_break_timer++;

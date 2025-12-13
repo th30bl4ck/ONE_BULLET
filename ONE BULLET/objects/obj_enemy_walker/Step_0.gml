@@ -1,5 +1,7 @@
 if (global.note_open) exit;
 
+if (global.levelup_active) exit;
+
 if (!ai_enabled) exit;
 
 
