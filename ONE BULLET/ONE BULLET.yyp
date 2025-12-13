@@ -87,6 +87,7 @@
     {"id":{"name":"settings_room","path":"rooms/settings_room/settings_room.yy",},},
     {"id":{"name":"starting_room","path":"rooms/starting_room/starting_room.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"level_up_menu","path":"scripts/level_up_menu/level_up_menu.yy",},},
     {"id":{"name":"spawn_enemy_at_edge","path":"scripts/spawn_enemy_at_edge/spawn_enemy_at_edge.yy",},},
     {"id":{"name":"ap","path":"sprites/ap/ap.yy",},},
     {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},

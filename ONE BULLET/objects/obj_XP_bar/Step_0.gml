@@ -1,3 +1,5 @@
+if (global.levelup_active) exit;
+
 // LEVEL UP CHECK
 if (global.xp >= global.xp_required)
 {
@@ -12,4 +14,6 @@ if (global.xp >= global.xp_required)
 
     // OPTIONAL: play a sound or flash
     // audio_play_sound(snd_levelup, 1, false);
+
+    open_levelup_menu();
 }
