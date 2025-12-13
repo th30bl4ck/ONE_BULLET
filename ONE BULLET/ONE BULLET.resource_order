@@ -1,6 +1,17 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"enemy_objects","order":1,"path":"folders/Objects/enemy_objects.yy",},
+    {"name":"letters_objects","order":8,"path":"folders/Objects/letters_objects.yy",},
+    {"name":"main_menu_objects","order":2,"path":"folders/Objects/main_menu_objects.yy",},
+    {"name":"player_objects","order":3,"path":"folders/Objects/player_objects.yy",},
+    {"name":"second_room_objects","order":4,"path":"folders/Objects/second_room_objects.yy",},
+    {"name":"setting_objects","order":5,"path":"folders/Objects/setting_objects.yy",},
+    {"name":"starting_room_objects","order":6,"path":"folders/Objects/starting_room_objects.yy",},
+    {"name":"universal_objects","order":7,"path":"folders/Objects/universal_objects.yy",},
+    {"name":"sprite_letters","order":1,"path":"folders/Sprites/sprite_letters.yy",},
+  ],
   "ResourceOrderSettings":[
+    {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
   ],
 }

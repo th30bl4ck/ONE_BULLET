@@ -1,3 +1,7 @@
+if (global.note_open) exit;
+
+if (global.levelup_active) exit;
+
 if (!ai_enabled) exit;
 
 
@@ -38,3 +42,4 @@ if (obj_player.x > x) {
 } else {
     image_xscale = -1;   // Face left
 }
+
