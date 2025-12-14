@@ -12,6 +12,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
+    {"name":"healthbar","order":1,"path":"sprites/healthbar/healthbar.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
   ],
 }
