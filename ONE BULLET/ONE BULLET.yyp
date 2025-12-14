@@ -94,6 +94,7 @@
     {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
     {"id":{"name":"gunpowder","path":"sprites/gunpowder/gunpowder.yy",},},
+    {"id":{"name":"healthbar","path":"sprites/healthbar/healthbar.yy",},},
     {"id":{"name":"horizontal","path":"sprites/horizontal/horizontal.yy",},},
     {"id":{"name":"hrizont","path":"sprites/hrizont/hrizont.yy",},},
     {"id":{"name":"idl_player","path":"sprites/idl_player/idl_player.yy",},},
