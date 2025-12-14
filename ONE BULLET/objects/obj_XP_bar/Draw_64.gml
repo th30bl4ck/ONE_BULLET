@@ -21,35 +21,39 @@ draw_rectangle(bx, by, bx + fill, by + bh, false);
 
 // LEVEL TEXT ABOVE BAR
 draw_set_color(c_white);
-draw_text(bx, by - 30, "Level: " + string(global.level));
+draw_text(bx, by - 35, "Level: " + string(global.level));
 
 // XP TEXT BELOW BAR
 draw_text(bx, by + bh + 4, string(current) + " / " + string(max_xp) + " XP");
 
-if (global.levelup_active)
-{
-    var w = display_get_gui_width();
-    var h = display_get_gui_height();
 
-    // dark background overlay
-    draw_set_color(c_black);
-    draw_set_alpha(0.6);
-    draw_rectangle(0, 0, w, h, false);
-    draw_set_alpha(1);
+if (!global.levelup_active) exit;
 
-    // popup window size
-    var pw = 300;
-    var ph = 150;
-    var px = (w/2) - pw/2;
-    var py = (h/2) - ph/2;
+var cx = display_get_gui_width() * 0.5;
+var cy = display_get_gui_height() * 0.5;
 
-    // window background
-    draw_set_color(make_color_rgb(30, 30, 30));
-    draw_rectangle(px, py, px + pw, py + ph, false);
+// RESET EVERYTHING IMPORTANT
+draw_set_alpha(1);
+draw_set_color(c_white);
+shader_reset();
 
-    draw_set_color(c_white);
-    draw_text(px + 20, py + 20, "LEVEL UP!");
+// --- WHITE BOX ---
+draw_rectangle(cx - 220, cy - 120, cx + 220, cy + 120, false);
 
-    draw_text(px + 20, py + 60, "1) " + global.choice_1);
-    draw_text(px + 20, py + 90, "2) " + global.choice_2);
-}
+// --- BLACK OUTLINE ---
+draw_set_color(c_black);
+draw_rectangle(cx - 220, cy - 120, cx + 220, cy + 120, true);
+
+// --- BLACK TEXT ---
+draw_set_alpha(1);
+draw_set_color(c_black);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+draw_text(cx, cy - 70, "LEVEL UP!");
+
+draw_set_halign(fa_right);
+draw_text(cx - 40, cy, "1) " + string(global.choice_1));
+
+draw_set_halign(fa_left);
+draw_text(cx + 40, cy, "2) " + string(global.choice_2));
