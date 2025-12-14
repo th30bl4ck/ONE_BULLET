@@ -14,3 +14,5 @@ state = "chase";
 
 cooldown_time = 45;   // frames
 cooldown_timer = 0;
+
+xp_value = 5; 

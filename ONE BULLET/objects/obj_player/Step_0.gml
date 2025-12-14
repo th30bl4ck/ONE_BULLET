@@ -179,3 +179,18 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
 
 // Smooth HP bar transition
 hp_display = lerp(hp_display, hp, 0.1);
+
+if (combo_timer > 0) {
+    combo_timer--;
+} else if (combo_count > 0) {
+    combo_count = 0;
+    combo_heat = 0;
+}
+
+if (combo_count == 5 || combo_count == 10) {
+    camera_shake = 4;
+}
+
+if (combo_count >= 10) {
+    game_speed = 0.9;
+}
