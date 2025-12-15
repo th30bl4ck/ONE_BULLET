@@ -14,3 +14,6 @@ if (global.xp >= global.xp_required)
 
     open_levelup_menu();
 }
+
+
+
