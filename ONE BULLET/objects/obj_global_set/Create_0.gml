@@ -9,3 +9,5 @@ global.xp_required = 20;
 global.note_open = false;
 global.note_text = "";
 global.active_note = noone;
+
+

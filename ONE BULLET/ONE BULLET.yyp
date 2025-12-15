@@ -111,6 +111,7 @@
     {"id":{"name":"spr_basic_tileset","path":"sprites/spr_basic_tileset/spr_basic_tileset.yy",},},
     {"id":{"name":"spr_enemy_dasher","path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
+    {"id":{"name":"spr_icon_hp","path":"sprites/spr_icon_hp/spr_icon_hp.yy",},},
     {"id":{"name":"spr_invisable","path":"sprites/spr_invisable/spr_invisable.yy",},},
     {"id":{"name":"spr_letter_1st","path":"sprites/spr_letter_1st/spr_letter_1st.yy",},},
     {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},},
