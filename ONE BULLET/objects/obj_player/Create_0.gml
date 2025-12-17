@@ -46,3 +46,4 @@ combo_count = 0;
 combo_timer = 0;
 combo_timer_max = 120; // 2 seconds at 60fps
 combo_heat = 0;        // 0 → 1 (for visuals)
+
