@@ -1,10 +1,29 @@
 //------------------------------------
-// WAVE NOT ACTIVE → WAIT + START WAVE
+// GLOBAL BLOCKS
 //------------------------------------
 if (global.levelup_active) exit;
+if (arena_complete) exit;
 
+
+//------------------------------------
+// WAVE NOT ACTIVE → WAIT + START WAVE
+//------------------------------------
 if (!wave_in_progress)
 {
+    // If all waves are done, complete arena
+    if (current_wave >= max_waves)
+    {
+        arena_complete = true;
+
+        // Unlock the exit to the next room
+        with (obj_room1_changer)
+        {
+            unlocked = true;
+        }
+
+        exit;
+    }
+
     wave_break_timer++;
 
     if (wave_break_timer >= wave_break_time)
@@ -12,15 +31,14 @@ if (!wave_in_progress)
         wave_break_timer = 0;
         wave_in_progress = true;
 
-        // Number of enemies this wave
-        wave_enemy_total = 3 + current_wave * 1;
-
+        // Enemies per wave (scales slightly)
+        wave_enemy_total = 6 + current_wave * 2;
         wave_enemy_spawned = 0;
+        spawn_timer = 0;
     }
 
     exit;
 }
-
 
 
 //------------------------------------
@@ -34,7 +52,7 @@ if (wave_enemy_spawned < wave_enemy_total)
     {
         spawn_timer = 0;
 
-        // Spawn position from room edges
+        // Spawn from room edges
         var side = irandom(3);
         var xx, yy;
 
@@ -46,47 +64,27 @@ if (wave_enemy_spawned < wave_enemy_total)
             case 3: xx = irandom(room_width); yy = room_height + 32; break;
         }
 
-        //------------------------------------
-        // PICK ENEMY TYPE PER SPAWN
-        //------------------------------------
-        var enemy_to_spawn;
+        // Full mix every wave
+        var enemy_to_spawn = choose(
+            obj_enemy_walker,
+            obj_enemy_dasher
+        );
 
-        if (current_wave <= 3)
-        {
-            // ONLY walkers in first 3 waves
-            enemy_to_spawn = obj_enemy_walker;
-        }
-        else if (current_wave <= 6)
-        {
-            // MIX of walkers + dashers (equal chance)
-            enemy_to_spawn = choose(obj_enemy_walker, obj_enemy_dasher);
-        }
-        else
-        {
-            // MIX but weighted toward dashers
-            enemy_to_spawn = choose(
-                obj_enemy_walker,
-                obj_enemy_walker,
-                obj_enemy_dasher,
-                obj_enemy_dasher
-            );
-        }
-
-        // Create the enemy
         instance_create_layer(xx, yy, "Instances", enemy_to_spawn);
-
         wave_enemy_spawned++;
     }
 }
 else
 {
     //------------------------------------
-    // WAVE COMPLETE → NEXT WAVE
+    // WAVE COMPLETE → MOVE TO NEXT WAVE
     //------------------------------------
-    if (instance_number(obj_enemy_walker) == 0 && instance_number(obj_enemy_dasher) == 0)
+    if (instance_number(obj_enemy_walker) == 0 &&
+        instance_number(obj_enemy_dasher) == 0)
     {
         current_wave++;
         wave_in_progress = false;
     }
 }
+
 
