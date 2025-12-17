@@ -74,7 +74,6 @@
     {"id":{"name":"obj_room1_changer","path":"objects/obj_room1_changer/obj_room1_changer.yy",},},
     {"id":{"name":"obj_room2_changer","path":"objects/obj_room2_changer/obj_room2_changer.yy",},},
     {"id":{"name":"obj_scale","path":"objects/obj_scale/obj_scale.yy",},},
-    {"id":{"name":"obj_score_manager","path":"objects/obj_score_manager/obj_score_manager.yy",},},
     {"id":{"name":"obj_scorepopup","path":"objects/obj_scorepopup/obj_scorepopup.yy",},},
     {"id":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},},
     {"id":{"name":"obj_slideTransition","path":"objects/obj_slideTransition/obj_slideTransition.yy",},},
