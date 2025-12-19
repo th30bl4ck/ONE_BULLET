@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings":[
-    {"name":"enemy_objects","order":1,"path":"folders/Objects/enemy_objects.yy",},
     {"name":"diffirent_enemy_spawners_objects","order":10,"path":"folders/Objects/diffirent_enemy_spawners_objects.yy",},
+    {"name":"enemy_objects","order":1,"path":"folders/Objects/enemy_objects.yy",},
     {"name":"letters_objects","order":8,"path":"folders/Objects/letters_objects.yy",},
     {"name":"main_menu_objects","order":2,"path":"folders/Objects/main_menu_objects.yy",},
     {"name":"player_objects","order":3,"path":"folders/Objects/player_objects.yy",},
