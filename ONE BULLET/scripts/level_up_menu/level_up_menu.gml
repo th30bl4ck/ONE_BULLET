@@ -55,7 +55,8 @@ function scr_apply_upgrade(choice)
         break;
 
         case "Sticky Finger":
-            global.xp_attract_range += 32;
+            global.xp_attract_range += 16;
+
             // Apply immediately to existing XP orbs
             with (obj_XP)
             {

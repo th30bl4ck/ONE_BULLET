@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spawnpoint",
+  "%Name":"obj_spawnpoint_second_room_2",
   "eventList":[],
   "managed":true,
-  "name":"obj_spawnpoint",
+  "name":"obj_spawnpoint_second_room_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"universal_objects",
-    "path":"folders/Objects/universal_objects.yy",
+    "name":"second_room_objects",
+    "path":"folders/Objects/second_room_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

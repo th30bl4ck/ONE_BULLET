@@ -2,6 +2,7 @@
   "FolderOrderSettings":[
     {"name":"diffirent_enemy_spawners_objects","order":10,"path":"folders/Objects/diffirent_enemy_spawners_objects.yy",},
     {"name":"enemy_objects","order":1,"path":"folders/Objects/enemy_objects.yy",},
+    {"name":"third_room_objects","order":11,"path":"folders/Objects/third_room_objects.yy",},
     {"name":"letters_objects","order":8,"path":"folders/Objects/letters_objects.yy",},
     {"name":"main_menu_objects","order":2,"path":"folders/Objects/main_menu_objects.yy",},
     {"name":"player_objects","order":3,"path":"folders/Objects/player_objects.yy",},
@@ -13,6 +14,12 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
+    {"name":"obj_room2_changer_forward","order":1,"path":"objects/obj_room2_changer_forward/obj_room2_changer_forward.yy",},
+    {"name":"obj_spawnpoint_second_room_1","order":2,"path":"objects/obj_spawnpoint_second_room_1/obj_spawnpoint_second_room_1.yy",},
+    {"name":"obj_spawnpoint_second_room_2","order":3,"path":"objects/obj_spawnpoint_second_room_2/obj_spawnpoint_second_room_2.yy",},
+    {"name":"obj_spawnpoint_starting_room","order":1,"path":"objects/obj_spawnpoint_starting_room/obj_spawnpoint_starting_room.yy",},
+    {"name":"obj_spawnpoint_third_room","order":1,"path":"objects/obj_spawnpoint_third_room/obj_spawnpoint_third_room.yy",},
+    {"name":"third_room","order":1,"path":"rooms/third_room/third_room.yy",},
     {"name":"scr_get_combo_xp_multiplier","order":1,"path":"scripts/scr_get_combo_xp_multiplier/scr_get_combo_xp_multiplier.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
