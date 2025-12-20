@@ -1,0 +1,3 @@
+function coins_spawn(){
+
+}
