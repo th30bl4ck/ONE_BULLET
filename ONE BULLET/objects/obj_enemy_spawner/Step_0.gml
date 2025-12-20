@@ -15,6 +15,18 @@ if (!wave_in_progress)
     {
         arena_complete = true;
 
+        if (!coins_spawned)
+        {
+            var coin_count = global.room_enemy_kills div 10;
+
+            if (coin_count > 0)
+            {
+                coins_spawn(coin_count);
+            }
+
+            coins_spawned = true;
+        }
+
         // Unlock the exit to the next room
         with (obj_room1_changer)
         {
@@ -86,5 +98,4 @@ else
         wave_in_progress = false;
     }
 }
-
 

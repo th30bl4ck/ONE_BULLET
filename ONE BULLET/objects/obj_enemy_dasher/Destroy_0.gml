@@ -11,3 +11,9 @@ with (obj_player) {
     // Heat scales with combo
     combo_heat = clamp(combo_count / 10, 0, 1);
 }
+
+if (variable_global_exists("room_enemy_kills")) {
+    global.room_enemy_kills += 1;
+} else {
+    global.room_enemy_kills = 1;
+}
