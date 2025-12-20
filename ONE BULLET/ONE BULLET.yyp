@@ -113,6 +113,7 @@
     {"id":{"name":"perice","path":"sprites/perice/perice.yy",},},
     {"id":{"name":"roid","path":"sprites/roid/roid.yy",},},
     {"id":{"name":"rollershoes","path":"sprites/rollershoes/rollershoes.yy",},},
+    {"id":{"name":"side_door","path":"sprites/side_door/side_door.yy",},},
     {"id":{"name":"spooger_attk","path":"sprites/spooger_attk/spooger_attk.yy",},},
     {"id":{"name":"spooger_bullet","path":"sprites/spooger_bullet/spooger_bullet.yy",},},
     {"id":{"name":"spooger_walk","path":"sprites/spooger_walk/spooger_walk.yy",},},
