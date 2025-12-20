@@ -14,3 +14,6 @@ enemy_type = obj_enemy_walker;
 
 max_waves = 4;
 arena_complete = false;
+
+coins_spawned = false;
+global.room_enemy_kills = 0;

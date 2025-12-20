@@ -33,3 +33,9 @@ if (instance_exists(p)) {
     p.combo_timer = p.combo_timer_max;
     p.combo_heat = clamp(p.combo_count / 10, 0, 1);
 }
+
+if (variable_global_exists("room_enemy_kills")) {
+    global.room_enemy_kills += 1;
+} else {
+    global.room_enemy_kills = 1;
+}
