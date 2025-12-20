@@ -1,4 +1,10 @@
 if (game_pause) {
+    var coin_text = "Coins: " + string(global.coins);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_color(c_white);
+    draw_text(16, 16, coin_text);
+
     var text = "Game Paused";
     var text_x = display_get_gui_width() / 2;
     var text_y = display_get_gui_height() / 2;

@@ -1,2 +1,0 @@
-
-global.score = 0;

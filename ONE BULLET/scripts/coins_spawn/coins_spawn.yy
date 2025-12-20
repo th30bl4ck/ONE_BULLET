@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"level_up_menu",
+  "%Name":"coins_spawn",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"level_up_menu",
+  "name":"coins_spawn",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_score_manager",
+  "%Name":"obj_room2_changer_forward",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_score_manager",
+  "name":"obj_room2_changer_forward",
   "overriddenProperties":[],
   "parent":{
-    "name":"universal_objects",
-    "path":"folders/Objects/universal_objects.yy",
+    "name":"second_room_objects",
+    "path":"folders/Objects/second_room_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"spr_invisable",
+    "path":"sprites/spr_invisable/spr_invisable.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

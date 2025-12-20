@@ -5,16 +5,19 @@ function open_levelup_menu()
     var upgrades = [
         "Move Speed +1",
         "Heal 1 HP",
-        "Max HP +1"
+        "Max HP +1",
+        "Sticky Finger"
     ];
 
-    global.choice_1 = choose(upgrades[0], upgrades[1], upgrades[2]);
+    var upgrade_count = array_length(upgrades);
+
+    global.choice_1 = upgrades[irandom(upgrade_count - 1)];
     global.choice_2 = global.choice_1;
 
     // Ensure the two choices are different
     repeat (10)
     {
-        global.choice_2 = choose(upgrades[0], upgrades[1], upgrades[2]);
+        global.choice_2 = upgrades[irandom(upgrade_count - 1)];
         if (global.choice_2 != global.choice_1) break;
     }
 
@@ -48,6 +51,16 @@ function scr_apply_upgrade(choice)
                 max_hp += 1;
                 hp = max_hp;
                 hp_display = hp;
+            }
+        break;
+
+        case "Sticky Finger":
+            global.xp_attract_range += 16;
+
+            // Apply immediately to existing XP orbs
+            with (obj_XP)
+            {
+                attract_range = global.xp_attract_range;
             }
         break;
     }

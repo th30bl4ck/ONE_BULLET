@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_spawner",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_spawnpoint_second_room_1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_enemy_spawner",
+  "name":"obj_spawnpoint_second_room_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"diffirent_enemy_spawners_objects",
-    "path":"folders/Objects/diffirent_enemy_spawners_objects.yy",
+    "name":"second_room_objects",
+    "path":"folders/Objects/second_room_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

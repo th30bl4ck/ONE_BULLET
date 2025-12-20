@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"sprite_letters",
-    "path":"folders/Sprites/sprite_letters.yy",
+    "name":"letters_sprites",
+    "path":"folders/Sprites/letters_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

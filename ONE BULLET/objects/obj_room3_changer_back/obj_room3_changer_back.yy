@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_spawner",
+  "%Name":"obj_room3_changer_back",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy_spawner",
+  "name":"obj_room3_changer_back",
   "overriddenProperties":[],
   "parent":{
-    "name":"diffirent_enemy_spawners_objects",
-    "path":"folders/Objects/diffirent_enemy_spawners_objects.yy",
+    "name":"third_room_objects",
+    "path":"folders/Objects/third_room_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,8 +29,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"spr_invisable",
+    "path":"sprites/spr_invisable/spr_invisable.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
