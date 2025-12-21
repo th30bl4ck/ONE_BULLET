@@ -57,7 +57,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.2.941",
+    "IDEVersion":"2024.14.2.212",
   },
   "name":"ONE BULLET",
   "resources":[
@@ -124,7 +124,6 @@
     {"id":{"name":"spr_basic_button","path":"sprites/spr_basic_button/spr_basic_button.yy",},},
     {"id":{"name":"spr_basic_enemy","path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},},
     {"id":{"name":"spr_basic_tileset","path":"sprites/spr_basic_tileset/spr_basic_tileset.yy",},},
-    {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_coinz","path":"sprites/spr_coinz/spr_coinz.yy",},},
     {"id":{"name":"spr_enemy_dasher","path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
