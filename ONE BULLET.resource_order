@@ -28,7 +28,7 @@
     {"name":"bigboyboots","order":5,"path":"sprites/bigboyboots/bigboyboots.yy",},
     {"name":"cristil","order":4,"path":"sprites/cristil/cristil.yy",},
     {"name":"side_door","order":1,"path":"sprites/side_door/side_door.yy",},
-    {"name":"spr_coinz","order":3,"path":"sprites/spr_coinz/spr_coinz.yy",},
+    {"name":"spr_coinz","order":1,"path":"sprites/spr_coinz/spr_coinz.yy",},
     {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
   ],
