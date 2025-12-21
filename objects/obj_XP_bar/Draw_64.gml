@@ -85,11 +85,6 @@ draw_set_halign(fa_left);
 draw_text(cx + 40, cy, "2) " + string(global.choice_2));
 
 
-
-
-var cx = display_get_gui_width() * 0.5;
-var cy = display_get_gui_height() * 0.5;
-
 var icon_offset = 120;
 var icon_y = cy - 20;
 
