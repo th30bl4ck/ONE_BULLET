@@ -8,6 +8,7 @@ global.xp_required = 20;
 
 global.coins = 0;
 global.room_enemy_kills = 0;
+global.room_damage_taken = 0;
 
 global.xp_attract_range = 64;
 
