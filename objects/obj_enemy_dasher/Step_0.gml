@@ -92,6 +92,10 @@ if (place_meeting(x, y, obj_player)) {
             hp -= 1;
             invuln = 30; // half-second of safety
             hit_flash_timer = 15;
+
+            if (variable_global_exists("room_damage_taken")) {
+                global.room_damage_taken += 1;
+            }
         }
 
         // if HP is zero or below → start death
@@ -130,5 +134,4 @@ with (obj_enemy_dasher)
         }
     }
 }
-
 

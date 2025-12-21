@@ -19,6 +19,10 @@ if (place_meeting(x, y, obj_player)) {
             invuln = 30; // half-second of safety
             hit_flash_timer = 15;
 
+            if (variable_global_exists("room_damage_taken")) {
+                global.room_damage_taken += 1;
+            }
+
             // optional knockback
             // hspeed = (other.x - x) * 0.2;
             // vspeed = (other.y - y) * 0.2;
@@ -42,4 +46,3 @@ if (obj_player.x > x) {
 } else {
     image_xscale = -1;   // Face left
 }
-

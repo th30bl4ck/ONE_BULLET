@@ -18,6 +18,7 @@ if (!wave_in_progress)
         if (!coins_spawned)
         {
             var coin_count = global.room_enemy_kills div 10;
+            coin_count = max(0, coin_count - global.room_damage_taken);
 
             if (coin_count > 0)
             {
@@ -98,4 +99,3 @@ else
         wave_in_progress = false;
     }
 }
-
