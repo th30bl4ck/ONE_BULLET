@@ -193,8 +193,9 @@ if (combo_count >= 10) {
     game_speed = 0.9;
 }
 
-//hp bar
-for (var i = 0; i < max_hp; i++)
+var count = min(max_hp, array_length(hp_segments));
+
+for (var i = 0; i < count; i++)
 {
     if (hp_segments[i] > 0 && hp_segments[i] < 8)
     {
@@ -206,6 +207,7 @@ for (var i = 0; i < max_hp; i++)
         hp_segments[i] = 8; // lock to empty frame
     }
 }
+
 
 //damage
 function take_damage(amount)
@@ -225,11 +227,24 @@ function increase_max_hp(amount)
     max_hp += amount;
     hp += amount;
 
+    var old_len = array_length(hp_segments);
     array_resize(hp_segments, max_hp);
 
-    // new segments start full
-    for (var i = max_hp - amount; i < max_hp; i++)
+    for (var i = old_len; i < max_hp; i++)
     {
-        hp_segments[i] = 0;
+        hp_segments[i] = 0; // FULL frame
     }
 }
+
+heal_hp = function(amount)
+{
+    repeat (amount)
+    {
+        if (hp < max_hp)
+        {
+            hp_segments[hp] = 0; // refill this segment
+            hp += 1;
+            hp_display = hp;
+        }
+    }
+};

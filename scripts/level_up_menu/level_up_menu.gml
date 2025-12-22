@@ -37,24 +37,21 @@ function scr_apply_upgrade(choice)
             with (obj_player) { move_speed += 1; }
         break;
 
-       case "Heal 1 HP":
+case "Heal 1 HP":
     with (obj_player)
     {
-        // heal without animation breaking
-        hp = min(max_hp, hp + 1);
-        hp_display = hp;
+        heal_hp(1);
     }
 break;
 
 
         case "Max HP +1":
-            with (obj_player)
-            {
-                max_hp += 1;
-                hp = max_hp;
-                hp_display = hp;
-            }
-        break;
+    with (obj_player)
+    {
+        increase_max_hp(1); // adds a new head
+    }
+break;
+
 
         case "Sticky Finger":
             global.xp_attract_range += 16;
