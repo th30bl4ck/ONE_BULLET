@@ -57,7 +57,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"ONE BULLET",
   "resources":[
@@ -108,7 +108,6 @@
     {"id":{"name":"cristil","path":"sprites/cristil/cristil.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
     {"id":{"name":"gunpowder","path":"sprites/gunpowder/gunpowder.yy",},},
-    {"id":{"name":"healthbar","path":"sprites/healthbar/healthbar.yy",},},
     {"id":{"name":"horizontal","path":"sprites/horizontal/horizontal.yy",},},
     {"id":{"name":"hrizont","path":"sprites/hrizont/hrizont.yy",},},
     {"id":{"name":"idl_player","path":"sprites/idl_player/idl_player.yy",},},
@@ -128,6 +127,7 @@
     {"id":{"name":"spr_enemy_dasher","path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_health","path":"sprites/spr_health/spr_health.yy",},},
+    {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},},
     {"id":{"name":"spr_invisable","path":"sprites/spr_invisable/spr_invisable.yy",},},
     {"id":{"name":"spr_letter_1st","path":"sprites/spr_letter_1st/spr_letter_1st.yy",},},
     {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},},

@@ -177,9 +177,7 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
     can_shoot = false;
 }
 
-// Smooth HP bar transition
-hp_display = lerp(hp_display, hp, 0.1);
-
+//combo
 if (combo_timer > 0) {
     combo_timer--;
 } else if (combo_count > 0) {
@@ -193,4 +191,45 @@ if (combo_count == 5 || combo_count == 10) {
 
 if (combo_count >= 10) {
     game_speed = 0.9;
+}
+
+//hp bar
+for (var i = 0; i < max_hp; i++)
+{
+    if (hp_segments[i] > 0 && hp_segments[i] < 8)
+    {
+        hp_segments[i] += 0.25;
+    }
+
+    if (hp_segments[i] >= 8)
+    {
+        hp_segments[i] = 8; // lock to empty frame
+    }
+}
+
+//damage
+function take_damage(amount)
+{
+    repeat (amount)
+    {
+        if (hp > 0)
+        {
+            hp--;
+            hp_segments[hp] = 1;
+        }
+    }
+}
+
+function increase_max_hp(amount)
+{
+    max_hp += amount;
+    hp += amount;
+
+    array_resize(hp_segments, max_hp);
+
+    // new segments start full
+    for (var i = max_hp - amount; i < max_hp; i++)
+    {
+        hp_segments[i] = 0;
+    }
 }

@@ -37,13 +37,15 @@ function scr_apply_upgrade(choice)
             with (obj_player) { move_speed += 1; }
         break;
 
-        case "Heal 1 HP":
-            with (obj_player)
-            {
-                hp = min(max_hp, hp + 1);
-                hp_display = hp;
-            }
-        break;
+       case "Heal 1 HP":
+    with (obj_player)
+    {
+        // heal without animation breaking
+        hp = min(max_hp, hp + 1);
+        hp_display = hp;
+    }
+break;
+
 
         case "Max HP +1":
             with (obj_player)
