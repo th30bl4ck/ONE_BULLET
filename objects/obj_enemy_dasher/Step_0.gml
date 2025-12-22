@@ -89,7 +89,7 @@ if (place_meeting(x, y, obj_player)) {
 
         // only take damage if not invulnerable
         if (invuln <= 0) {
-            hp -= 1;
+            take_damage(1);
             invuln = 30; // half-second of safety
             hit_flash_timer = 15;
 

@@ -30,14 +30,6 @@ death_cam_h = 0;
 
 death_cam_locked = false;
 
-max_hp = 5;
-hp = max_hp;
-
-invuln = 0;
-
-// this is the SMOOTHING value
-hp_display = hp;
-
 // hit flash
 hit_flash_timer = 0;
 
@@ -47,3 +39,15 @@ combo_timer = 0;
 combo_timer_max = 120; // 2 seconds at 60fps
 combo_heat = 0;        // 0 → 1 (for visuals)
 
+
+// --- HP SETUP ---
+max_hp = 5;
+hp = max_hp;
+
+// one segment per HP
+hp_segments = array_create(max_hp, 0);
+
+// invulnerability
+invuln = 0;
+
+hp_display = hp;
