@@ -35,5 +35,6 @@
     {"name":"spr_background","order":1,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_coinz","order":1,"path":"sprites/spr_coinz/spr_coinz.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
+    {"name":"spr_shop_item_1","order":2,"path":"sprites/spr_shop_item_1/spr_shop_item_1.yy",},
   ],
 }
