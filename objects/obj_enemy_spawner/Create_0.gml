@@ -18,3 +18,4 @@ arena_complete = false;
 coins_spawned = false;
 global.room_enemy_kills = 0;
 global.room_damage_taken = 0;
+

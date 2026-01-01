@@ -1,7 +1,4 @@
-// draw the item sprite
-if (sprite_index != spr_invisable) {
-    draw_self();
-}
+draw_self();
 
 if (show_hint) {
     draw_set_halign(fa_center);

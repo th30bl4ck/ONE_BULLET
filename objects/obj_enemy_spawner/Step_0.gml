@@ -22,7 +22,7 @@ if (!wave_in_progress)
 
             if (coin_count > 0)
             {
-                coins_spawn(coin_count);
+                scr_coins_spawn(coin_count);
             }
 
             coins_spawned = true;
