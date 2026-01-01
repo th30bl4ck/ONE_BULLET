@@ -42,7 +42,7 @@ combo_heat = 0;        // 0 → 1 (for visuals)
 
 // --- HP SETUP ---
 max_hp = 5;
-hp = max_hp;
+hp = 5;
 
 // one segment per HP
 hp_segments = array_create(max_hp, 0);
