@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"coins_spawn",
+  "%Name":"scr_coins_spawn",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"coins_spawn",
+  "name":"scr_coins_spawn",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

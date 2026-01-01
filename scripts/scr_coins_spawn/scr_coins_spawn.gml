@@ -1,4 +1,4 @@
-function coins_spawn(_count)
+function scr_coins_spawn(_count)
 {
     if (_count <= 0) return;
 

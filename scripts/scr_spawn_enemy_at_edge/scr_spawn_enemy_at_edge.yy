@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"level_up_menu",
+  "%Name":"scr_spawn_enemy_at_edge",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"level_up_menu",
+  "name":"scr_spawn_enemy_at_edge",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
