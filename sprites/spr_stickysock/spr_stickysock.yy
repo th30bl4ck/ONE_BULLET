@@ -1,27 +1,27 @@
 {
   "$GMSprite":"v2",
-  "%Name":"gunpowder",
+  "%Name":"spr_stickysock",
   "bboxMode":0,
   "bbox_bottom":31,
-  "bbox_left":3,
+  "bbox_left":1,
   "bbox_right":31,
-  "bbox_top":18,
+  "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"3bd915d4-4321-449a-9ee7-973e86323ce1","name":"3bd915d4-4321-449a-9ee7-973e86323ce1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a5777e21-61e8-4237-a18e-a847a6a6c9c4","name":"a5777e21-61e8-4237-a18e-a847a6a6c9c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c63772c4-f22d-425a-9e70-e1979fa1ec37","blendMode":0,"displayName":"default","isLocked":false,"name":"c63772c4-f22d-425a-9e70-e1979fa1ec37","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"04ea9a6d-c787-457d-bdf7-e6acb9a9d5e7","blendMode":0,"displayName":"default","isLocked":false,"name":"04ea9a6d-c787-457d-bdf7-e6acb9a9d5e7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"gunpowder",
+  "name":"spr_stickysock",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"gunpowder",
+    "%Name":"spr_stickysock",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"gunpowder",
+    "name":"spr_stickysock",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3bd915d4-4321-449a-9ee7-973e86323ce1","path":"sprites/gunpowder/gunpowder.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5e47b6f7-a115-4b8d-834b-dbb72e38aede","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a5777e21-61e8-4237-a18e-a847a6a6c9c4","path":"sprites/spr_stickysock/spr_stickysock.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"54b6a9aa-8fce-4268-b87a-90534980cfb4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -1,6 +1,6 @@
 if (global.note_open) {
-    var w = 420;
-    var h = 200;
+    var w = 500;
+    var h = 600;
     var cx = display_get_gui_width() / 2;
     var cy = display_get_gui_height() / 2;
 
