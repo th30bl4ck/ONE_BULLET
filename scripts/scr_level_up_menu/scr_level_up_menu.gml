@@ -6,7 +6,8 @@ function open_levelup_menu()
         "Move Speed +1",
         "Heal 1 HP",
         "Max HP +1",
-        "Sticky Finger"
+        "Sticky Finger",
+        "Big Boy Boots"
     ];
 
     var upgrade_count = array_length(upgrades);
@@ -58,6 +59,13 @@ break;
             with (obj_XP)
             {
                 attract_range = global.xp_attract_range;
+            }
+        break;
+
+        case "Big Boy Boots":
+            with (obj_player)
+            {
+                dash_time += 2;
             }
         break;
     }
