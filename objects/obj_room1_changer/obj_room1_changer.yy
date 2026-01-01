@@ -10,8 +10,8 @@
   "name":"obj_room1_changer",
   "overriddenProperties":[],
   "parent":{
-    "name":"invisable_objects",
-    "path":"folders/Objects/starting_room_objects/invisable_objects.yy",
+    "name":"starting_room_objects",
+    "path":"folders/Objects/starting_room_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

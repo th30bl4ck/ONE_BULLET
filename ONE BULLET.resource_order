@@ -9,6 +9,7 @@
     {"name":"setting_objects","order":5,"path":"folders/Objects/setting_objects.yy",},
     {"name":"shop_objects","order":12,"path":"folders/Objects/shop_objects.yy",},
     {"name":"starting_room_objects","order":6,"path":"folders/Objects/starting_room_objects.yy",},
+    {"name":"invisable_objects","order":1,"path":"folders/Objects/starting_room_objects/invisable_objects.yy",},
     {"name":"third_room_objects","order":11,"path":"folders/Objects/third_room_objects.yy",},
     {"name":"universal_objects","order":7,"path":"folders/Objects/universal_objects.yy",},
     {"name":"letters_sprites","order":1,"path":"folders/Sprites/letters_sprites.yy",},
@@ -16,6 +17,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
+    {"name":"obj_room1_changer","order":2,"path":"objects/obj_room1_changer/obj_room1_changer.yy",},
     {"name":"obj_room2_changer_forward","order":1,"path":"objects/obj_room2_changer_forward/obj_room2_changer_forward.yy",},
     {"name":"obj_spawnpoint_second_room_1","order":2,"path":"objects/obj_spawnpoint_second_room_1/obj_spawnpoint_second_room_1.yy",},
     {"name":"obj_spawnpoint_second_room_2","order":3,"path":"objects/obj_spawnpoint_second_room_2/obj_spawnpoint_second_room_2.yy",},
@@ -28,8 +30,8 @@
     {"name":"bigboyboots","order":5,"path":"sprites/bigboyboots/bigboyboots.yy",},
     {"name":"cristil","order":4,"path":"sprites/cristil/cristil.yy",},
     {"name":"side_door","order":1,"path":"sprites/side_door/side_door.yy",},
+    {"name":"spr_background","order":1,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_coinz","order":1,"path":"sprites/spr_coinz/spr_coinz.yy",},
-    {"name":"spr_floor","order":1,"path":"sprites/spr_floor/spr_floor.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
   ],
 }
