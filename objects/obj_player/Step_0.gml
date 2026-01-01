@@ -177,6 +177,13 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
     can_shoot = false;
 }
 
+// ----- Recall -----
+if (keyboard_check_pressed(ord("R"))) {
+    if (instance_exists(bullet_id) && bullet_id.state == "stuck") {
+        bullet_id.state = "recall";
+    }
+}
+
 //combo
 if (combo_timer > 0) {
     combo_timer--;
