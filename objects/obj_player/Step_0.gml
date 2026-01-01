@@ -255,3 +255,33 @@ heal_hp = function(amount)
         }
     }
 };
+
+function approach(_cur, _tgt, _amt)
+{
+    if (_cur < _tgt) return min(_cur + _amt, _tgt);
+    if (_cur > _tgt) return max(_cur - _amt, _tgt);
+    return _cur;
+}
+
+
+if (array_length(hp_frames) != max_hp) {
+    var old = hp_frames;
+    hp_frames = array_create(max_hp, 0);
+    for (var i = 0; i < min(array_length(old), max_hp); i++) hp_frames[i] = old[i];
+    for (var i = array_length(old); i < max_hp; i++) hp_frames[i] = 0;
+}
+
+var frames = sprite_get_number(spr_healthbar);
+var frame_full  = 0;
+var frame_empty = frames - 1;
+
+var anim_spd = 0.4; 
+
+
+for (var i = 0; i < max_hp; i++) {
+    var target = (i < hp) ? frame_full : frame_empty;
+    hp_frames[i] = approach(hp_frames[i], target, anim_spd);
+}
+
+
+hp_prev = hp;

@@ -51,3 +51,7 @@ hp_segments = array_create(max_hp, 0);
 invuln = 0;
 
 hp_display = hp;
+
+hp_prev = hp;
+
+hp_frames = array_create(max_hp, 0); // start all full (frame 0)
