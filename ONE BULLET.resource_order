@@ -25,6 +25,7 @@
     {"name":"obj_spawnpoint_second_room_2","order":3,"path":"objects/obj_spawnpoint_second_room_2/obj_spawnpoint_second_room_2.yy",},
     {"name":"obj_spawnpoint_starting_room","order":1,"path":"objects/obj_spawnpoint_starting_room/obj_spawnpoint_starting_room.yy",},
     {"name":"obj_spawnpoint_third_room","order":1,"path":"objects/obj_spawnpoint_third_room/obj_spawnpoint_third_room.yy",},
+    {"name":"room5","order":3,"path":"rooms/room5/room5.yy",},
     {"name":"shop_room","order":2,"path":"rooms/shop_room/shop_room.yy",},
     {"name":"third_room","order":1,"path":"rooms/third_room/third_room.yy",},
     {"name":"scr_coins_spawn","order":2,"path":"scripts/scr_coins_spawn/scr_coins_spawn.yy",},
