@@ -23,7 +23,7 @@
   ],
   "name":"spr_bigboyboots",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Items",
     "path":"folders/Sprites/Items.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":32,
+    "yorigin":21,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
