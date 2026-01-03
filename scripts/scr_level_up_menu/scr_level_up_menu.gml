@@ -3,9 +3,9 @@ function open_levelup_menu()
     if (global.levelup_active) return;
 
     var upgrades = [
-        "Move Speed +1",
-        "Heal 1 HP",
-        "Max HP +1",
+        "rollershoes",
+        "medkit",
+        "stim",
         "Sticky Finger",
         "Big Boy Boots"
     ];
@@ -34,11 +34,11 @@ function scr_apply_upgrade(choice)
 {
     switch (choice)
     {
-        case "Move Speed +1":
+        case "rollershoes":
             with (obj_player) { move_speed += 1; }
         break;
 
-case "Heal 1 HP":
+case "medkit":
     with (obj_player)
     {
         heal_hp(1);
@@ -46,7 +46,7 @@ case "Heal 1 HP":
 break;
 
 
-        case "Max HP +1":
+        case "stim":
     with (obj_player)
     {
         increase_max_hp(1); // adds a new head

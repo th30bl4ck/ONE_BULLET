@@ -133,7 +133,6 @@
     {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_rollershoes","path":"sprites/spr_rollershoes/spr_rollershoes.yy",},},
-    {"id":{"name":"spr_shop_item_1","path":"sprites/spr_shop_item_1/spr_shop_item_1.yy",},},
     {"id":{"name":"spr_stickysock","path":"sprites/spr_stickysock/spr_stickysock.yy",},},
     {"id":{"name":"spr_used_medkit","path":"sprites/spr_used_medkit/spr_used_medkit.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
