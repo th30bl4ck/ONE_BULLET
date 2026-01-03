@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shop_item_1",
+  "%Name":"obj_perice",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shop_item_1",
+  "name":"obj_perice",
   "overriddenProperties":[],
   "parent":{
     "name":"shop_objects",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shop_item_1",
-    "path":"sprites/spr_shop_item_1/spr_shop_item_1.yy",
+    "name":"spr_perice",
+    "path":"sprites/spr_perice/spr_perice.yy",
   },
   "spriteMaskId":null,
   "visible":true,
