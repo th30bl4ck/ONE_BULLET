@@ -38,8 +38,10 @@
     {"name":"spr_bigboyboots","order":5,"path":"sprites/spr_bigboyboots/spr_bigboyboots.yy",},
     {"name":"spr_coinz","order":1,"path":"sprites/spr_coinz/spr_coinz.yy",},
     {"name":"spr_enemy_dasher","order":2,"path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},
+    {"name":"spr_heal","order":1,"path":"sprites/spr_heal/spr_heal.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
     {"name":"spr_shopkeeper","order":2,"path":"sprites/spr_shopkeeper/spr_shopkeeper.yy",},
     {"name":"spr_XP","order":4,"path":"sprites/spr_XP/spr_XP.yy",},
+    {"name":"Sprite37","order":2,"path":"sprites/Sprite37/Sprite37.yy",},
   ],
 }
