@@ -18,9 +18,10 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
+    {"name":"obj_perice","order":1,"path":"objects/obj_perice/obj_perice.yy",},
     {"name":"obj_room1_changer","order":2,"path":"objects/obj_room1_changer/obj_room1_changer.yy",},
     {"name":"obj_room2_changer_forward","order":1,"path":"objects/obj_room2_changer_forward/obj_room2_changer_forward.yy",},
-    {"name":"obj_shop_item_1","order":1,"path":"objects/obj_shop_item_1/obj_shop_item_1.yy",},
+    {"name":"obj_shopkeeper","order":2,"path":"objects/obj_shopkeeper/obj_shopkeeper.yy",},
     {"name":"obj_spawnpoint_second_room_1","order":2,"path":"objects/obj_spawnpoint_second_room_1/obj_spawnpoint_second_room_1.yy",},
     {"name":"obj_spawnpoint_second_room_2","order":3,"path":"objects/obj_spawnpoint_second_room_2/obj_spawnpoint_second_room_2.yy",},
     {"name":"obj_spawnpoint_starting_room","order":1,"path":"objects/obj_spawnpoint_starting_room/obj_spawnpoint_starting_room.yy",},
@@ -38,7 +39,7 @@
     {"name":"spr_coinz","order":1,"path":"sprites/spr_coinz/spr_coinz.yy",},
     {"name":"spr_enemy_dasher","order":2,"path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
-    {"name":"spr_shop_item_1","order":2,"path":"sprites/spr_shop_item_1/spr_shop_item_1.yy",},
+    {"name":"spr_shopkeeper","order":2,"path":"sprites/spr_shopkeeper/spr_shopkeeper.yy",},
     {"name":"spr_XP","order":4,"path":"sprites/spr_XP/spr_XP.yy",},
   ],
 }
