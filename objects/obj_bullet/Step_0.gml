@@ -1,12 +1,4 @@
 // PICKUP WHILE STUCK
-if (state == "fired") {
-    trail_timer -= 1;
-    if (trail_timer <= 0) {
-        effect_create_above(ef_spark, x, y, 0.4, c_yellow);
-        trail_timer = 2;
-    }
-}
-
 if (state == "stuck") {
     speed = 0;
     solid = false;
