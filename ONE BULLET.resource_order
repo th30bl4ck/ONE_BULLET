@@ -17,6 +17,8 @@
     {"name":"shop_sprites","order":2,"path":"folders/Sprites/shop_sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_enemy_blob","order":2,"path":"objects/obj_enemy_blob/obj_enemy_blob.yy",},
+    {"name":"obj_enemy_shooter","order":1,"path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
     {"name":"obj_perice","order":1,"path":"objects/obj_perice/obj_perice.yy",},
     {"name":"obj_room1_changer","order":2,"path":"objects/obj_room1_changer/obj_room1_changer.yy",},
@@ -41,6 +43,7 @@
     {"name":"spr_heal","order":1,"path":"sprites/spr_heal/spr_heal.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
     {"name":"spr_shopkeeper","order":2,"path":"sprites/spr_shopkeeper/spr_shopkeeper.yy",},
+    {"name":"spr_test_shooter","order":5,"path":"sprites/spr_test_shooter/spr_test_shooter.yy",},
     {"name":"spr_XP","order":4,"path":"sprites/spr_XP/spr_XP.yy",},
     {"name":"Sprite37","order":2,"path":"sprites/Sprite37/Sprite37.yy",},
   ],
