@@ -32,6 +32,20 @@ function close_levelup_menu()
 
 function scr_apply_upgrade(choice)
 {
+    if (!variable_global_exists("upgrade_counts"))
+    {
+        global.upgrade_counts = ds_map_create();
+    }
+
+    if (ds_map_exists(global.upgrade_counts, choice))
+    {
+        global.upgrade_counts[? choice] += 1;
+    }
+    else
+    {
+        global.upgrade_counts[? choice] = 1;
+    }
+
     switch (choice)
     {
         case "rollershoes":
