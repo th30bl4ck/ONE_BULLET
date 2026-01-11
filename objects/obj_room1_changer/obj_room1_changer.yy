@@ -29,14 +29,15 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"spawnObject","filters":[],"listItems":[],"multiselect":false,"name":"spawnObject","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"sprite_index","filters":[],"listItems":[],"multiselect":false,"name":"sprite_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_index","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"spr_invisable",
-    "path":"sprites/spr_invisable/spr_invisable.yy",
+    "name":"side_door",
+    "path":"sprites/side_door/side_door.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
