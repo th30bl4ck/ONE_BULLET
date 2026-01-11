@@ -15,6 +15,20 @@ if (state == "stuck") {
     }
 }
 
+if (state != "stuck") {
+    if (variable_global_exists("wall_tilemap_id") && global.wall_tilemap_id != noone) {
+        if (tilemap_get_at_pixel(global.wall_tilemap_id, bbox_left, bbox_top) != 0
+        || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_top) != 0
+        || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_left, bbox_bottom) != 0
+        || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_bottom) != 0) {
+            speed = 0;
+            hspeed = 0;
+            vspeed = 0;
+            state = "stuck";
+        }
+    }
+}
+
 if (state == "recall") {
     var target = noone;
     if (instance_exists(owner)) {
