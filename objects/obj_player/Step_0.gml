@@ -116,11 +116,14 @@ if (input_locked) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+var move_x = 0;
+var move_y = 0;
+
 if (!is_dashing) {
     var dir = point_direction(0,0, h, v);
     if (h != 0 || v != 0) {
-        x += lengthdir_x(move_speed, dir);
-        y += lengthdir_y(move_speed, dir);
+        move_x += lengthdir_x(move_speed, dir);
+        move_y += lengthdir_y(move_speed, dir);
     }
 }
 
@@ -143,12 +146,51 @@ if (keyboard_check_pressed(vk_shift) && dash_cd_timer <= 0 && !is_dashing) {
 // Dash movement
 // ----------------------
 if (is_dashing) {
-    x += lengthdir_x(dash_speed, dash_dir);
-    y += lengthdir_y(dash_speed, dash_dir);
+    move_x += lengthdir_x(dash_speed, dash_dir);
+    move_y += lengthdir_y(dash_speed, dash_dir);
 
     dash_timer--;
     if (dash_timer <= 0) {
         is_dashing = false;
+    }
+}
+
+function wall_tilemap_collision(_x, _y) {
+    if (!variable_global_exists("wall_tilemap_id")) return false;
+    if (global.wall_tilemap_id == noone) return false;
+
+    var left = bbox_left + (_x - x);
+    var right = bbox_right + (_x - x);
+    var top = bbox_top + (_y - y);
+    var bottom = bbox_bottom + (_y - y);
+
+    return tilemap_get_at_pixel(global.wall_tilemap_id, left, top) != 0
+        || tilemap_get_at_pixel(global.wall_tilemap_id, right, top) != 0
+        || tilemap_get_at_pixel(global.wall_tilemap_id, left, bottom) != 0
+        || tilemap_get_at_pixel(global.wall_tilemap_id, right, bottom) != 0;
+}
+
+if (move_x != 0) {
+    var next_x = x + move_x;
+    if (!wall_tilemap_collision(next_x, y)) {
+        x = next_x;
+    } else {
+        var step_x = sign(move_x);
+        while (step_x != 0 && !wall_tilemap_collision(x + step_x, y)) {
+            x += step_x;
+        }
+    }
+}
+
+if (move_y != 0) {
+    var next_y = y + move_y;
+    if (!wall_tilemap_collision(x, next_y)) {
+        y = next_y;
+    } else {
+        var step_y = sign(move_y);
+        while (step_y != 0 && !wall_tilemap_collision(x, y + step_y)) {
+            y += step_y;
+        }
     }
 }
 
