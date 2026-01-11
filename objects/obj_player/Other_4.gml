@@ -6,3 +6,6 @@ if variable_global_exists("spawn_object") {
     }
     global.spawn_object = undefined;
 }
+
+global.wall_layer_id  = layer_get_id("tileset_wall");
+global.wall_tilemap_id = layer_tilemap_get_id(global.wall_layer_id);
