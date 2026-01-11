@@ -9,11 +9,6 @@ if (instance_exists(obj_wall) && place_meeting(x, y, obj_wall)) {
     instance_destroy();
 }
 
-// hit player (change to your damage/death system)
-if (place_meeting(x, y, obj_player)) {
-    // scr_player_die(); // if you have one
-    instance_destroy();
-}
 
 if (place_meeting(x, y, obj_player)) {
     with (obj_player) {
@@ -39,4 +34,5 @@ if (place_meeting(x, y, obj_player)) {
             image_speed = 1;
         }
     }
+    instance_destroy();
 }
