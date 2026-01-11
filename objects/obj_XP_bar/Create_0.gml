@@ -12,3 +12,10 @@ if (!variable_global_exists("upgrade_icons"))
     global.upgrade_icons[? "Sticky Finger"] = spr_stickysock;
     global.upgrade_icons[? "Big Boy Boots"] = spr_bigboyboots;
 }
+
+if (variable_global_exists("upgrade_counts"))
+{
+    ds_map_destroy(global.upgrade_counts);
+}
+
+global.upgrade_counts = ds_map_create();
