@@ -1,14 +1,19 @@
-if (global.note_open) exit;
+x += lengthdir_x(spd, dir);
+y += lengthdir_y(spd, dir);
 
-if (global.levelup_active) exit;
+life--;
+if (life <= 0) instance_destroy();
 
-if (!ai_enabled) exit;
+// if you have walls, change obj_wall to your wall object name
+if (instance_exists(obj_wall) && place_meeting(x, y, obj_wall)) {
+    instance_destroy();
+}
 
-
-var p = obj_player;
-direction = point_direction(x, y, p.x, p.y);
-x += lengthdir_x(move_speed, direction);
-y += lengthdir_y(move_speed, direction);
+// hit player (change to your damage/death system)
+if (place_meeting(x, y, obj_player)) {
+    // scr_player_die(); // if you have one
+    instance_destroy();
+}
 
 if (place_meeting(x, y, obj_player)) {
     with (obj_player) {
@@ -23,7 +28,7 @@ if (place_meeting(x, y, obj_player)) {
                 global.room_damage_taken += 1;
             }
 
-
+     
         }
 
         // if HP is zero or below → start death
@@ -34,13 +39,4 @@ if (place_meeting(x, y, obj_player)) {
             image_speed = 1;
         }
     }
-}
-
-
-
-// Face direction of player
-if (obj_player.x > x) {
-    image_xscale = 1;    // Face right
-} else {
-    image_xscale = -1;   // Face left
 }
