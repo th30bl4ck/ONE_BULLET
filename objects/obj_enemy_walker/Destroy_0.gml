@@ -8,7 +8,7 @@ var base_xp = variable_instance_exists(id, "xp_value") ? xp_value : 3;
 // =========================
 var p = instance_find(obj_player, 0);
 var combo = instance_exists(p) ? p.combo_count : 0;
-scr_enemy_separation();
+
 
 // =========================
 // COMBO MULTIPLIER

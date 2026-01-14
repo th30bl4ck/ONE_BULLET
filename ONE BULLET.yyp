@@ -104,6 +104,7 @@
     {"id":{"name":"starting_room","path":"rooms/starting_room/starting_room.yy",},},
     {"id":{"name":"third_room","path":"rooms/third_room/third_room.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
+    {"id":{"name":"scr_assign_anchor","path":"scripts/scr_assign_anchor/scr_assign_anchor.yy",},},
     {"id":{"name":"scr_coins_spawn","path":"scripts/scr_coins_spawn/scr_coins_spawn.yy",},},
     {"id":{"name":"scr_get_combo_xp_multiplier","path":"scripts/scr_get_combo_xp_multiplier/scr_get_combo_xp_multiplier.yy",},},
     {"id":{"name":"scr_level_up_menu","path":"scripts/scr_level_up_menu/scr_level_up_menu.yy",},},

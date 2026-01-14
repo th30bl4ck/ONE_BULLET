@@ -6,7 +6,7 @@ if (arena_complete) exit;
 
 
 //------------------------------------
-// WAVE NOT ACTIVE → WAIT + START WAVE
+// WAVE NOT ACTIVE 
 //------------------------------------
 if (!wave_in_progress)
 {
@@ -61,32 +61,35 @@ if (wave_enemy_spawned < wave_enemy_total)
 {
     spawn_timer++;
 
-    if (spawn_timer >= spawn_delay)
+if (spawn_timer >= spawn_delay)
+{
+    spawn_timer = 0;
+
+    // Spawn from room edges
+    var side = irandom(3);
+    var xx, yy;
+
+    switch (side)
     {
-        spawn_timer = 0;
-
-        // Spawn from room edges
-        var side = irandom(3);
-        var xx, yy;
-
-        switch (side)
-        {
-            case 0: xx = -32; yy = irandom(room_height); break;
-            case 1: xx = room_width + 32; yy = irandom(room_height); break;
-            case 2: xx = irandom(room_width); yy = -32; break;
-            case 3: xx = irandom(room_width); yy = room_height + 32; break;
-        }
-
-        // Full mix every wave
-        var enemy_to_spawn = choose(
-            obj_enemy_walker,
-            obj_enemy_dasher,
-            obj_enemy_shooter   
-        );
-
-        instance_create_layer(xx, yy, "Instances", enemy_to_spawn);
-        wave_enemy_spawned++;
+        case 0: xx = -32; yy = irandom(room_height); break;
+        case 1: xx = room_width + 32; yy = irandom(room_height); break;
+        case 2: xx = irandom(room_width); yy = -32; break;
+        case 3: xx = irandom(room_width); yy = room_height + 32; break;
     }
+
+    // Full mix every wave
+    var enemy_to_spawn = choose(
+        obj_enemy_walker,
+        obj_enemy_dasher,
+        obj_enemy_shooter
+    );
+
+    // CREATE + ASSIGN ANCHOR (Step 2)
+    var e = instance_create_layer(xx, yy, "Instances", enemy_to_spawn);
+    scr_assign_anchor(e);
+
+    wave_enemy_spawned++;
+}
 }
 else
 {
