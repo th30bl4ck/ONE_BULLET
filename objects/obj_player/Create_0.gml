@@ -4,10 +4,10 @@ bullet_id = noone;
 shoot_layer = "Instances"; 
 
 dash_speed = 12;
-dash_time = 8;           // how long the dash lasts (frames)
+dash_time = 8;          
 dash_timer = 0;
 
-dash_cooldown = 40;      // how long before you can dash again
+dash_cooldown = 40;      
 dash_cd_timer = 0;
 
 is_dashing = false;
@@ -16,10 +16,9 @@ dash_dir = 0;
 global.player = id;
 
 state = "alive";
-death_zoom = 1; // camera zoom
+death_zoom = 1; 
 
-min_cam_scale = 1; // this will be calculated after the first frame
-
+min_cam_scale = 1; 
 input_locked = false;
 
 death_cam_x = 0;

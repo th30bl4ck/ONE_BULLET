@@ -44,8 +44,8 @@ if (!wave_in_progress)
         wave_break_timer = 0;
         wave_in_progress = true;
 
-        // Enemies per wave (scales slightly)
-        wave_enemy_total = 6 + current_wave * 2;
+        // Enemies per wave scales slightly
+        wave_enemy_total = 7 + current_wave * 2;
         wave_enemy_spawned = 0;
         spawn_timer = 0;
     }
