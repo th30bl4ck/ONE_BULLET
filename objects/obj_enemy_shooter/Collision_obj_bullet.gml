@@ -1,10 +1,10 @@
 var bullet_pierces = variable_global_exists("bullet_pierce") && global.bullet_pierce;
 
 if (!bullet_pierces) {
-    instance_destroy(other); // kill the bullet
+    instance_destroy(other); 
 }
 
-instance_destroy();      // kill the enemy
+instance_destroy();      
 
 // Return shooting ability
 if (!bullet_pierces) {

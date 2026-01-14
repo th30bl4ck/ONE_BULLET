@@ -13,6 +13,7 @@ var py = obj_player.y;
 
 var dist      = point_distance(x, y, px, py);
 var to_player = point_direction(x, y, px, py);
+scr_enemy_separation();
 
 
 //------------------------------------
@@ -27,7 +28,7 @@ if (orbit_timer <= 0)
 
 
 //------------------------------------
-// ORBIT TARGET DISTANCE (optional upgrade: spreads shooters)
+// ORBIT TARGET DISTANCE 
 //------------------------------------
 orbit_dist_timer--;
 if (orbit_dist_timer <= 0)
@@ -89,7 +90,7 @@ if (state == 0)
         windup = windup_max;
     }
 }
-else // state == 1
+else 
 {
     windup--;
 
