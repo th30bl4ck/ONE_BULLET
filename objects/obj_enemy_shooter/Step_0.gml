@@ -13,7 +13,7 @@ var py = obj_player.y;
 
 var dist      = point_distance(x, y, px, py);
 var to_player = point_direction(x, y, px, py);
-scr_enemy_separation();
+
 
 
 //------------------------------------
@@ -104,5 +104,66 @@ else
     }
 }
 
+
+// Anchor target 
+if (!instance_exists(obj_player)) exit;
+
+if (!variable_instance_exists(id, "anchor_id"))
+{
+    anchor_id = irandom(3);
+    anchor_jitter = irandom_range(-18, 18);
+    anchor_claimed = false;
+}
+
+var ox = global.enemy_anchor_offsets[anchor_id][0];
+var oy = global.enemy_anchor_offsets[anchor_id][1];
+
+var tx = obj_player.x + ox;
+var ty = obj_player.y + oy;
+
+tx += anchor_jitter;
+ty += anchor_jitter * 0.5;
+
+// Shooter spacing movement 
+var prefer_dist = 140; 
+var slack = 20;
+
+var d = point_distance(x, y, tx, ty);
+var dir = point_direction(x, y, tx, ty);
+
+if (d > prefer_dist + slack)
+{
+    x += lengthdir_x(move_speed, dir);
+    y += lengthdir_y(move_speed, dir);
+}
+else if (d < prefer_dist - slack)
+{
+    x -= lengthdir_x(move_speed, dir);
+    y -= lengthdir_y(move_speed, dir);
+}
+
+if (place_meeting(x, y, obj_player)) {
+    with (obj_player) {
+
+        // only take damage if not invulnerable
+        if (invuln <= 0) {
+            take_damage(1);
+            invuln = 30; // half-second of safety
+            hit_flash_timer = 15;
+
+            if (variable_global_exists("room_damage_taken")) {
+                global.room_damage_taken += 1;
+            }
+        }
+
+        // if HP is zero or below → start death
+        if (hp <= 0) {
+            state = "dying";
+            sprite_index = spr_player_death;
+            image_index = 0;
+            image_speed = 1;
+        }
+    }
+}
 
 

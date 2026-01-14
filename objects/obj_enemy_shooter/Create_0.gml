@@ -1,9 +1,11 @@
+move_speed = 0.6;
+
 shoot_range = 400;
 
 shoot_cd_max = room_speed * 1.2;
 shoot_cd = irandom(shoot_cd_max); 
 
-windup_max = round(room_speed * 0.5);
+windup_max = round(room_speed * 0.7);
 windup = 0;
 
 state = 0; 
@@ -33,12 +35,3 @@ orbit_dist_lerp = 0.04;
 
 desired_orbit_dist = orbit_target;
 
-// --- Enemy separation settings ---
-sep_radius      = 14;   
-sep_strength    = 0.55; 
-sep_max_push    = 2.5;  
-sep_refresh_mod = 3;    
-
-
-sep_neigh = ds_list_create();
-sep_tick  = irandom(sep_refresh_mod - 1);

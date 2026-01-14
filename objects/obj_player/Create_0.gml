@@ -55,3 +55,15 @@ hp_display = hp;
 hp_prev = hp;
 
 hp_frames = array_create(max_hp, 0); // start all full (frame 0)
+
+
+// Enemy lane anchors 
+global.enemy_anchor_offsets = [
+    [  0, -80], // TOP
+    [  0,  80], // BOTTOM
+    [-80,   0], // LEFT
+    [ 80,   0]  // RIGHT
+];
+
+// How many enemies are assigned to each anchor
+global.enemy_anchor_counts = [0, 0, 0, 0];
