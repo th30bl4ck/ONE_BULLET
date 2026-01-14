@@ -25,7 +25,10 @@ if (state == "chase") {
         dash_target_x = px;
         dash_target_y = py;
     }
+scr_enemy_separation();
 }
+
+
 
 // =====================
 // CHARGE STATE (wind-up)
