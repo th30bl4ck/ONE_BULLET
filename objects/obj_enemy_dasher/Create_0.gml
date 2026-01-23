@@ -1,5 +1,5 @@
 // Movement speeds
-walk_speed = 1.5;
+move_speed = 0.8;
 dash_speed = 12;
 
 // Ranges

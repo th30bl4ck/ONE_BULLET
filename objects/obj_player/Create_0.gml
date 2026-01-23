@@ -4,10 +4,10 @@ bullet_id = noone;
 shoot_layer = "Instances"; 
 
 dash_speed = 12;
-dash_time = 8;           // how long the dash lasts (frames)
+dash_time = 8;          
 dash_timer = 0;
 
-dash_cooldown = 40;      // how long before you can dash again
+dash_cooldown = 40;      
 dash_cd_timer = 0;
 
 is_dashing = false;
@@ -16,10 +16,9 @@ dash_dir = 0;
 global.player = id;
 
 state = "alive";
-death_zoom = 1; // camera zoom
+death_zoom = 1; 
 
-min_cam_scale = 1; // this will be calculated after the first frame
-
+min_cam_scale = 1; 
 input_locked = false;
 
 death_cam_x = 0;
@@ -55,3 +54,15 @@ hp_display = hp;
 hp_prev = hp;
 
 hp_frames = array_create(max_hp, 0); // start all full (frame 0)
+
+
+// Enemy lane anchors 
+global.enemy_anchor_offsets = [
+    [  0, -80], // TOP
+    [  0,  80], // BOTTOM
+    [-80,   0], // LEFT
+    [ 80,   0]  // RIGHT
+];
+
+// How many enemies are assigned to each anchor
+global.enemy_anchor_counts = [0, 0, 0, 0];

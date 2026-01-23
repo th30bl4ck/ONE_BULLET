@@ -13,8 +13,8 @@ if (state == "chase") {
 
     // Move toward player
     var dir = point_direction(x, y, px, py);
-    x += lengthdir_x(walk_speed, dir);
-    y += lengthdir_y(walk_speed, dir);
+    x += lengthdir_x(move_speed, dir);
+    y += lengthdir_y(move_speed, dir);
 
     // If player enters mid-range → begin charge
     if (dist < mid_range) {
@@ -26,6 +26,8 @@ if (state == "chase") {
         dash_target_y = py;
     }
 }
+
+
 
 // =====================
 // CHARGE STATE (wind-up)
@@ -135,3 +137,29 @@ with (obj_enemy_dasher)
     }
 }
 
+// Anchor target 
+if (!instance_exists(obj_player)) exit;
+
+if (!variable_instance_exists(id, "anchor_id"))
+{
+    anchor_id = irandom(3);
+    anchor_jitter = irandom_range(-18, 18);
+    anchor_claimed = false;
+}
+
+var ox = global.enemy_anchor_offsets[anchor_id][0];
+var oy = global.enemy_anchor_offsets[anchor_id][1];
+
+var tx = obj_player.x + ox;
+var ty = obj_player.y + oy;
+
+tx += anchor_jitter;
+ty += anchor_jitter * 0.5;
+
+
+if (state != "charge")
+{
+    var dir = point_direction(x, y, tx, ty);
+    x += lengthdir_x(move_speed, dir);
+    y += lengthdir_y(move_speed, dir);
+}
