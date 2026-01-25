@@ -49,5 +49,6 @@
     {"name":"spr_test_shooter","order":5,"path":"sprites/spr_test_shooter/spr_test_shooter.yy",},
     {"name":"spr_XP","order":4,"path":"sprites/spr_XP/spr_XP.yy",},
     {"name":"Sprite37","order":2,"path":"sprites/Sprite37/Sprite37.yy",},
+    {"name":"titlething","order":1,"path":"sprites/titlething/titlething.yy",},
   ],
 }

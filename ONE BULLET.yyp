@@ -150,6 +150,7 @@
     {"id":{"name":"Sprite37","path":"sprites/Sprite37/Sprite37.yy",},},
     {"id":{"name":"stanered","path":"sprites/stanered/stanered.yy",},},
     {"id":{"name":"tile_set","path":"sprites/tile_set/tile_set.yy",},},
+    {"id":{"name":"titlething","path":"sprites/titlething/titlething.yy",},},
     {"id":{"name":"basic_tileset","path":"tilesets/basic_tileset/basic_tileset.yy",},},
   ],
   "resourceType":"GMProject",
