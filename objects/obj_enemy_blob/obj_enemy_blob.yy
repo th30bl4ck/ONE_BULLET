@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_test_shooter",
-    "path":"sprites/spr_test_shooter/spr_test_shooter.yy",
+    "name":"spooger_bullet",
+    "path":"sprites/spooger_bullet/spooger_bullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
