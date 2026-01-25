@@ -15,7 +15,7 @@ if (state == "stuck") {
     }
 }
 
-if (state != "stuck") {
+if (state == "fired") {
     if (variable_global_exists("wall_tilemap_id") && global.wall_tilemap_id != noone) {
         if (tilemap_get_at_pixel(global.wall_tilemap_id, bbox_left, bbox_top) != 0
         || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_top) != 0
@@ -24,7 +24,7 @@ if (state != "stuck") {
             speed = 0;
             hspeed = 0;
             vspeed = 0;
-            state = "recall";
+            state = "stuck";
         }
     }
 }
