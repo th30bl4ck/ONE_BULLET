@@ -1,5 +1,5 @@
 // =====================
-// BAR POSITION (FIXED)
+// BAR POSITION 
 // =====================
 var bx = 40;
 var by = 60;
@@ -32,19 +32,19 @@ draw_set_color(c_lime);
 draw_rectangle(bx, by, bx + fill, by + bh, false);
 
 // =====================
-// TEXT SETTINGS (CRITICAL)
+// TEXT SETTINGS 
 // =====================
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
 
 // =====================
-// LEVEL TEXT (LOCKED POSITION)
+// LEVEL TEXT 
 // =====================
 draw_text(bx, by - 34, "Level: " + string(global.level));
 
 // =====================
-// XP TEXT (LOCKED POSITION)
+// XP TEXT 
 // =====================
 draw_text(bx, by + bh + 3,
     string(current) + " / " + string(max_xp) + " XP"
@@ -56,7 +56,7 @@ draw_text(bx, by + bh + 3,
 if (!global.levelup_active) exit;
 
 // -------------------------------------------------
-// helper: draw rounded panel (NO draw_roundrect)
+// helper: draw rounded panel 
 // -------------------------------------------------
 function draw_panel_rounded(x1, y1, x2, y2, r, fill_col, outline_col)
 {
@@ -86,7 +86,7 @@ function draw_panel_rounded(x1, y1, x2, y2, r, fill_col, outline_col)
 }
 
 // -------------------------------------------------
-// helper: circle with clean black outline (no green bleed)
+// helper: circle with clean black outline 
 // -------------------------------------------------
 function draw_accent_circle(x, y, r, fill_col)
 {
@@ -153,12 +153,12 @@ draw_rectangle(0, 0, gui_w, gui_h, false);
 draw_set_alpha(1);
 
 // -------------------------------------------------
-// Main panel (GREEN)
+// Main panel 
 // -------------------------------------------------
 draw_panel_rounded(left, top, right, bottom, 18, panel_fill_col, c_black);
 
 // -------------------------------------------------
-// Panel corner accents (clean outline)
+// Panel corner accents 
 // -------------------------------------------------
 var cr   = 12;  // radius
 var coff = 18;  // offset from corners
