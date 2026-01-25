@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spooger_walk",
-    "path":"sprites/spooger_walk/spooger_walk.yy",
+    "name":"spr_test_shooter",
+    "path":"sprites/spr_test_shooter/spr_test_shooter.yy",
   },
   "spriteMaskId":null,
   "visible":true,
