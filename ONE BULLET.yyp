@@ -38,13 +38,13 @@
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"objects","folderPath":"folders/Sprites/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"bullet_sprites","folderPath":"folders/Sprites/bullet_sprites.yy","name":"bullet_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemy_sprites","folderPath":"folders/Sprites/enemy_sprites.yy","name":"enemy_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spooger_sprites","folderPath":"folders/Sprites/enemy_sprites/spooger_sprites.yy","name":"spooger_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items","folderPath":"folders/Sprites/Items.yy","name":"Items","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"letters_sprites","folderPath":"folders/Sprites/letters_sprites.yy","name":"letters_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"main_menu_sprites","folderPath":"folders/Sprites/main_menu_sprites.yy","name":"main_menu_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"objects","folderPath":"folders/Sprites/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player_sprites","folderPath":"folders/Sprites/player_sprites.yy","name":"player_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"shop_sprites","folderPath":"folders/Sprites/shop_sprites.yy","name":"shop_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"starting_room_sprites","folderPath":"folders/Sprites/starting_room_sprites.yy","name":"starting_room_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -59,7 +59,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"ONE BULLET",
   "resources":[

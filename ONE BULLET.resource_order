@@ -13,9 +13,9 @@
     {"name":"invisable_objects","order":1,"path":"folders/Objects/starting_room_objects/invisable_objects.yy",},
     {"name":"third_room_objects","order":11,"path":"folders/Objects/third_room_objects.yy",},
     {"name":"universal_objects","order":7,"path":"folders/Objects/universal_objects.yy",},
-    {"name":"objects","order":3,"path":"folders/Sprites/objects.yy",},
     {"name":"spooger_sprites","order":3,"path":"folders/Sprites/enemy_sprites/spooger_sprites.yy",},
     {"name":"letters_sprites","order":1,"path":"folders/Sprites/letters_sprites.yy",},
+    {"name":"objects","order":3,"path":"folders/Sprites/objects.yy",},
     {"name":"shop_sprites","order":2,"path":"folders/Sprites/shop_sprites.yy",},
   ],
   "ResourceOrderSettings":[
