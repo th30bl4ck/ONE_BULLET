@@ -158,6 +158,8 @@
     {"id":{"name":"spr_XP","path":"sprites/spr_XP/spr_XP.yy",},},
     {"id":{"name":"Sprite37","path":"sprites/Sprite37/Sprite37.yy",},},
     {"id":{"name":"Sprite48","path":"sprites/Sprite48/Sprite48.yy",},},
+    {"id":{"name":"Sprite49","path":"sprites/Sprite49/Sprite49.yy",},},
+    {"id":{"name":"Sprite50","path":"sprites/Sprite50/Sprite50.yy",},},
     {"id":{"name":"stanered","path":"sprites/stanered/stanered.yy",},},
     {"id":{"name":"tile_set","path":"sprites/tile_set/tile_set.yy",},},
     {"id":{"name":"basic_tileset","path":"tilesets/basic_tileset/basic_tileset.yy",},},

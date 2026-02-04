@@ -59,5 +59,7 @@
     {"name":"spr_XP","order":4,"path":"sprites/spr_XP/spr_XP.yy",},
     {"name":"Sprite37","order":2,"path":"sprites/Sprite37/Sprite37.yy",},
     {"name":"Sprite48","order":4,"path":"sprites/Sprite48/Sprite48.yy",},
+    {"name":"Sprite49","order":5,"path":"sprites/Sprite49/Sprite49.yy",},
+    {"name":"Sprite50","order":6,"path":"sprites/Sprite50/Sprite50.yy",},
   ],
 }
