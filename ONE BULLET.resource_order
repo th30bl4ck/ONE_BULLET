@@ -64,7 +64,6 @@
     {"name":"spr_shopkeeper","order":2,"path":"sprites/spr_shopkeeper/spr_shopkeeper.yy",},
     {"name":"spr_start_select","order":4,"path":"sprites/spr_start_select/spr_start_select.yy",},
     {"name":"spr_start","order":1,"path":"sprites/spr_start/spr_start.yy",},
-    {"name":"spr_test_shooter","order":5,"path":"sprites/spr_test_shooter/spr_test_shooter.yy",},
     {"name":"spr_topleft","order":6,"path":"sprites/spr_topleft/spr_topleft.yy",},
     {"name":"spr_topright","order":7,"path":"sprites/spr_topright/spr_topright.yy",},
     {"name":"spr_XP","order":4,"path":"sprites/spr_XP/spr_XP.yy",},
