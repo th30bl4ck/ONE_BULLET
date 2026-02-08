@@ -59,6 +59,14 @@ if (state == "dying") {
 
     // Restart when animation ends
     if (image_index >= image_number - 1) {
+        if (variable_global_exists("upgrade_counts") && global.upgrade_counts != noone)
+        {
+            ds_map_destroy(global.upgrade_counts);
+        }
+        global.upgrade_counts = ds_map_create();
+        global.xp_attract_range = 64 + 32;
+        global.bullet_pierce = false;
+        global.coins = 0;
         game_restart();
     }
 
