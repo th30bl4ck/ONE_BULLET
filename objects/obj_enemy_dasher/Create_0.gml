@@ -16,3 +16,6 @@ cooldown_time = 45;   // frames
 cooldown_timer = 0;
 
 xp_value = 5; 
+
+image_xscale = 1.3;   
+image_yscale = 1.3;

@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"player_sprites",
-    "path":"folders/Sprites/player_sprites.yy",
+    "name":"death_sprites",
+    "path":"folders/Sprites/player_sprites/death_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
