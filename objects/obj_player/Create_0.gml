@@ -3,6 +3,9 @@ can_shoot = true;
 bullet_id = noone;
 shoot_layer = "Instances"; 
 
+image_xscale = 1.4;   
+image_yscale = 1.4;
+
 dash_speed = 12;
 dash_time = 8;          
 dash_timer = 0;

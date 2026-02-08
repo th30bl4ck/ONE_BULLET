@@ -6,3 +6,6 @@ xp_value = 3;
 
 stuck_timer = 0;
 last_player_dist = 999999;
+
+image_xscale = 1.2;   
+image_yscale = 1.2;
