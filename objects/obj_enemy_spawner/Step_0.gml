@@ -81,7 +81,8 @@ if (spawn_timer >= spawn_delay)
     var enemy_to_spawn = choose(
         obj_enemy_walker,
         obj_enemy_dasher,
-        obj_enemy_shooter
+        obj_enemy_shooter,
+        obj_enemy_splitter
     );
 
     // CREATE + ASSIGN ANCHOR (Step 2)
@@ -98,7 +99,8 @@ else
     //------------------------------------
     if (instance_number(obj_enemy_walker) == 0 &&
         instance_number(obj_enemy_dasher) == 0 &&
-        instance_number(obj_enemy_shooter) == 0)  
+        instance_number(obj_enemy_shooter) == 0&&
+        instance_number(obj_enemy_splitter) == 0)
     {
         current_wave++;
         wave_in_progress = false;
