@@ -35,3 +35,5 @@ orbit_dist_lerp = 0.04;
 
 desired_orbit_dist = orbit_target;
 
+image_xscale = 1.5;   
+image_yscale = 1.3;

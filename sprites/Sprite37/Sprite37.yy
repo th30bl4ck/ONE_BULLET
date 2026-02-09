@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"player_sprites",
-    "path":"folders/Sprites/player_sprites.yy",
+    "name":"heads_sprites",
+    "path":"folders/Sprites/player_sprites/heads_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
