@@ -24,6 +24,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_enemy_blob","order":2,"path":"objects/obj_enemy_blob/obj_enemy_blob.yy",},
     {"name":"obj_enemy_shooter","order":1,"path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},
+    {"name":"obj_enemy_splitter_kids","order":4,"path":"objects/obj_enemy_splitter_kids/obj_enemy_splitter_kids.yy",},
     {"name":"obj_enemy_splitter","order":3,"path":"objects/obj_enemy_splitter/obj_enemy_splitter.yy",},
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
     {"name":"obj_perice","order":1,"path":"objects/obj_perice/obj_perice.yy",},
