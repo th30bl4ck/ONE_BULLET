@@ -24,6 +24,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_enemy_blob","order":2,"path":"objects/obj_enemy_blob/obj_enemy_blob.yy",},
     {"name":"obj_enemy_shooter","order":1,"path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},
+    {"name":"obj_enemy_splitter","order":3,"path":"objects/obj_enemy_splitter/obj_enemy_splitter.yy",},
     {"name":"obj_global_set","order":9,"path":"objects/obj_global_set/obj_global_set.yy",},
     {"name":"obj_perice","order":1,"path":"objects/obj_perice/obj_perice.yy",},
     {"name":"obj_room1_changer","order":2,"path":"objects/obj_room1_changer/obj_room1_changer.yy",},
@@ -51,6 +52,7 @@
     {"name":"spr_downleft","order":1,"path":"sprites/spr_downleft/spr_downleft.yy",},
     {"name":"spr_downright","order":2,"path":"sprites/spr_downright/spr_downright.yy",},
     {"name":"spr_enemy_dasher","order":2,"path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},
+    {"name":"spr_enemy_splitter","order":5,"path":"sprites/spr_enemy_splitter/spr_enemy_splitter.yy",},
     {"name":"spr_health","order":2,"path":"sprites/spr_health/spr_health.yy",},
     {"name":"spr_healthbar","order":1,"path":"sprites/spr_healthbar/spr_healthbar.yy",},
     {"name":"spr_left","order":3,"path":"sprites/spr_left/spr_left.yy",},
