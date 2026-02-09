@@ -76,6 +76,7 @@
     {"id":{"name":"obj_enemy_dasher","path":"objects/obj_enemy_dasher/obj_enemy_dasher.yy",},},
     {"id":{"name":"obj_enemy_shooter","path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},},
     {"id":{"name":"obj_enemy_spawner","path":"objects/obj_enemy_spawner/obj_enemy_spawner.yy",},},
+    {"id":{"name":"obj_enemy_splitter_kids","path":"objects/obj_enemy_splitter_kids/obj_enemy_splitter_kids.yy",},},
     {"id":{"name":"obj_enemy_splitter","path":"objects/obj_enemy_splitter/obj_enemy_splitter.yy",},},
     {"id":{"name":"obj_enemy_walker","path":"objects/obj_enemy_walker/obj_enemy_walker.yy",},},
     {"id":{"name":"obj_global_set","path":"objects/obj_global_set/obj_global_set.yy",},},
