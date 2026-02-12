@@ -17,7 +17,9 @@ if (state == "dying") {
     with (obj_XP_bar) instance_destroy();
     with (obj_enemy_dasher) instance_destroy();
     with (obj_enemy_shooter) instance_destroy();
-    
+    with (obj_enemy_splitter) instance_destroy();
+    with (obj_enemy_splitter_kids) instance_destroy();
+	
      var cam = view_camera[0];
 
     if (!death_cam_locked) {
