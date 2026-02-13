@@ -116,6 +116,7 @@
     {"id":{"name":"scr_level_up_menu","path":"scripts/scr_level_up_menu/scr_level_up_menu.yy",},},
     {"id":{"name":"scr_shop","path":"scripts/scr_shop/scr_shop.yy",},},
     {"id":{"name":"scr_spawn_enemy_at_edge","path":"scripts/scr_spawn_enemy_at_edge/scr_spawn_enemy_at_edge.yy",},},
+    {"id":{"name":"animation","path":"sprites/animation/animation.yy",},},
     {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
     {"id":{"name":"hrizont","path":"sprites/hrizont/hrizont.yy",},},
