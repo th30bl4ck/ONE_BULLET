@@ -17,7 +17,9 @@ if (state == "dying") {
     with (obj_XP_bar) instance_destroy();
     with (obj_enemy_dasher) instance_destroy();
     with (obj_enemy_shooter) instance_destroy();
-    
+    with (obj_enemy_splitter) instance_destroy();
+    with (obj_enemy_splitter_kids) instance_destroy();
+	
      var cam = view_camera[0];
 
     if (!death_cam_locked) {
@@ -59,6 +61,14 @@ if (state == "dying") {
 
     // Restart when animation ends
     if (image_index >= image_number - 1) {
+        if (variable_global_exists("upgrade_counts") && global.upgrade_counts != noone)
+        {
+            ds_map_destroy(global.upgrade_counts);
+        }
+        global.upgrade_counts = ds_map_create();
+        global.xp_attract_range = 64 + 32;
+        global.bullet_pierce = false;
+        global.coins = 0;
         game_restart();
     }
 
