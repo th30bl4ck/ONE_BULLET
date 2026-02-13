@@ -7,7 +7,8 @@ function open_levelup_menu()
         "medkit",
         "stim",
         "Sticky Finger",
-        "Big Boy Boots"
+        "Big Boy Boots",
+        "Magnet Core"
     ];
 
     var upgrade_count = array_length(upgrades);
@@ -80,6 +81,13 @@ break;
             with (obj_player)
             {
                 dash_time += 2;
+            }
+        break;
+    
+    case "Magnet Core":
+            with (obj_bullet)
+            {
+                recall_speed += 4;
             }
         break;
     }
