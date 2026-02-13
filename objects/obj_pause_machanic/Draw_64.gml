@@ -21,7 +21,8 @@ if (variable_global_exists("upgrade_counts") && global.upgrade_counts != noone)
         "medkit",
         "stim",
         "Sticky Finger",
-        "Big Boy Boots"
+        "Big Boy Boots",
+        "Magnet Core"
     ];
 
     var base_x = 50;
