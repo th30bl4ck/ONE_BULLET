@@ -85,10 +85,7 @@ break;
         break;
     
     case "Magnet Core":
-            with (obj_bullet)
-            {
-                global.recall_speed += 100;
-            }
+           global.recall_speed += 4;
         break;
     }
 }
