@@ -14,5 +14,4 @@ _unlocked_prev = unlocked;  // internal tracker
 
 _opening = true;
 
-_opening = false;
 
