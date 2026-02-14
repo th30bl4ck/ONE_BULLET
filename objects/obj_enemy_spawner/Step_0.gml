@@ -100,6 +100,7 @@ else
     if (instance_number(obj_enemy_walker) == 0 &&
         instance_number(obj_enemy_dasher) == 0 &&
         instance_number(obj_enemy_shooter) == 0&&
+		instance_number(obj_enemy_splitter_kids) == 0&&
         instance_number(obj_enemy_splitter) == 0)
     {
         current_wave++;

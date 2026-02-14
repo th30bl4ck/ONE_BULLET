@@ -39,7 +39,7 @@ if (state == "recall") {
 
     if (target != noone) {
         direction = point_direction(x, y, target.x, target.y);
-        speed = recall_speed;
+        speed = global.recall_speed;
     }
 
     if (place_meeting(x, y, obj_player)) {
