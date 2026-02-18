@@ -13,6 +13,7 @@ global.room_damage_taken = 0;
 global.xp_attract_range = 64;
 global.bullet_pierce = false;
 global.recall_speed = 6;
+global.player_bullet_speed = 10;
 
 global.note_open = false;
 global.note_text = "";
