@@ -224,7 +224,7 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
 
     bullet_id = instance_create_layer(bx, by, shoot_layer, obj_bullet);
     bullet_id.direction = dir;
-    bullet_id.speed = 10;
+    bullet_id.speed = global.player_bullet_speed;
     bullet_id.owner = id;
 
     can_shoot = false;

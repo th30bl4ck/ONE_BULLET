@@ -89,8 +89,8 @@ break;
            global.recall_speed += 4;
         break;
     
-        case "trigger finger":
-           speed += 4;
+        case "Trigger Finger":
+           global.player_bullet_speed += 2;
         break;
     }
 }
