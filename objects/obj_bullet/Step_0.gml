@@ -1,5 +1,5 @@
 if (state == "stuck") {
-    speed = 0;
+    global.bullet_speed = 0;
     solid = false;
 
     if (keyboard_check_pressed(ord("R"))) {
@@ -21,7 +21,7 @@ if (state == "fired") {
         || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_top) != 0
         || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_left, bbox_bottom) != 0
         || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_bottom) != 0) {
-            speed = 0;
+            global.bullet_speed = 0;
             hspeed = 0;
             vspeed = 0;
             state = "stuck";
@@ -39,7 +39,7 @@ if (state == "recall") {
 
     if (target != noone) {
         direction = point_direction(x, y, target.x, target.y);
-        speed = global.recall_speed;
+        global.bullet_speed = global.recall_speed;
     }
 
     if (place_meeting(x, y, obj_player)) {
