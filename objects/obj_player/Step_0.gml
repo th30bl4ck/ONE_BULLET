@@ -127,6 +127,29 @@ if (input_locked) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+var move_up = keyboard_check(ord("W"));
+var move_down = keyboard_check(ord("S"));
+var move_left = keyboard_check(ord("A"));
+var move_right = keyboard_check(ord("D"));
+
+if (move_up && move_right) {
+    sprite_index = spr_topright;
+} else if (move_right && move_down) {
+    sprite_index = spr_downright;
+} else if (move_down && move_left) {
+    sprite_index = spr_downleft;
+} else if (move_left && move_up) {
+    sprite_index = spr_topleft;
+} else if (move_up) {
+    sprite_index = spr_back;
+} else if (move_right) {
+    sprite_index = spr_right;
+} else if (move_down) {
+    sprite_index = spr_player;
+} else if (move_left) {
+    sprite_index = spr_left;
+}
+
 var move_x = 0;
 var move_y = 0;
 
