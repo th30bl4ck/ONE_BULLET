@@ -1,5 +1,5 @@
 state = "fired"; 
-global.bullet_speed = 10;
+speed = 10;
 if (!variable_global_exists("recall_speed")) {
     global.recall_speed = 6;
 }
