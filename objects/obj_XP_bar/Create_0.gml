@@ -12,6 +12,7 @@ if (!variable_global_exists("upgrade_icons"))
     global.upgrade_icons[? "Sticky Finger"] = spr_stickysock;
     global.upgrade_icons[? "Big Boy Boots"] = spr_bigboyboots;
     global.upgrade_icons[? "Magnet Core"] = spr_magnet_core;
+    global.upgrade_icons[? "trigger finger"] = spr_trigger_finger;
 }
 
 if (!variable_global_exists("upgrade_counts"))

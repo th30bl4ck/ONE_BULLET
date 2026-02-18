@@ -3,12 +3,13 @@ function open_levelup_menu()
     if (global.levelup_active) return;
 
     var upgrades = [
-        "rollershoes",
-        "medkit",
-        "stim",
+        "Rollershoes",
+        "Medkit",
+        "Stim",
         "Sticky Finger",
         "Big Boy Boots",
-        "Magnet Core"
+        "Magnet Core",
+        "Trigger Finger"
     ];
 
     var upgrade_count = array_length(upgrades);
@@ -86,6 +87,10 @@ break;
     
     case "Magnet Core":
            global.recall_speed += 4;
+        break;
+    
+        case "trigger finger":
+           global.bullet_speed += 4;
         break;
     }
 }
