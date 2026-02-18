@@ -90,7 +90,7 @@ break;
         break;
     
         case "trigger finger":
-           global.bullet_speed += 4;
+           speed += 4;
         break;
     }
 }
