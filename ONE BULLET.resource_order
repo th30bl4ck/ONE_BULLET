@@ -1,5 +1,7 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"msc","order":1,"path":"folders/Sprites/msc.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"spr_tf","order":1,"path":"sprites/spr_tf/spr_tf.yy",},
   ],
