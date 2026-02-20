@@ -22,7 +22,7 @@ if (global.wall_tilemap_room != room) {
 }
 
 // =========================
-// DEATH SEQUENCE 
+// DEATH SEQUENCE
 // =========================
 if (state == "dying") {
 
@@ -34,13 +34,13 @@ if (state == "dying") {
 
     // Kill enemies
     with (obj_enemy_walker) instance_destroy();
-    with (obj_XP) instance_destroy(); 
+    with (obj_XP) instance_destroy();
     with (obj_XP_bar) instance_destroy();
     with (obj_enemy_dasher) instance_destroy();
     with (obj_enemy_shooter) instance_destroy();
     with (obj_enemy_splitter) instance_destroy();
     with (obj_enemy_splitter_kids) instance_destroy();
-	
+
      var cam = view_camera[0];
 
     if (!death_cam_locked) {
@@ -94,7 +94,7 @@ if (state == "dying") {
     }
 
     hp_display = 0;
-    
+
     exit;
 }
 
@@ -105,6 +105,16 @@ if (state == "dying") {
 
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
+
+hp = clamp(hp, 0, max_hp);
+if (hp <= 0 && state != "dying") {
+    state = "dying";
+    sprite_index = spr_player_death;
+    image_index = 0;
+    image_speed = 1;
+    hp_display = 0;
+    exit;
+}
 
 
 // =========================
@@ -332,7 +342,26 @@ var frames = sprite_get_number(spr_healthbar);
 var frame_full  = 0;
 var frame_empty = frames - 1;
 
-var anim_spd = 0.4; 
+var anim_spd = 0.4;
+
+for (var i = 0; i < max_hp; i++)
+{
+    var target = frame_empty;
+
+    if (i < hp)
+    {
+        target = frame_full;
+        hp_segments[i] = 0;
+    }
+    else if (i < array_length(hp_segments))
+    {
+        target = clamp(hp_segments[i], 1, frame_empty);
+    }
+
+    hp_frames[i] = approach(hp_frames[i], target, anim_spd);
+}
+
+hp_display = hp;
 
 
 hp_prev = hp;
