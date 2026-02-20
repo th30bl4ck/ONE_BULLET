@@ -178,6 +178,7 @@
     {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},},
     {"id":{"name":"spr_stickysock","path":"sprites/spr_stickysock/spr_stickysock.yy",},},
     {"id":{"name":"spr_tablelog","path":"sprites/spr_tablelog/spr_tablelog.yy",},},
+    {"id":{"name":"spr_tf","path":"sprites/spr_tf/spr_tf.yy",},},
     {"id":{"name":"spr_topleft","path":"sprites/spr_topleft/spr_topleft.yy",},},
     {"id":{"name":"spr_topright","path":"sprites/spr_topright/spr_topright.yy",},},
     {"id":{"name":"spr_used_medkit","path":"sprites/spr_used_medkit/spr_used_medkit.yy",},},
