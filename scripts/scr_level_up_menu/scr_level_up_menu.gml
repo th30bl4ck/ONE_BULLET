@@ -34,11 +34,16 @@ function close_levelup_menu()
 
 function scr_apply_upgrade(choice)
 {
-    if (!variable_global_exists("upgrade_counts"))
+     if (!instance_exists(obj_player)) return;
+     if (!variable_global_exists("upgrade_counts"))
     {
         global.upgrade_counts = ds_map_create();
     }
 
+    if (!variable_global_exists("xp_attract_range")) global.xp_attract_range = 64;
+    if (!variable_global_exists("recall_speed")) global.recall_speed = 6;
+    if (!variable_global_exists("player_bullet_speed")) global.player_bullet_speed = 10;
+    
     if (ds_map_exists(global.upgrade_counts, choice))
     {
         global.upgrade_counts[? choice] += 1;
@@ -54,12 +59,12 @@ function scr_apply_upgrade(choice)
             with (obj_player) { move_speed += 1; }
         break;
 
-case "Medkit":
-    with (obj_player)
-    {
-        heal_hp(1);
-    }
-break;
+        case "Medkit":
+            with (obj_player)
+            {
+                heal_hp(max_hp - hp);
+            }
+        break;
 
 
         case "Stim":

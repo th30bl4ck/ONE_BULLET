@@ -1,7 +1,28 @@
 if (global.note_open) exit;
 
+
+if (!variable_global_exists("wall_tilemap_id")) {
+    global.wall_tilemap_id = noone;
+    global.wall_tilemap_room = noone;
+}
+
+if (global.wall_tilemap_room != room) {
+    global.wall_tilemap_room = room;
+    global.wall_tilemap_id = noone;
+
+    var wall_layer_names = ["tileset_wall", "tiles_walls", "Layer_Walls"];
+
+    for (var i = 0; i < array_length(wall_layer_names); i++) {
+        var wall_layer_id = layer_get_id(wall_layer_names[i]);
+        if (wall_layer_id != -1) {
+            global.wall_tilemap_id = layer_tilemap_get_id(wall_layer_id);
+            break;
+        }
+    }
+}
+
 // =========================
-// DEATH SEQUENCE 
+// DEATH SEQUENCE
 // =========================
 if (state == "dying") {
 
@@ -13,13 +34,13 @@ if (state == "dying") {
 
     // Kill enemies
     with (obj_enemy_walker) instance_destroy();
-    with (obj_XP) instance_destroy(); 
+    with (obj_XP) instance_destroy();
     with (obj_XP_bar) instance_destroy();
     with (obj_enemy_dasher) instance_destroy();
     with (obj_enemy_shooter) instance_destroy();
     with (obj_enemy_splitter) instance_destroy();
     with (obj_enemy_splitter_kids) instance_destroy();
-	
+
      var cam = view_camera[0];
 
     if (!death_cam_locked) {
@@ -73,7 +94,7 @@ if (state == "dying") {
     }
 
     hp_display = 0;
-    
+
     exit;
 }
 
@@ -84,6 +105,16 @@ if (state == "dying") {
 
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
+
+hp = clamp(hp, 0, max_hp);
+if (hp <= 0 && state != "dying") {
+    state = "dying";
+    sprite_index = spr_player_death;
+    image_index = 0;
+    image_speed = 1;
+    hp_display = 0;
+    exit;
+}
 
 
 // =========================
@@ -292,46 +323,6 @@ for (var i = 0; i < count; i++)
 }
 
 
-//damage
-function take_damage(amount)
-{
-    repeat (amount)
-    {
-        if (hp > 0)
-        {
-            hp--;
-            hp_segments[hp] = 1;
-        }
-    }
-}
-
-function increase_max_hp(amount)
-{
-    max_hp += amount;
-    hp += amount;
-
-    var old_len = array_length(hp_segments);
-    array_resize(hp_segments, max_hp);
-
-    for (var i = old_len; i < max_hp; i++)
-    {
-        hp_segments[i] = 0; // FULL frame
-    }
-}
-
-heal_hp = function(amount)
-{
-    repeat (amount)
-    {
-        if (hp < max_hp)
-        {
-            hp_segments[hp] = 0; // refill this segment
-            hp += 1;
-            hp_display = hp;
-        }
-    }
-};
-
 function approach(_cur, _tgt, _amt)
 {
     if (_cur < _tgt) return min(_cur + _amt, _tgt);
@@ -351,13 +342,26 @@ var frames = sprite_get_number(spr_healthbar);
 var frame_full  = 0;
 var frame_empty = frames - 1;
 
-var anim_spd = 0.4; 
+var anim_spd = 0.4;
 
+for (var i = 0; i < max_hp; i++)
+{
+    var target = frame_empty;
 
-for (var i = 0; i < max_hp; i++) {
-    var target = (i < hp) ? frame_full : frame_empty;
+    if (i < hp)
+    {
+        target = frame_full;
+        hp_segments[i] = 0;
+    }
+    else if (i < array_length(hp_segments))
+    {
+        target = clamp(hp_segments[i], 1, frame_empty);
+    }
+
     hp_frames[i] = approach(hp_frames[i], target, anim_spd);
 }
+
+hp_display = hp;
 
 
 hp_prev = hp;
