@@ -51,6 +51,7 @@
     {"name":"animation","order":8,"path":"sprites/animation/animation.yy",},
     {"name":"logo","order":7,"path":"sprites/logo/logo.yy",},
     {"name":"overflo","order":1,"path":"sprites/overflo/overflo.yy",},
+    {"name":"pedastil","order":3,"path":"sprites/pedastil/pedastil.yy",},
     {"name":"side_door","order":1,"path":"sprites/side_door/side_door.yy",},
     {"name":"slugdelet","order":7,"path":"sprites/slugdelet/slugdelet.yy",},
     {"name":"slugger","order":9,"path":"sprites/slugger/slugger.yy",},

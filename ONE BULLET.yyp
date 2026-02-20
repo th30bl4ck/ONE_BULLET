@@ -133,6 +133,7 @@
     {"id":{"name":"hrizont","path":"sprites/hrizont/hrizont.yy",},},
     {"id":{"name":"logo","path":"sprites/logo/logo.yy",},},
     {"id":{"name":"overflo","path":"sprites/overflo/overflo.yy",},},
+    {"id":{"name":"pedastil","path":"sprites/pedastil/pedastil.yy",},},
     {"id":{"name":"roid","path":"sprites/roid/roid.yy",},},
     {"id":{"name":"side_door","path":"sprites/side_door/side_door.yy",},},
     {"id":{"name":"slugdelet","path":"sprites/slugdelet/slugdelet.yy",},},
