@@ -59,12 +59,12 @@ function scr_apply_upgrade(choice)
             with (obj_player) { move_speed += 1; }
         break;
 
-case "medkit":
-    with (obj_player)
-    {
-        heal_hp(1);
-    }
-break;
+        case "Medkit":
+            with (obj_player)
+            {
+                heal_hp(max_hp - hp);
+            }
+        break;
 
 
         case "stim":
