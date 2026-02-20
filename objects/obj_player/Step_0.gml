@@ -1,5 +1,26 @@
 if (global.note_open) exit;
 
+
+if (!variable_global_exists("wall_tilemap_id")) {
+    global.wall_tilemap_id = noone;
+    global.wall_tilemap_room = noone;
+}
+
+if (global.wall_tilemap_room != room) {
+    global.wall_tilemap_room = room;
+    global.wall_tilemap_id = noone;
+
+    var wall_layer_names = ["tileset_wall", "tiles_walls", "Layer_Walls"];
+
+    for (var i = 0; i < array_length(wall_layer_names); i++) {
+        var wall_layer_id = layer_get_id(wall_layer_names[i]);
+        if (wall_layer_id != -1) {
+            global.wall_tilemap_id = layer_tilemap_get_id(wall_layer_id);
+            break;
+        }
+    }
+}
+
 // =========================
 // DEATH SEQUENCE 
 // =========================
@@ -292,46 +313,6 @@ for (var i = 0; i < count; i++)
 }
 
 
-//damage
-function take_damage(amount)
-{
-    repeat (amount)
-    {
-        if (hp > 0)
-        {
-            hp--;
-            hp_segments[hp] = 1;
-        }
-    }
-}
-
-function increase_max_hp(amount)
-{
-    max_hp += amount;
-    hp += amount;
-
-    var old_len = array_length(hp_segments);
-    array_resize(hp_segments, max_hp);
-
-    for (var i = old_len; i < max_hp; i++)
-    {
-        hp_segments[i] = 0; // FULL frame
-    }
-}
-
-heal_hp = function(amount)
-{
-    repeat (amount)
-    {
-        if (hp < max_hp)
-        {
-            hp_segments[hp] = 0; // refill this segment
-            hp += 1;
-            hp_display = hp;
-        }
-    }
-};
-
 function approach(_cur, _tgt, _amt)
 {
     if (_cur < _tgt) return min(_cur + _amt, _tgt);
@@ -352,12 +333,6 @@ var frame_full  = 0;
 var frame_empty = frames - 1;
 
 var anim_spd = 0.4; 
-
-
-for (var i = 0; i < max_hp; i++) {
-    var target = (i < hp) ? frame_full : frame_empty;
-    hp_frames[i] = approach(hp_frames[i], target, anim_spd);
-}
 
 
 hp_prev = hp;
