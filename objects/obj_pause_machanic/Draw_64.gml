@@ -17,12 +17,13 @@ if (variable_global_exists("upgrade_counts") && global.upgrade_counts != noone)
 {
     // These MUST match your ds_map keys exactly:
     var upgrades = [
-        "rollershoes",
-        "medkit",
-        "stim",
+        "Rollershoes",
+        "Medkit",
+        "Stim",
         "Sticky Finger",
         "Big Boy Boots",
-        "Magnet Core"
+        "Magnet Core",
+        "Trigger Finger"
     ];
 
     var base_x = 50;
