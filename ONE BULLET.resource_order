@@ -77,7 +77,11 @@
     {"name":"spr_snot_rocket","order":6,"path":"sprites/spr_snot_rocket/spr_snot_rocket.yy",},
     {"name":"spr_start_select","order":4,"path":"sprites/spr_start_select/spr_start_select.yy",},
     {"name":"spr_start","order":1,"path":"sprites/spr_start/spr_start.yy",},
+<<<<<<< ethan
+    {"name":"spr_tablelog","order":3,"path":"sprites/spr_tablelog/spr_tablelog.yy",},
+=======
     {"name":"spr_tf","order":9,"path":"sprites/spr_tf/spr_tf.yy",},
+>>>>>>> main
     {"name":"spr_topleft","order":6,"path":"sprites/spr_topleft/spr_topleft.yy",},
     {"name":"spr_topright","order":7,"path":"sprites/spr_topright/spr_topright.yy",},
     {"name":"spr_XP","order":3,"path":"sprites/spr_XP/spr_XP.yy",},
