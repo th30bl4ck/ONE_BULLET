@@ -4,6 +4,7 @@ target_room = second_room;
 unlocked = true; 
 
 sprite_index = side_door;   // set the sprite
+
 image_speed  = 0;           // stopped while locked
 image_index  = 0;           // closed frame
 
