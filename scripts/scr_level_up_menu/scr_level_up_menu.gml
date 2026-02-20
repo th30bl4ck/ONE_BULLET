@@ -55,7 +55,7 @@ function scr_apply_upgrade(choice)
 
     switch (choice)
     {
-        case "rollershoes":
+        case "Rollershoes":
             with (obj_player) { move_speed += 1; }
         break;
 
@@ -67,7 +67,7 @@ function scr_apply_upgrade(choice)
         break;
 
 
-        case "stim":
+        case "Stim":
     with (obj_player)
     {
         increase_max_hp(1); // adds a new head

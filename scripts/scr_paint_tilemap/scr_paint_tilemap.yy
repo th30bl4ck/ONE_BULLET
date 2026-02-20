@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_paint_tilemap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_paint_tilemap",
+  "parent":{
+    "name":"for_importing_rooms",
+    "path":"folders/Scripts/for_importing_rooms.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
