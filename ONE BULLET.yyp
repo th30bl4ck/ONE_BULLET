@@ -62,7 +62,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.4.999",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"ONE BULLET",
   "resources":[
@@ -116,6 +116,7 @@
     {"id":{"name":"scr_level_up_menu","path":"scripts/scr_level_up_menu/scr_level_up_menu.yy",},},
     {"id":{"name":"scr_shop","path":"scripts/scr_shop/scr_shop.yy",},},
     {"id":{"name":"scr_spawn_enemy_at_edge","path":"scripts/scr_spawn_enemy_at_edge/scr_spawn_enemy_at_edge.yy",},},
+    {"id":{"name":"alsosludgelet","path":"sprites/alsosludgelet/alsosludgelet.yy",},},
     {"id":{"name":"animation","path":"sprites/animation/animation.yy",},},
     {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
@@ -124,6 +125,9 @@
     {"id":{"name":"overflo","path":"sprites/overflo/overflo.yy",},},
     {"id":{"name":"roid","path":"sprites/roid/roid.yy",},},
     {"id":{"name":"side_door","path":"sprites/side_door/side_door.yy",},},
+    {"id":{"name":"slugdelet","path":"sprites/slugdelet/slugdelet.yy",},},
+    {"id":{"name":"slugger","path":"sprites/slugger/slugger.yy",},},
+    {"id":{"name":"split","path":"sprites/split/split.yy",},},
     {"id":{"name":"spooger_attk","path":"sprites/spooger_attk/spooger_attk.yy",},},
     {"id":{"name":"spooger_bullet","path":"sprites/spooger_bullet/spooger_bullet.yy",},},
     {"id":{"name":"spooger_walk","path":"sprites/spooger_walk/spooger_walk.yy",},},
