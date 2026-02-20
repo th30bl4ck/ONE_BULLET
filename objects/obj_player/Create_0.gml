@@ -73,6 +73,8 @@ global.enemy_anchor_counts = [0, 0, 0, 0];
 // upgrade/combat helpers
 take_damage = function(amount)
 {
+    if (amount <= 0) return;
+
     repeat (amount)
     {
         if (hp > 0)
@@ -81,12 +83,19 @@ take_damage = function(amount)
             hp_segments[hp] = 1;
         }
     }
+
+    hp = clamp(hp, 0, max_hp);
+    hp_display = hp;
 };
 
 increase_max_hp = function(amount)
 {
+    if (amount <= 0) return;
+
     max_hp += amount;
     hp += amount;
+
+    hp = clamp(hp, 0, max_hp);
 
     var old_len = array_length(hp_segments);
     array_resize(hp_segments, max_hp);
@@ -95,10 +104,14 @@ increase_max_hp = function(amount)
     {
         hp_segments[i] = 0; // FULL frame
     }
+
+    hp_display = hp;
 };
 
 heal_hp = function(amount)
 {
+    if (amount <= 0) return;
+
     repeat (amount)
     {
         if (hp < max_hp)
@@ -108,4 +121,7 @@ heal_hp = function(amount)
             hp_display = hp;
         }
     }
+
+    hp = clamp(hp, 0, max_hp);
+    hp_display = hp;
 };
