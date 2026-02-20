@@ -50,11 +50,11 @@ function scr_apply_upgrade(choice)
 
     switch (choice)
     {
-        case "rollershoes":
+        case "Rollershoes":
             with (obj_player) { move_speed += 1; }
         break;
 
-case "medkit":
+case "Medkit":
     with (obj_player)
     {
         heal_hp(1);
@@ -62,7 +62,7 @@ case "medkit":
 break;
 
 
-        case "stim":
+        case "Stim":
     with (obj_player)
     {
         increase_max_hp(1); // adds a new head
