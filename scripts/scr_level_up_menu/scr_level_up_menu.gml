@@ -3,12 +3,13 @@ function open_levelup_menu()
     if (global.levelup_active) return;
 
     var upgrades = [
-        "rollershoes",
-        "medkit",
-        "stim",
+        "Rollershoes",
+        "Medkit",
+        "Stim",
         "Sticky Finger",
         "Big Boy Boots",
-        "Magnet Core"
+        "Magnet Core",
+        "Trigger Finger"
     ];
 
     var upgrade_count = array_length(upgrades);
@@ -33,11 +34,16 @@ function close_levelup_menu()
 
 function scr_apply_upgrade(choice)
 {
-    if (!variable_global_exists("upgrade_counts"))
+     if (!instance_exists(obj_player)) return;
+     if (!variable_global_exists("upgrade_counts"))
     {
         global.upgrade_counts = ds_map_create();
     }
 
+    if (!variable_global_exists("xp_attract_range")) global.xp_attract_range = 64;
+    if (!variable_global_exists("recall_speed")) global.recall_speed = 6;
+    if (!variable_global_exists("player_bullet_speed")) global.player_bullet_speed = 10;
+    
     if (ds_map_exists(global.upgrade_counts, choice))
     {
         global.upgrade_counts[? choice] += 1;
@@ -49,19 +55,19 @@ function scr_apply_upgrade(choice)
 
     switch (choice)
     {
-        case "rollershoes":
+        case "Rollershoes":
             with (obj_player) { move_speed += 1; }
         break;
 
-case "medkit":
-    with (obj_player)
-    {
-        heal_hp(1);
-    }
-break;
+        case "Medkit":
+            with (obj_player)
+            {
+                heal_hp(max_hp - hp);
+            }
+        break;
 
 
-        case "stim":
+        case "Stim":
     with (obj_player)
     {
         increase_max_hp(1); // adds a new head
@@ -85,10 +91,11 @@ break;
         break;
     
     case "Magnet Core":
-            with (obj_bullet)
-            {
-                recall_speed += 4;
-            }
+           global.recall_speed += 4;
+        break;
+    
+        case "Trigger Finger":
+           global.player_bullet_speed += 2;
         break;
     }
 }
