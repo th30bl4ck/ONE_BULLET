@@ -1,7 +1,7 @@
 spawnObject = obj_spawnpoint_second_room_1;
 target_room = second_room;
 
-unlocked = true;           // start locked
+unlocked = false;           // start locked
 
 sprite_index = side_door;   // set the sprite
 image_speed  = 0;           // stopped while locked
