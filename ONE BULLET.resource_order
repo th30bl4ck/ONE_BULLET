@@ -1,6 +1,10 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"msc","order":1,"path":"folders/Sprites/msc.yy",},
+  ],
   "ResourceOrderSettings":[
+    {"name":"spr_tf","order":1,"path":"sprites/spr_tf/spr_tf.yy",},
+    {"name":"spr_the_jerk","order":2,"path":"sprites/spr_the_jerk/spr_the_jerk.yy",},
     {"name":"obj_enemy_blob","order":2,"path":"objects/obj_enemy_blob/obj_enemy_blob.yy",},
     {"name":"obj_enemy_shooter","order":1,"path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},
     {"name":"obj_enemy_splitter_kids","order":4,"path":"objects/obj_enemy_splitter_kids/obj_enemy_splitter_kids.yy",},
