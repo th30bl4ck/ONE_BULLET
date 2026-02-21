@@ -85,6 +85,7 @@
     {"id":{"name":"obj_enemy_splitter","path":"objects/obj_enemy_splitter/obj_enemy_splitter.yy",},},
     {"id":{"name":"obj_enemy_walker","path":"objects/obj_enemy_walker/obj_enemy_walker.yy",},},
     {"id":{"name":"obj_global_set","path":"objects/obj_global_set/obj_global_set.yy",},},
+    {"id":{"name":"obj_intro_controller","path":"objects/obj_intro_controller/obj_intro_controller.yy",},},
     {"id":{"name":"obj_letter_1st","path":"objects/obj_letter_1st/obj_letter_1st.yy",},},
     {"id":{"name":"obj_pause_machanic","path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},},
     {"id":{"name":"obj_perice","path":"objects/obj_perice/obj_perice.yy",},},
@@ -110,6 +111,7 @@
     {"id":{"name":"obj_XP_bar","path":"objects/obj_XP_bar/obj_XP_bar.yy",},},
     {"id":{"name":"obj_XP","path":"objects/obj_XP/obj_XP.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
+    {"id":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
     {"id":{"name":"room4","path":"rooms/room4/room4.yy",},},
     {"id":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"id":{"name":"second_room","path":"rooms/second_room/second_room.yy",},},
@@ -192,6 +194,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
     {"roomId":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
     {"roomId":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"roomId":{"name":"starting_room","path":"rooms/starting_room/starting_room.yy",},},
