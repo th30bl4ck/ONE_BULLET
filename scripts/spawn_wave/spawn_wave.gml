@@ -4,7 +4,7 @@ function spawn_wave(difficulty)
     if (_enemy_obj == -1) _enemy_obj = asset_get_index("obj_enemy_dasher");
     if (_enemy_obj == -1) _enemy_obj = asset_get_index("obj_enemy_shooter");
 
-        if (_enemy_obj == -1)
+    if (_enemy_obj == -1)
     {
         show_debug_message("[SPAWN][ERROR] spawn_wave: no valid enemy object found.");
         return;
@@ -15,8 +15,8 @@ function spawn_wave(difficulty)
     {
         var x_pos = irandom_range(100, room_width - 100);
         var y_pos = irandom_range(100, room_height - 100);
-
         instance_create_layer(x_pos, y_pos, "Instances", _enemy_obj);
     }
+
     show_debug_message("[SPAWN] spawn_wave difficulty=" + string(difficulty) + " count=" + string(enemy_count));
 }

@@ -1,5 +1,8 @@
+/// @description Resolve current room data and spawn content
+
 room_cleared = false;
 room_data = undefined;
+auto_advance_frames = max(1, room_speed); // 1 second fallback if Enter is missed
 
 function _log_current_room_state(_prefix)
 {
@@ -7,6 +10,28 @@ function _log_current_room_state(_prefix)
     var _size = (variable_global_exists("run_rooms") && ds_exists(global.run_rooms, ds_type_list)) ? ds_list_size(global.run_rooms) : -1;
     var _type = is_struct(room_data) && variable_struct_exists(room_data, "type") ? string(room_data.type) : "<none>";
     show_debug_message("[ROOM] " + _prefix + " index=" + string(_idx) + " run_size=" + string(_size) + " type=" + _type);
+}
+
+function _build_fallback_run_if_missing()
+{
+    if (variable_global_exists("run_rooms") && ds_exists(global.run_rooms, ds_type_list))
+    {
+        return;
+    }
+
+    show_debug_message("[ROOM][WARN] run state missing in room controller; building fallback run list.");
+
+    global.run_rooms = ds_list_create();
+    ds_list_add(global.run_rooms, { type: "start", difficulty: 0 });
+    ds_list_add(global.run_rooms, { type: "combat", difficulty: 1 });
+    ds_list_add(global.run_rooms, { type: "boss", difficulty: 2 });
+
+    if (!variable_global_exists("current_room_index"))
+    {
+        global.current_room_index = 0;
+    }
+
+    show_debug_message("[ROOM][WARN] Fallback run created with 3 rooms (start/combat/boss).");
 }
 
 function _spawn_placeholder_enemy(_count)
@@ -27,6 +52,41 @@ function _spawn_placeholder_enemy(_count)
     }
 
     show_debug_message("[ROOM] Spawned placeholder enemies count=" + string(_count));
+}
+
+attempt_advance_room = function(_reason)
+{
+    if (!room_cleared)
+    {
+        show_debug_message("[ROOM] Advance ignored (not cleared). reason=" + _reason);
+        return;
+    }
+
+    if (!variable_global_exists("run_rooms") || !ds_exists(global.run_rooms, ds_type_list))
+    {
+        show_debug_message("[ROOM][ERROR] Advance failed: global.run_rooms missing/invalid. reason=" + _reason);
+        return;
+    }
+
+    if (!variable_global_exists("current_room_index"))
+    {
+        global.current_room_index = 0;
+        show_debug_message("[ROOM][WARN] current_room_index missing during transition. Reset to 0.");
+    }
+
+    global.current_room_index += 1;
+    var _size = ds_list_size(global.run_rooms);
+
+    show_debug_message("[ROOM] Advancing room (" + _reason + ") to index=" + string(global.current_room_index) + " of " + string(_size));
+
+    if (global.current_room_index < _size)
+    {
+        room_restart();
+    }
+    else
+    {
+        show_debug_message("[ROOM] Run complete. No more rooms.");
+    }
 }
 
 function spawn_room_content()
@@ -106,9 +166,16 @@ function spawn_room_content()
 }
 
 // Defensive guards around global state.
+_build_fallback_run_if_missing();
+
+if (!is_callable(attempt_advance_room))
+{
+    show_debug_message("[ROOM][ERROR] attempt_advance_room helper missing.");
+}
+
 if (!variable_global_exists("run_rooms") || !ds_exists(global.run_rooms, ds_type_list))
 {
-    show_debug_message("Room generation missing: global.run_rooms is not initialized.");
+    show_debug_message("[ROOM][ERROR] global.run_rooms missing or invalid after fallback attempt. Destroying obj_room_controller.");
     instance_destroy();
     exit;
 }
@@ -128,6 +195,6 @@ if (_count <= 0)
 }
 
 global.current_room_index = clamp(global.current_room_index, 0, _count - 1);
-
 room_data = global.run_rooms[| global.current_room_index];
+
 spawn_room_content();

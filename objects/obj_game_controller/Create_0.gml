@@ -1,4 +1,4 @@
-/// RUN GENERATION
+/// @description Persistent run generator + singleton guard
 
 // Prevent duplicate persistent controllers (for example if placed in multiple rooms).
 if (instance_number(obj_game_controller) > 1)
@@ -8,7 +8,7 @@ if (instance_number(obj_game_controller) > 1)
     exit;
 }
 
-// Clean up any previous run list before rebuilding
+// Clean up any previous run list before rebuilding.
 if (variable_global_exists("run_rooms") && ds_exists(global.run_rooms, ds_type_list))
 {
     ds_list_destroy(global.run_rooms);
@@ -34,7 +34,6 @@ for (var i = 0; i < total_rooms; i++)
 var start_room = global.run_rooms[| 0];
 start_room.type = "start";
 ds_list_set(global.run_rooms, 0, start_room);
-
 
 var boss_room_index = total_rooms - 1;
 var boss_room = global.run_rooms[| boss_room_index];

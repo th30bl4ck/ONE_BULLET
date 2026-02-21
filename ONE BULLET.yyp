@@ -119,6 +119,7 @@
     {"id":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
     {"id":{"name":"room4","path":"rooms/room4/room4.yy",},},
     {"id":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
+    {"id":{"name":"Room9","path":"rooms/Room9/Room9.yy",},},
     {"id":{"name":"second_room","path":"rooms/second_room/second_room.yy",},},
     {"id":{"name":"settings_room","path":"rooms/settings_room/settings_room.yy",},},
     {"id":{"name":"shop_room","path":"rooms/shop_room/shop_room.yy",},},
@@ -215,6 +216,7 @@
     {"roomId":{"name":"settings_room","path":"rooms/settings_room/settings_room.yy",},},
     {"roomId":{"name":"shop_room","path":"rooms/shop_room/shop_room.yy",},},
     {"roomId":{"name":"room4","path":"rooms/room4/room4.yy",},},
+    {"roomId":{"name":"Room9","path":"rooms/Room9/Room9.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
