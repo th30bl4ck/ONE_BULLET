@@ -4,5 +4,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"spr_tf","order":1,"path":"sprites/spr_tf/spr_tf.yy",},
+    {"name":"spr_the_jerk","order":2,"path":"sprites/spr_the_jerk/spr_the_jerk.yy",},
   ],
 }
