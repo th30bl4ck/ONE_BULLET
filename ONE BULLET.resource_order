@@ -3,6 +3,8 @@
     {"name":"room_generation","order":7,"path":"folders/Scripts/room_generation.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"spr_tf","order":1,"path":"sprites/spr_tf/spr_tf.yy",},
+    {"name":"spr_the_jerk","order":2,"path":"sprites/spr_the_jerk/spr_the_jerk.yy",},
     {"name":"obj_enemy_blob","order":2,"path":"objects/obj_enemy_blob/obj_enemy_blob.yy",},
     {"name":"obj_enemy_parent","order":5,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_enemy_shooter","order":1,"path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},
