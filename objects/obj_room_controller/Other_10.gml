@@ -15,7 +15,7 @@ function spawn_room_content()
         break;
 
         case "shop":
-            spawn_shop();
+            instance_create_layer(room_width / 2, room_height / 2, "Instances", obj_shopkeeper);
         break;
 
         case "boss":
