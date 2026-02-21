@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spawn_elite_wave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spawn_elite_wave",
+  "parent":{
+    "name":"room_generation",
+    "path":"folders/Scripts/room_generation.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
