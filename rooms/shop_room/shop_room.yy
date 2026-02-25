@@ -125,8 +125,8 @@
   ],
   "name":"shop_room",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"shop_rooms",
+    "path":"folders/Rooms/shop_rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
