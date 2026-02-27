@@ -20,4 +20,3 @@ if (!variable_global_exists("upgrade_counts"))
     global.upgrade_counts = ds_map_create();
 }
 
-
