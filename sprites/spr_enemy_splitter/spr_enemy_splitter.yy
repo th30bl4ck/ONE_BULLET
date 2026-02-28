@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"enemy_sprites",
-    "path":"folders/Sprites/enemy_sprites.yy",
+    "name":"splitter_sprites",
+    "path":"folders/Sprites/enemy_sprites/splitter_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

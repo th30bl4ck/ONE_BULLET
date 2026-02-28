@@ -4,13 +4,25 @@ if (!bullet_pierces) {
     instance_destroy(other); // kill the bullet
 }
 
-var spawn_offset = 12;
-for (var i = 0; i < 2; i++) {
+var spawn_offset = 20;
+
+for (var i = 0; i < 2; i++)
+{
     var angle = irandom_range(0, 359);
     var nx = x + lengthdir_x(spawn_offset, angle);
     var ny = y + lengthdir_y(spawn_offset, angle);
-    instance_create_layer(nx, ny, "Instances", obj_enemy_splitter_kids);
+
+    var obj_to_spawn;
+
+    if (i == 0)
+        obj_to_spawn = obj_enemy_splitter_kids;
+    else
+        obj_to_spawn = obj_enemy_splitter_kids_1;
+
+    instance_create_layer(nx, ny, "Instances", obj_to_spawn);
 }
+
+instance_destroy(); // kill the enemy
 
 instance_destroy();      // kill the enemy
 
