@@ -9,3 +9,7 @@ if variable_global_exists("spawn_object") && global.spawn_object != undefined {
 
     global.spawn_object = undefined;
 }
+
+// Ensure room transitions never leave the player soft-locked from firing.
+can_shoot = true;
+bullet_id = noone;

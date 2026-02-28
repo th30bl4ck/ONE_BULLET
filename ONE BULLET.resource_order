@@ -1,6 +1,20 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"menu_rooms","order":2,"path":"folders/Rooms/menu_rooms.yy",},
+    {"name":"rooms_1door","order":1,"path":"folders/Rooms/rooms_1door.yy",},
+    {"name":"rooms_2door","order":4,"path":"folders/Rooms/rooms_2door.yy",},
+    {"name":"rooms_3door","order":5,"path":"folders/Rooms/rooms_3door.yy",},
+    {"name":"rooms_4door","order":6,"path":"folders/Rooms/rooms_4door.yy",},
+    {"name":"shop_rooms","order":3,"path":"folders/Rooms/shop_rooms.yy",},
+  ],
   "ResourceOrderSettings":[
-    {"name":"spr_tf","order":1,"path":"sprites/spr_tf/spr_tf.yy",},
+    {"name":"rm_E_v1","order":2,"path":"rooms/rm_E_v1/rm_E_v1.yy",},
+    {"name":"rm_E_v2","order":3,"path":"rooms/rm_E_v2/rm_E_v2.yy",},
+    {"name":"rm_N_v2","order":1,"path":"rooms/rm_N_v2/rm_N_v2.yy",},
+    {"name":"rm_S_v1","order":4,"path":"rooms/rm_S_v1/rm_S_v1.yy",},
+    {"name":"rm_S_v2","order":5,"path":"rooms/rm_S_v2/rm_S_v2.yy",},
+    {"name":"rm_W_v1","order":6,"path":"rooms/rm_W_v1/rm_W_v1.yy",},
+    {"name":"rm_W_v2","order":7,"path":"rooms/rm_W_v2/rm_W_v2.yy",},
+    {"name":"settings_room","order":1,"path":"rooms/settings_room/settings_room.yy",},
   ],
 }

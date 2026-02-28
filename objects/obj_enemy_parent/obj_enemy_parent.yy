@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sludge",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_enemy_parent",
+  "eventList":[],
   "managed":true,
-  "name":"obj_sludge",
+  "name":"obj_enemy_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"boss_objects",
-    "path":"folders/Objects/boss_objects.yy",
+    "name":"enemy_objects",
+    "path":"folders/Objects/enemy_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
