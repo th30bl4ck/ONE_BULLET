@@ -19,7 +19,10 @@
     "name":"enemy_objects",
     "path":"folders/Objects/enemy_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_enemy_parent",
+    "path":"objects/obj_enemy_parent/obj_enemy_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -38,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_splitter",
-    "path":"sprites/spr_enemy_splitter/spr_enemy_splitter.yy",
+    "name":"alsosludgelet",
+    "path":"sprites/alsosludgelet/alsosludgelet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
