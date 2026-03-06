@@ -278,42 +278,46 @@ if (semantic_orbit_active && can_shoot && !instance_exists(bullet_id)) {
 }
 
 // ----- Shoot -----
-if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
-    var dir = point_direction(x, y, mouse_x, mouse_y);
+if ((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
 
+    // Fire orbiting bullet if upgrade is active and current bullet is orbiting
     if (semantic_orbit_active && instance_exists(bullet_id) && bullet_id.state == "orbit") {
-        var fire_dist = 12;
-        bullet_id.x = x + lengthdir_x(fire_dist, dir);
-        bullet_id.y = y + lengthdir_y(fire_dist, dir);
+        var dir = point_direction(x, y, mouse_x, mouse_y);
+
+        bullet_id.x = x + lengthdir_x(12, dir);
+        bullet_id.y = y + lengthdir_y(12, dir);
         bullet_id.direction = dir;
         bullet_id.speed = global.player_bullet_speed;
         bullet_id.state = "fired";
         bullet_id.owner = id;
-    } else {
+
+        can_shoot = false;
+    }
+
+    // Fire a brand new bullet only if there is no bullet
+    else if (can_shoot && !instance_exists(bullet_id)) {
+        var dir = point_direction(x, y, mouse_x, mouse_y);
         var bx = x + lengthdir_x(12, dir);
         var by = y + lengthdir_y(12, dir);
 
         bullet_id = instance_create_layer(bx, by, shoot_layer, obj_bullet);
+        bullet_id.owner = id;
+        bullet_id.state = "fired";
         bullet_id.direction = dir;
         bullet_id.speed = global.player_bullet_speed;
-        bullet_id.owner = id;
-    }
 
-    can_shoot = false;
+        can_shoot = false;
+    }
 }
 
 // ----- Recall -----
 if (keyboard_check_pressed(ord("R"))) {
-    if (instance_exists(bullet_id)) {
-        if (semantic_orbit_active) {
-            if (bullet_id.state != "orbit") {
-                bullet_id.state = "recall";
-            }
-        } else if (bullet_id.state == "stuck") {
-            bullet_id.state = "recall";
-        }
+    if (instance_exists(bullet_id) && (bullet_id.state == "stuck" || bullet_id.state == "fired")) {
+        bullet_id.state = "recall";
+        bullet_id.speed = global.recall_speed;
     }
 }
+
 
 //combo
 if (combo_timer > 0) {
