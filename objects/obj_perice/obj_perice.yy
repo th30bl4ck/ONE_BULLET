@@ -10,8 +10,8 @@
   "name":"obj_perice",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_upgrades_objects",
-    "path":"folders/Objects/shop_objects/shop_upgrades_objects.yy",
+    "name":"shop_objects",
+    "path":"folders/Objects/shop_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
