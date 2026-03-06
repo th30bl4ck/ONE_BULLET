@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Items_sprites",
-    "path":"folders/Sprites/Items_sprites.yy",
+    "name":"shop_upgrades",
+    "path":"folders/Sprites/Items_sprites/shop_upgrades.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
