@@ -1,5 +1,4 @@
-var orbit_bullet = variable_instance_exists(other, "state") && other.state == "orbit";
-var bullet_pierces = (variable_global_exists("bullet_pierce") && global.bullet_pierce) || orbit_bullet;
+var bullet_pierces = variable_global_exists("bullet_pierce") && global.bullet_pierce;
 
 if (!bullet_pierces) {
     instance_destroy(other); 
