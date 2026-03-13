@@ -167,21 +167,28 @@ var move_down = keyboard_check(ord("S"));
 var move_left = keyboard_check(ord("A"));
 var move_right = keyboard_check(ord("D"));
 
-if (move_up && move_right) {
+if (v == -1 && h == 1) {
     sprite_index = spr_topright;
-} else if (move_right && move_down) {
+}
+else if (v == 1 && h == 1) {
     sprite_index = spr_downright;
-} else if (move_down && move_left) {
+}
+else if (v == 1 && h == -1) {
     sprite_index = spr_downleft;
-} else if (move_left && move_up) {
+}
+else if (v == -1 && h == -1) {
     sprite_index = spr_topleft;
-} else if (move_up) {
+}
+else if (v == -1 && h == 0) {
     sprite_index = spr_back;
-} else if (move_right) {
+}
+else if (v == 0 && h == 1) {
     sprite_index = spr_right;
-} else if (move_down) {
+}
+else if (v == 1 && h == 0) {
     sprite_index = spr_player;
-} else if (move_left) {
+}
+else if (v == 0 && h == -1) {
     sprite_index = spr_left;
 }
 
