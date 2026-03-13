@@ -24,6 +24,8 @@ function open_levelup_menu()
         if (global.choice_2 != global.choice_1) break;
     }
 
+    
+    
     global.levelup_active = true;
 }
 
@@ -60,10 +62,10 @@ function scr_apply_upgrade(choice)
         break;
 
         case "Medkit":
-            with (obj_player)
-            {
-                heal_hp(max_hp - hp);
-            }
+        with (obj_player)
+        {
+        heal_hp(1);
+        }
         break;
 
 
@@ -72,7 +74,7 @@ function scr_apply_upgrade(choice)
     {
         increase_max_hp(1); // adds a new head
     }
-break;
+    break;
 
 
         case "Sticky Finger":
