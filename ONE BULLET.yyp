@@ -182,6 +182,7 @@
     {"id":{"name":"roid","path":"sprites/roid/roid.yy",},},
     {"id":{"name":"side_door","path":"sprites/side_door/side_door.yy",},},
     {"id":{"name":"slugdelet","path":"sprites/slugdelet/slugdelet.yy",},},
+    {"id":{"name":"spawn","path":"sprites/spawn/spawn.yy",},},
     {"id":{"name":"split","path":"sprites/split/split.yy",},},
     {"id":{"name":"spooger_attk","path":"sprites/spooger_attk/spooger_attk.yy",},},
     {"id":{"name":"spooger_bullet","path":"sprites/spooger_bullet/spooger_bullet.yy",},},
