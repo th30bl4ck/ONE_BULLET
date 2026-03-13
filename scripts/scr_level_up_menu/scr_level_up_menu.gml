@@ -9,7 +9,8 @@ function open_levelup_menu()
         "Sticky Finger",
         "Big Boy Boots",
         "Magnet Core",
-        "Trigger Finger"
+        "Trigger Finger",
+        "Long Barrel"
     ];
 
     var upgrade_count = array_length(upgrades);
@@ -45,6 +46,7 @@ function scr_apply_upgrade(choice)
     if (!variable_global_exists("xp_attract_range")) global.xp_attract_range = 64;
     if (!variable_global_exists("recall_speed")) global.recall_speed = 6;
     if (!variable_global_exists("player_bullet_speed")) global.player_bullet_speed = 10;
+    if (!variable_global_exists("bullet_max_distance")) global.bullet_max_distance = 300;
     
     if (ds_map_exists(global.upgrade_counts, choice))
     {
@@ -70,11 +72,11 @@ function scr_apply_upgrade(choice)
 
 
         case "Stim":
-    with (obj_player)
-    {
+        with (obj_player)
+             {
         increase_max_hp(1); // adds a new head
-    }
-    break;
+             }
+         break;
 
 
         case "Sticky Finger":
@@ -92,12 +94,16 @@ function scr_apply_upgrade(choice)
             }
         break;
     
-    case "Magnet Core":
+        case "Magnet Core":
            global.recall_speed += 4;
         break;
     
         case "Trigger Finger":
            global.player_bullet_speed += 2;
+        break;
+        
+        case "Long Barrel":
+            global.bullet_max_distance += 150;
         break;
     }
 }

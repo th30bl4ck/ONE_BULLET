@@ -23,7 +23,8 @@ if (variable_global_exists("upgrade_counts") && global.upgrade_counts != noone)
         "Sticky Finger",
         "Big Boy Boots",
         "Magnet Core",
-        "Trigger Finger"
+        "Trigger Finger",
+        "Long Barrel"
     ];
 
     var base_x = 50;
