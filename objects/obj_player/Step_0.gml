@@ -89,10 +89,12 @@ if (state == "dying") {
         global.upgrade_counts = ds_map_create();
         global.xp_attract_range = 64 + 32;
         global.bullet_pierce = false;
+        global.semantic_orbit = false;
         global.coins = 0;
         game_restart();
     }
 
+    player_health.current = 0;
     hp_display = 0;
 
     exit;
@@ -106,7 +108,9 @@ if (state == "dying") {
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
-hp = clamp(hp, 0, max_hp);
+player_health.current = clamp(player_health.current, 0, player_health.max);
+player_health_sync_aliases();
+
 if (hp <= 0 && state != "dying") {
     state = "dying";
     sprite_index = spr_player_death;
@@ -268,26 +272,49 @@ if (dash_cd_timer > 0) {
 }
 
 
+var semantic_orbit_active = variable_global_exists("semantic_orbit") && global.semantic_orbit;
+
+if (semantic_orbit_active && can_shoot && !instance_exists(bullet_id)) {
+    bullet_id = instance_create_layer(x, y, shoot_layer, obj_bullet);
+    bullet_id.owner = id;
+    bullet_id.state = "orbit";
+}
+
 // ----- Shoot -----
 if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
-
     var dir = point_direction(x, y, mouse_x, mouse_y);
 
-    var bx = x + lengthdir_x(12, dir);
-    var by = y + lengthdir_y(12, dir);
+    if (semantic_orbit_active && instance_exists(bullet_id) && bullet_id.state == "orbit") {
+        var fire_dist = 12;
+        bullet_id.x = x + lengthdir_x(fire_dist, dir);
+        bullet_id.y = y + lengthdir_y(fire_dist, dir);
+        bullet_id.direction = dir;
+        bullet_id.speed = global.player_bullet_speed;
+        bullet_id.state = "fired";
+        bullet_id.owner = id;
+    } else {
+        var bx = x + lengthdir_x(12, dir);
+        var by = y + lengthdir_y(12, dir);
 
-    bullet_id = instance_create_layer(bx, by, shoot_layer, obj_bullet);
-    bullet_id.direction = dir;
-    bullet_id.speed = global.player_bullet_speed;
-    bullet_id.owner = id;
+        bullet_id = instance_create_layer(bx, by, shoot_layer, obj_bullet);
+        bullet_id.direction = dir;
+        bullet_id.speed = global.player_bullet_speed;
+        bullet_id.owner = id;
+    }
 
     can_shoot = false;
 }
 
 // ----- Recall -----
 if (keyboard_check_pressed(ord("R"))) {
-    if (instance_exists(bullet_id) && bullet_id.state == "stuck") {
-        bullet_id.state = "recall";
+    if (instance_exists(bullet_id)) {
+        if (semantic_orbit_active) {
+            if (bullet_id.state != "orbit") {
+                bullet_id.state = "recall";
+            }
+        } else if (bullet_id.state == "stuck") {
+            bullet_id.state = "recall";
+        }
     }
 }
 
@@ -307,61 +334,4 @@ if (combo_count >= 10) {
     game_speed = 0.9;
 }
 
-var count = min(max_hp, array_length(hp_segments));
-
-for (var i = 0; i < count; i++)
-{
-    if (hp_segments[i] > 0 && hp_segments[i] < 8)
-    {
-        hp_segments[i] += 0.25;
-    }
-
-    if (hp_segments[i] >= 8)
-    {
-        hp_segments[i] = 8; // lock to empty frame
-    }
-}
-
-
-function approach(_cur, _tgt, _amt)
-{
-    if (_cur < _tgt) return min(_cur + _amt, _tgt);
-    if (_cur > _tgt) return max(_cur - _amt, _tgt);
-    return _cur;
-}
-
-
-if (array_length(hp_frames) != max_hp) {
-    var old = hp_frames;
-    hp_frames = array_create(max_hp, 0);
-    for (var i = 0; i < min(array_length(old), max_hp); i++) hp_frames[i] = old[i];
-    for (var i = array_length(old); i < max_hp; i++) hp_frames[i] = 0;
-}
-
-var frames = sprite_get_number(spr_healthbar);
-var frame_full  = 0;
-var frame_empty = frames - 1;
-
-var anim_spd = 0.4;
-
-for (var i = 0; i < max_hp; i++)
-{
-    var target = frame_empty;
-
-    if (i < hp)
-    {
-        target = frame_full;
-        hp_segments[i] = 0;
-    }
-    else if (i < array_length(hp_segments))
-    {
-        target = clamp(hp_segments[i], 1, frame_empty);
-    }
-
-    hp_frames[i] = approach(hp_frames[i], target, anim_spd);
-}
-
-hp_display = hp;
-
-
-hp_prev = hp;
+player_health_update_visuals();
