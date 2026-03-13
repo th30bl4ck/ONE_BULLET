@@ -39,10 +39,9 @@ hit_flash_timer = 0;
 combo_count = 0;
 combo_timer = 0;
 combo_timer_max = 120; // 2 seconds at 60fps
-combo_heat = 0;        // 0 → 1 (for visuals)
+combo_heat = 0;        
 
-
-// --- player_health SYSTEM ---
+// --- player_health system ---
 function player_health_approach(_cur, _tgt, _amt)
 {
     if (_cur < _tgt) return min(_cur + _amt, _tgt);

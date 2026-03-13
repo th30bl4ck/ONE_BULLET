@@ -299,6 +299,11 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
         bullet_id.speed = global.player_bullet_speed;
         bullet_id.state = "fired";
         bullet_id.owner = id;
+
+        // range stuff
+        bullet_id.start_x = bullet_id.x;
+        bullet_id.start_y = bullet_id.y;
+        bullet_id.max_distance = global.bullet_max_distance;
     } else {
         var bx = x + lengthdir_x(12, dir);
         var by = y + lengthdir_y(12, dir);
@@ -307,6 +312,12 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
         bullet_id.direction = dir;
         bullet_id.speed = global.player_bullet_speed;
         bullet_id.owner = id;
+
+        // range stuff
+        bullet_id.start_x = bullet_id.x;
+        bullet_id.start_y = bullet_id.y;
+        bullet_id.max_distance = global.bullet_max_distance;
+        bullet_id.state = "fired";
     }
 
     can_shoot = false;
@@ -319,9 +330,9 @@ if (keyboard_check_pressed(ord("R"))) {
             if (bullet_id.state != "orbit") {
                 bullet_id.state = "recall";
             }
-        } else if (bullet_id.state == "stuck") {
-            bullet_id.state = "recall";
-        }
+            } else if (bullet_id.state == "stuck" || bullet_id.state == "stopped") {
+                bullet_id.state = "recall";
+            }
     }
 }
 

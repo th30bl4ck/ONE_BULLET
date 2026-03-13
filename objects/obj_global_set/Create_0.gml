@@ -21,3 +21,5 @@ global.active_note = noone;
 
 global.xp_attract_range += 32;
 attract_range = global.xp_attract_range;
+
+global.bullet_max_distance = 300;
