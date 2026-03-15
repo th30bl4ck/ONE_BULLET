@@ -94,6 +94,7 @@ if (state == "dying") {
         game_restart();
     }
 
+    player_health.current = 0;
     hp_display = 0;
 
     exit;
@@ -107,7 +108,9 @@ if (state == "dying") {
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
-hp = clamp(hp, 0, max_hp);
+player_health.current = clamp(player_health.current, 0, player_health.max);
+player_health_sync_aliases();
+
 if (hp <= 0 && state != "dying") {
     state = "dying";
     sprite_index = spr_player_death;
@@ -164,21 +167,28 @@ var move_down = keyboard_check(ord("S"));
 var move_left = keyboard_check(ord("A"));
 var move_right = keyboard_check(ord("D"));
 
-if (move_up && move_right) {
+if (v == -1 && h == 1) {
     sprite_index = spr_topright;
-} else if (move_right && move_down) {
+}
+else if (v == 1 && h == 1) {
     sprite_index = spr_downright;
-} else if (move_down && move_left) {
+}
+else if (v == 1 && h == -1) {
     sprite_index = spr_downleft;
-} else if (move_left && move_up) {
+}
+else if (v == -1 && h == -1) {
     sprite_index = spr_topleft;
-} else if (move_up) {
+}
+else if (v == -1 && h == 0) {
     sprite_index = spr_back;
-} else if (move_right) {
+}
+else if (v == 0 && h == 1) {
     sprite_index = spr_right;
-} else if (move_down) {
+}
+else if (v == 1 && h == 0) {
     sprite_index = spr_player;
-} else if (move_left) {
+}
+else if (v == 0 && h == -1) {
     sprite_index = spr_left;
 }
 
@@ -289,6 +299,11 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
         bullet_id.speed = global.player_bullet_speed;
         bullet_id.state = "fired";
         bullet_id.owner = id;
+
+        // range stuff
+        bullet_id.start_x = bullet_id.x;
+        bullet_id.start_y = bullet_id.y;
+        bullet_id.max_distance = global.bullet_max_distance;
     } else {
         var bx = x + lengthdir_x(12, dir);
         var by = y + lengthdir_y(12, dir);
@@ -297,6 +312,12 @@ if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(
         bullet_id.direction = dir;
         bullet_id.speed = global.player_bullet_speed;
         bullet_id.owner = id;
+
+        // range stuff
+        bullet_id.start_x = bullet_id.x;
+        bullet_id.start_y = bullet_id.y;
+        bullet_id.max_distance = global.bullet_max_distance;
+        bullet_id.state = "fired";
     }
 
     can_shoot = false;
@@ -309,9 +330,9 @@ if (keyboard_check_pressed(ord("R"))) {
             if (bullet_id.state != "orbit") {
                 bullet_id.state = "recall";
             }
-        } else if (bullet_id.state == "stuck") {
-            bullet_id.state = "recall";
-        }
+            } else if (bullet_id.state == "stuck" || bullet_id.state == "stopped") {
+                bullet_id.state = "recall";
+            }
     }
 }
 
@@ -331,60 +352,4 @@ if (combo_count >= 10) {
     game_speed = 0.9;
 }
 
-var count = min(max_hp, array_length(hp_segments));
-
-for (var i = 0; i < count; i++)
-{
-    if (hp_segments[i] > 0 && hp_segments[i] < 8)
-    {
-        hp_segments[i] += 0.25;
-    }
-
-    if (hp_segments[i] >= 8)
-    {
-        hp_segments[i] = 8; // lock to empty frame
-    }
-}
-
-
-function approach(_cur, _tgt, _amt)
-{
-    if (_cur < _tgt) return min(_cur + _amt, _tgt);
-    if (_cur > _tgt) return max(_cur - _amt, _tgt);
-    return _cur;
-}
-
-
-if (array_length(hp_frames) != max_hp) {
-    var old = hp_frames;
-    hp_frames = array_create(max_hp, 0);
-    for (var i = 0; i < min(array_length(old), max_hp); i++) hp_frames[i] = old[i];
-    for (var i = array_length(old); i < max_hp; i++) hp_frames[i] = 0;
-}
-
-var frames = sprite_get_number(spr_healthbar);
-var frame_full  = 0;
-var frame_empty = frames - 1;
-
-var anim_spd = 0.4;
-
-for (var i = 0; i < max_hp; i++)
-{
-    var target = frame_empty;
-
-    if (i < hp)
-    {
-        target = frame_full;
-        hp_segments[i] = 0;
-    }
-    else if (i < array_length(hp_segments))
-    {
-        target = clamp(hp_segments[i], 1, frame_empty);
-    }
-
-    hp_frames[i] = approach(hp_frames[i], target, anim_spd);
-}
-
-hp_display = hp;
-
-hp_prev = hp;
+player_health_update_visuals();
