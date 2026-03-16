@@ -213,6 +213,7 @@
     {"id":{"name":"spr_left","path":"sprites/spr_left/spr_left.yy",},},
     {"id":{"name":"spr_letter_1st","path":"sprites/spr_letter_1st/spr_letter_1st.yy",},},
     {"id":{"name":"spr_liquid_lead","path":"sprites/spr_liquid_lead/spr_liquid_lead.yy",},},
+    {"id":{"name":"spr_long_barrel","path":"sprites/spr_long_barrel/spr_long_barrel.yy",},},
     {"id":{"name":"spr_magnet_core","path":"sprites/spr_magnet_core/spr_magnet_core.yy",},},
     {"id":{"name":"spr_perice","path":"sprites/spr_perice/spr_perice.yy",},},
     {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},},
