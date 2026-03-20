@@ -330,9 +330,9 @@ if (keyboard_check_pressed(ord("R"))) {
             if (bullet_id.state != "orbit") {
                 bullet_id.state = "recall";
             }
-            } else if (bullet_id.state == "stuck" || bullet_id.state == "stopped") {
-                bullet_id.state = "recall";
-            }
+        } else if (bullet_id.state != "orbit") {
+            bullet_id.state = "recall";
+        }
     }
 }
 
