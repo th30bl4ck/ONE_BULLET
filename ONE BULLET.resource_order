@@ -7,6 +7,7 @@
     {"name":"rooms_3door","order":5,"path":"folders/Rooms/rooms_3door.yy",},
     {"name":"rooms_4door","order":6,"path":"folders/Rooms/rooms_4door.yy",},
     {"name":"shop_rooms","order":3,"path":"folders/Rooms/shop_rooms.yy",},
+    {"name":"random_rooms","order":1,"path":"folders/Scripts/random_rooms.yy",},
     {"name":"splitter_sprites","order":1,"path":"folders/Sprites/enemy_sprites/splitter_sprites.yy",},
   ],
   "ResourceOrderSettings":[
