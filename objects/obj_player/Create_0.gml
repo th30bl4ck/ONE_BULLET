@@ -7,7 +7,7 @@ image_xscale = 1.4;
 image_yscale = 1.4;
 
 dash_speed = 12;
-dash_time = 8;          
+dash_time = 8; 
 dash_timer = 0;
 
 dash_cooldown = 40;      
