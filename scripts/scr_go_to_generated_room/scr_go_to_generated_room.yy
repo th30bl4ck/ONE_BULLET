@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_go_to_generated_room",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_go_to_generated_room",
+  "parent":{
+    "name":"random_rooms",
+    "path":"folders/Scripts/random_rooms.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

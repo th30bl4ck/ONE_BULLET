@@ -1,11 +1,10 @@
-spawnObject = obj_spawnpoint_second_room_1;
-target_room = second_room;
+door_dir = global.DOOR_E;   
+spawn_tag = "west";        
+unlocked = false;
 
-unlocked = false;           // start locked
+sprite_index = side_door;
+image_speed = 0;
+image_index = 0;
 
-sprite_index = side_door;   // set the sprite
-image_speed  = 0;           // stopped while locked
-image_index  = 0;           // closed frame
-
-_unlocked_prev = unlocked;  // internal tracker
+_unlocked_prev = unlocked;
 _opening = false;
