@@ -49,6 +49,7 @@
     {"name":"scr_go_to_room","order":4,"path":"scripts/scr_go_to_room/scr_go_to_room.yy",},
     {"name":"scr_room_helpers","order":1,"path":"scripts/scr_room_helpers/scr_room_helpers.yy",},
     {"name":"alsosludgelet","order":1,"path":"sprites/alsosludgelet/alsosludgelet.yy",},
+    {"name":"side_door","order":2,"path":"sprites/side_door/side_door.yy",},
     {"name":"slugdelet","order":4,"path":"sprites/slugdelet/slugdelet.yy",},
     {"name":"spawn","order":2,"path":"sprites/spawn/spawn.yy",},
     {"name":"split","order":2,"path":"sprites/split/split.yy",},
@@ -61,6 +62,7 @@
     {"name":"spr_liquid_lead","order":5,"path":"sprites/spr_liquid_lead/spr_liquid_lead.yy",},
     {"name":"spr_long_barrel","order":8,"path":"sprites/spr_long_barrel/spr_long_barrel.yy",},
     {"name":"spr_semantic_orbit","order":6,"path":"sprites/spr_semantic_orbit/spr_semantic_orbit.yy",},
+    {"name":"Sprite73","order":1,"path":"sprites/Sprite73/Sprite73.yy",},
     {"name":"trickshot_spr","order":1,"path":"sprites/trickshot_spr/trickshot_spr.yy",},
   ],
 }
