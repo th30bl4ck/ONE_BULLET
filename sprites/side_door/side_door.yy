@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"side_door",
   "bboxMode":0,
-  "bbox_bottom":64,
+  "bbox_bottom":63,
   "bbox_left":53,
   "bbox_right":67,
   "bbox_top":32,
