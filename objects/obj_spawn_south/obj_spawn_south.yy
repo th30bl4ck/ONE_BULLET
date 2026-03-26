@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_room_spawn",
+  "%Name":"obj_spawn_south",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_room_spawn",
+  "name":"obj_spawn_south",
   "overriddenProperties":[],
   "parent":{
     "name":"random_rooms_objects",
