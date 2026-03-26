@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"random_rooms_objects","order":3,"path":"folders/Objects/random_rooms_objects.yy",},
     {"name":"boss_rooms","order":7,"path":"folders/Rooms/boss_rooms.yy",},
     {"name":"menu_rooms","order":2,"path":"folders/Rooms/menu_rooms.yy",},
     {"name":"rooms_1door","order":1,"path":"folders/Rooms/rooms_1door.yy",},
@@ -13,7 +14,10 @@
   "ResourceOrderSettings":[
     {"name":"obj_enemy_splitter_kids_1","order":1,"path":"objects/obj_enemy_splitter_kids_1/obj_enemy_splitter_kids_1.yy",},
     {"name":"obj_room_gen","order":1,"path":"objects/obj_room_gen/obj_room_gen.yy",},
-    {"name":"obj_room_spawn","order":2,"path":"objects/obj_room_spawn/obj_room_spawn.yy",},
+    {"name":"obj_spawn_east","order":2,"path":"objects/obj_spawn_east/obj_spawn_east.yy",},
+    {"name":"obj_spawn_north","order":1,"path":"objects/obj_spawn_north/obj_spawn_north.yy",},
+    {"name":"obj_spawn_south","order":3,"path":"objects/obj_spawn_south/obj_spawn_south.yy",},
+    {"name":"obj_spawn_west","order":4,"path":"objects/obj_spawn_west/obj_spawn_west.yy",},
     {"name":"rm_E_v1","order":2,"path":"rooms/rm_E_v1/rm_E_v1.yy",},
     {"name":"rm_E_v2","order":3,"path":"rooms/rm_E_v2/rm_E_v2.yy",},
     {"name":"rm_ES_v1","order":6,"path":"rooms/rm_ES_v1/rm_ES_v1.yy",},
