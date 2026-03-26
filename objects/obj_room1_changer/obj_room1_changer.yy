@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"side_door",
+    "path":"sprites/side_door/side_door.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
