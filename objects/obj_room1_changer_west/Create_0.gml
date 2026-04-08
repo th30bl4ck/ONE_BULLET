@@ -1,5 +1,5 @@
-door_dir = global.DOOR_E;   
-spawn_tag = "west";        
+door_dir = global.DOOR_W;
+
 unlocked = false;
 
 sprite_index = side_door;

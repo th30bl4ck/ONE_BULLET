@@ -11,7 +11,10 @@
     "name":"random_rooms_objects",
     "path":"folders/Objects/random_rooms_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_room_spawn",
+    "path":"objects/obj_room_spawn/obj_room_spawn.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -14,6 +14,9 @@
   "ResourceOrderSettings":[
     {"name":"obj_enemy_splitter_kids_1","order":1,"path":"objects/obj_enemy_splitter_kids_1/obj_enemy_splitter_kids_1.yy",},
     {"name":"obj_room_gen","order":1,"path":"objects/obj_room_gen/obj_room_gen.yy",},
+    {"name":"obj_room1_changer_north","order":1,"path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},
+    {"name":"obj_room1_changer_southg","order":2,"path":"objects/obj_room1_changer_southg/obj_room1_changer_southg.yy",},
+    {"name":"obj_room1_changer_west","order":3,"path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},
     {"name":"obj_spawn_east","order":2,"path":"objects/obj_spawn_east/obj_spawn_east.yy",},
     {"name":"obj_spawn_north","order":1,"path":"objects/obj_spawn_north/obj_spawn_north.yy",},
     {"name":"obj_spawn_south","order":3,"path":"objects/obj_spawn_south/obj_spawn_south.yy",},

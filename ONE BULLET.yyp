@@ -77,7 +77,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.221",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"ONE BULLET",
   "resources":[
@@ -107,7 +107,10 @@
     {"id":{"name":"obj_quit_button","path":"objects/obj_quit_button/obj_quit_button.yy",},},
     {"id":{"name":"obj_room_gen","path":"objects/obj_room_gen/obj_room_gen.yy",},},
     {"id":{"name":"obj_room_spawn","path":"objects/obj_room_spawn/obj_room_spawn.yy",},},
-    {"id":{"name":"obj_room1_changer","path":"objects/obj_room1_changer/obj_room1_changer.yy",},},
+    {"id":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},},
+    {"id":{"name":"obj_room1_changer_north","path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},},
+    {"id":{"name":"obj_room1_changer_southg","path":"objects/obj_room1_changer_southg/obj_room1_changer_southg.yy",},},
+    {"id":{"name":"obj_room1_changer_west","path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},},
     {"id":{"name":"obj_room2_changer_back","path":"objects/obj_room2_changer_back/obj_room2_changer_back.yy",},},
     {"id":{"name":"obj_room2_changer_forward","path":"objects/obj_room2_changer_forward/obj_room2_changer_forward.yy",},},
     {"id":{"name":"obj_room3_changer_back","path":"objects/obj_room3_changer_back/obj_room3_changer_back.yy",},},
