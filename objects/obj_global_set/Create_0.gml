@@ -1,5 +1,3 @@
-global.xp = 0;
-
 global.level = 1;
 global.xp = 0;
 
@@ -23,3 +21,19 @@ global.xp_attract_range += 32;
 attract_range = global.xp_attract_range;
 
 global.bullet_max_distance = 300;
+
+global.DOOR_N = 1;
+global.DOOR_E = 2;
+global.DOOR_S = 4;
+global.DOOR_W = 8;
+
+// Procedural generation setup
+global.grid_w = 4;
+global.grid_h = 4;
+
+// starting position in the grid
+global.map_x = 1;
+global.map_y = 1;
+
+// where player should spawn when entering a room
+global.entry_spawn_tag = "";

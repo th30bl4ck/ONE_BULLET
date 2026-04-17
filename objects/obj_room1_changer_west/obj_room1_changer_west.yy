@@ -13,7 +13,10 @@
     "name":"starting_room_objects",
     "path":"folders/Objects/starting_room_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_door_parent",
+    "path":"objects/obj_door_parent/obj_door_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

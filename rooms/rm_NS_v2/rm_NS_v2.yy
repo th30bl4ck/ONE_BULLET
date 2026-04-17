@@ -10,10 +10,10 @@
     {"name":"inst_37F423BC2_1_1_1","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
     {"name":"inst_5594D31F2_1_1_1","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
     {"name":"inst_25E58737_2_1_1_1","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
-    {"name":"inst_7398F24F2_1_1_1","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
-    {"name":"inst_5D8E8B4B1_1_1","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
     {"name":"inst_36EAB945","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
     {"name":"inst_4CCB63FD","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
+    {"name":"inst_6F7BE316","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
+    {"name":"inst_1A28A80F","path":"rooms/rm_NS_v2/rm_NS_v2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,8 +27,8 @@
           1,44,-19,51,5,44,51,51,49,49,-18,51,1,52,-4,53,-4,51,-11,53,1,1879048244,-4,49,-103,51,
         ],"TileDataFormat":1,},"tilesetId":{"name":"basic_tileset","path":"tilesets/basic_tileset/basic_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_7398F24F2_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7398F24F2_1_1_1","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":3.25,"scaleY":4.25,"x":544.0,"y":480.0,},
-        {"$GMRInstance":"v4","%Name":"inst_5D8E8B4B1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D8E8B4B1_1_1","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":3.25,"scaleY":4.25,"x":736.0,"y":256.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6F7BE316","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F7BE316","objectId":{"name":"obj_room1_changer_southg","path":"objects/obj_room1_changer_southg/obj_room1_changer_southg.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":3.5,"scaleY":4.75,"x":256.0,"y":704.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1A28A80F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1A28A80F","objectId":{"name":"obj_room1_changer_north","path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":3.75,"scaleY":4.25,"x":1024.0,"y":32.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"GUI","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"GUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"Effect_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_1","properties":[],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

@@ -12,8 +12,9 @@
     {"name":"splitter_sprites","order":1,"path":"folders/Sprites/enemy_sprites/splitter_sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_door_parent","order":4,"path":"objects/obj_door_parent/obj_door_parent.yy",},
     {"name":"obj_enemy_splitter_kids_1","order":1,"path":"objects/obj_enemy_splitter_kids_1/obj_enemy_splitter_kids_1.yy",},
-    {"name":"obj_room_gen","order":1,"path":"objects/obj_room_gen/obj_room_gen.yy",},
+    {"name":"obj_game_controller","order":4,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"obj_room1_changer_north","order":1,"path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},
     {"name":"obj_room1_changer_southg","order":2,"path":"objects/obj_room1_changer_southg/obj_room1_changer_southg.yy",},
     {"name":"obj_room1_changer_west","order":3,"path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},

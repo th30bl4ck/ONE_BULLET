@@ -1,4 +1,4 @@
-door_dir = global.DOOR_W;
+door_dir = global.DOOR_E;
 
 unlocked = false;
 
@@ -8,5 +8,3 @@ image_index = 0;
 
 _unlocked_prev = unlocked;
 _opening = false;
-
-

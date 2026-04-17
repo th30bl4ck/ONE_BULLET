@@ -1,20 +1,22 @@
 function scr_assign_room_assets()
 {
-    for (var yx = 0; y < grid_h; y++)
+    for (var yy = 0; yy < global.grid_h; yy++)
     {
-        for (var xy = 0; x < grid_w; x++)
+        for (var xx = 0; xx < global.grid_w; xx++)
         {
-            if (!layout[y][x].used) continue;
-
-            var door_mask = layout[y][x].doors;
-            var chosen_room = scr_pick_room_by_doors(door_mask);
-
-            if (chosen_room == -1)
+            if (global.layout[yy][xx].used)
             {
-                show_debug_message("No room found for door mask: " + string(door_mask));
+global.layout[yy][xx].room_asset = choose(
+    rm_E_v1,
+    rm_E_v2,
+    rm_N_v1,
+    rm_N_v2,
+    rm_S_v1,
+    rm_S_v2,
+    rm_W_v1,
+    rm_W_v2
+);
             }
-
-            layout[y][x].room_asset = chosen_room;
         }
     }
 }

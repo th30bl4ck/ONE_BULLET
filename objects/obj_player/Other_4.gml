@@ -14,20 +14,54 @@ if variable_global_exists("spawn_object") && global.spawn_object != undefined {
 can_shoot = true;
 bullet_id = noone;
 
-if (variable_global_exists("entry_spawn_tag"))
+
+
+show_debug_message("ROOM START");
+show_debug_message("Spawn tag: " + string(global.entry_spawn_tag));
+
+var found = false;
+
+with (obj_room_spawn)
 {
-    var i, inst;
-    for (i = 0; i < instance_number(obj_room_spawn); i += 1)
+    if (spawn_id == global.entry_spawn_tag)
     {
-        inst = instance_find(obj_room_spawn, i);
-        if (inst != noone)
-        {
-            if (inst.spawn_id == global.entry_spawn_tag)
-            {
-                x = inst.x;
-                y = inst.y;
-                break;
-            }
-        }
+        other.x = x;
+        other.y = y;
+        found = true;
     }
 }
+
+if (!found)
+{
+    show_debug_message("NO MATCHING SPAWN FOUND");
+}
+else
+{
+    show_debug_message("SPAWN SUCCESS");
+}
+
+// clear AFTER using
+global.entry_spawn_tag = "";
+
+
+show_debug_message("ROOM START");
+show_debug_message("Spawn tag: " + string(global.entry_spawn_tag));
+
+var found = false;
+
+with (obj_room_spawn)
+{
+    if (spawn_id == global.entry_spawn_tag)
+    {
+        other.x = x;
+        other.y = y;
+        found = true;
+    }
+}
+
+if (!found)
+{
+    show_debug_message("NO MATCHING SPAWN FOUND");
+}
+
+global.entry_spawn_tag = "";

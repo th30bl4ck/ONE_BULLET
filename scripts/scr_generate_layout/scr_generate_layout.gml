@@ -3,7 +3,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
     var frontier = [];
     var placed = 1;
 
-    layout[_start_y][_start_x].used = true;
+    global.layout[_start_y][_start_x].used = true;
     array_push(frontier, [_start_x, _start_y]);
 
     while (array_length(frontier) > 0 && placed < _target_count)
@@ -20,7 +20,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
             [-1,  0, global.DOOR_W ]
         ];
 
-        // shuffle a bit
+        // shuffle
         for (var i = 0; i < array_length(dirs); i++)
         {
             var j = irandom(array_length(dirs) - 1);
@@ -40,16 +40,18 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
             var nx = cx + dx;
             var ny = cy + dy;
 
-            if (nx < 0 || nx >= grid_w || ny < 0 || ny >= grid_h) continue;
-            if (layout[ny][nx].used) continue;
+            if (nx < 0 || nx >= global.grid_w || ny < 0 || ny >= global.grid_h) continue;
 
-            // random chance to place here
+            if (global.layout[ny][nx].used) continue;
+
+            // random chance
             if (irandom(100) > 55) continue;
 
-            layout[ny][nx].used = true;
+            // mark used
+            global.layout[ny][nx].used = true;
 
-            layout[cy][cx].doors |= door;
-            layout[ny][nx].doors |= scr_opposite_door(door);
+            global.layout[cy][cx].doors |= dir_flag;
+            global.layout[ny][nx].doors |= scr_opposite_door(dir_flag);
 
             array_push(frontier, [nx, ny]);
             placed++;
