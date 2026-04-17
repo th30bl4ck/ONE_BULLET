@@ -35,5 +35,7 @@ global.grid_h = 4;
 global.map_x = 1;
 global.map_y = 1;
 
-// where player should spawn when entering a room
-global.entry_spawn_tag = "";
+if (!variable_global_exists("entry_spawn_tag"))
+{
+    global.entry_spawn_tag = "";
+}

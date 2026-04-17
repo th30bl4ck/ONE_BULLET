@@ -27,7 +27,7 @@ with (obj_room_spawn)
     {
         other.x = x;
         other.y = y;
-        found = true;
+        other.found = true;
     }
 }
 
@@ -43,25 +43,3 @@ else
 // clear AFTER using
 global.entry_spawn_tag = "";
 
-
-show_debug_message("ROOM START");
-show_debug_message("Spawn tag: " + string(global.entry_spawn_tag));
-
-var found = false;
-
-with (obj_room_spawn)
-{
-    if (spawn_id == global.entry_spawn_tag)
-    {
-        other.x = x;
-        other.y = y;
-        found = true;
-    }
-}
-
-if (!found)
-{
-    show_debug_message("NO MATCHING SPAWN FOUND");
-}
-
-global.entry_spawn_tag = "";

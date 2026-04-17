@@ -23,11 +23,11 @@
   "layers":[
     {"$GMRTileLayer":"","%Name":"tileset_wall","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset_wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
           -44,0,1,19,-39,26,-3,0,1,19,-39,26,-3,0,2,19,28,-30,29,-4,26,-2,29,2,805306420,26,-3,0,2,19,36,-36,26,
-          2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,19,
-          36,-38,26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-36,26,2,36,26,-3,
-          0,2,19,36,-36,26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,1,19,-37,26,2,36,26,-3,0,1,19,-37,26,2,36,
-          26,-3,0,1,19,-37,26,2,36,26,-3,0,1,19,-37,26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,19,36,-36,26,
-          2,36,26,-4,0,1,52,-5,53,-4,26,-27,53,2,805306396,26,-88,0,
+          2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,19,36,-5,26,1,27,-30,26,2,36,26,-3,0,2,19,36,-36,26,2,36,
+          26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-38,26,-3,0,2,19,36,-36,
+          26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,1,19,-37,26,2,36,26,-3,0,1,19,
+          -37,26,2,36,26,-3,0,1,19,-37,26,2,36,26,-3,0,1,19,-37,26,2,36,26,-3,0,2,19,36,-36,26,2,36,26,-3,0,2,
+          19,36,-36,26,2,36,26,-4,0,1,52,-5,53,-4,26,-27,53,2,805306396,26,-88,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"basic_tileset","path":"tilesets/basic_tileset/basic_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_735D090F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_735D090F","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.25,"scaleY":4.25,"x":1280.0,"y":320.0,},
