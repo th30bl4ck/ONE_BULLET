@@ -253,6 +253,7 @@
     {"id":{"name":"spr_XP","path":"sprites/spr_XP/spr_XP.yy",},},
     {"id":{"name":"Sprite37","path":"sprites/Sprite37/Sprite37.yy",},},
     {"id":{"name":"Sprite52","path":"sprites/Sprite52/Sprite52.yy",},},
+    {"id":{"name":"Sprite73","path":"sprites/Sprite73/Sprite73.yy",},},
     {"id":{"name":"stanered","path":"sprites/stanered/stanered.yy",},},
     {"id":{"name":"tile_set","path":"sprites/tile_set/tile_set.yy",},},
     {"id":{"name":"trickshot_spr","path":"sprites/trickshot_spr/trickshot_spr.yy",},},
