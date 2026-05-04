@@ -29,7 +29,7 @@ if (!wave_in_progress)
         }
 
         // Unlock the exit to the next room
-        with (obj_room1_changer)
+        with (obj_door_parent)
         {
             unlocked = true;
         }

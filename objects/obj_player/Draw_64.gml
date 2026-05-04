@@ -1,5 +1,8 @@
 
-if (!variable_instance_exists(id, "player_health")) exit;
+if (!variable_global_exists("player_health")) exit;
+if (!is_struct(global.player_health)) exit;
+
+var player_health = global.player_health;
 
 if (array_length(player_health.frames) != player_health.max || array_length(player_health.segments) != player_health.max)
 {

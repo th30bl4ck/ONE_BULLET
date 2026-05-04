@@ -1,6 +1,6 @@
 door_dir = global.DOOR_S;
 
-unlocked = false;
+unlocked = true;
 
 sprite_index = side_door;
 image_speed = 0;

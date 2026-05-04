@@ -23,5 +23,14 @@ function scr_go_to_room(_dir)
     global.map_x = nx;
     global.map_y = ny;
 
+    
+    show_debug_message("SET TAG BEFORE ROOM CHANGE: " + target_spawn);
+
+    global.entry_spawn_tag = target_spawn;
+
+    show_debug_message("TAG STORED: " + string(global.entry_spawn_tag));
+
+    room_goto(next_room);
+    
     room_goto(next_room);
 }
