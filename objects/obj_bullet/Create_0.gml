@@ -12,3 +12,5 @@ image_angle = direction - 90;
 start_x = x;
 start_y = y;
 max_distance = 300;
+
+scr_refresh_wall_tilemap();

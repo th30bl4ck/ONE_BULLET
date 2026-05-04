@@ -123,7 +123,7 @@ if (state == "dying") {
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
-global.player_health.current = clamp(global.player_health.current, 0, player_health.max);
+global.player_health.current = clamp(global.player_health.current, 0, global.player_health.max);
 player_health_sync_aliases();
 
 if (hp <= 0 && state != "dying") {

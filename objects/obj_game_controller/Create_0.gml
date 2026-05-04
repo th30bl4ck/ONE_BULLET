@@ -58,7 +58,7 @@ show_debug_message("LAYOUT CREATED");
 // ========================
 // GENERATE + ASSIGN
 // ========================
-scr_generate_layout(global.map_x, global.map_y, 10);
+scr_generate_layout(global.map_x, global.map_y, 15);
 show_debug_message("LAYOUT GENERATED");
 
 scr_assign_room_assets();

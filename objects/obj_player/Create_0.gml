@@ -17,6 +17,25 @@ if (!variable_global_exists("player_health"))
         global.player_health.frames[i] = global.player_health.frame_full;
     }
 }
+else
+{
+    // Recover from death/restart states and ensure arrays match max HP.
+    if (!is_array(global.player_health.segments) || !is_array(global.player_health.frames))
+    {
+        global.player_health.segments = array_create(global.player_health.max, 0);
+        global.player_health.frames = array_create(global.player_health.max, global.player_health.frame_full);
+    }
+
+    if (global.player_health.current <= 0)
+    {
+        global.player_health.current = global.player_health.max;
+        for (var i = 0; i < global.player_health.max; i++)
+        {
+            global.player_health.segments[i] = 0;
+            global.player_health.frames[i] = global.player_health.frame_full;
+        }
+    }
+}
 
 
 // ===============
@@ -212,3 +231,40 @@ increase_max_hp = function(amount)
 {
     return player_health_increase_max(amount);
 };
+
+// =====================
+// COMBO STATE DEFAULTS
+// =====================
+combo_count = 0;
+combo_heat = 0;
+combo_timer_max = room_speed; // one second at current room speed
+combo_timer = 0;
+
+// =====================
+// PLAYER STATE DEFAULTS
+// =====================
+state = "alive";
+input_locked = false;
+invuln = 0;
+hit_flash_timer = 0;
+
+// Base movement and dash tuning used by Step and upgrades.
+move_speed = 3;
+is_dashing = false;
+dash_speed = 10;
+dash_time = 8;
+dash_timer = 0;
+dash_cooldown = 45;
+dash_cd_timer = 0;
+dash_dir = 0;
+
+can_shoot = true;
+bullet_id = noone;
+
+death_cam_locked = false;
+death_cam_x = x;
+death_cam_y = y;
+
+// Fallback bullet spawn layer used in Step when firing/orbiting.
+shoot_layer = layer;
+if (layer_exists("Instances")) shoot_layer = "Instances";

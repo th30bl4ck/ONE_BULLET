@@ -1,3 +1,5 @@
+scr_refresh_wall_tilemap();
+
 if (state == "stuck") {
     speed = 0;
     solid = false;
@@ -6,8 +8,7 @@ if (state == "stuck") {
         state = "recall";
     }
 
-    // Player pickup works reliably here
-    if (place_meeting(x, y, obj_player)) {
+    if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)) {
         with (obj_player) {
             can_shoot = true;
         }
@@ -24,7 +25,7 @@ if (state == "stopped") {
         state = "recall";
     }
 
-    if (place_meeting(x, y, obj_player)) {
+    if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)) {
         with (obj_player) {
             can_shoot = true;
         }
@@ -43,18 +44,13 @@ if (state == "fired") {
         state = "stopped";
     }
 
-    // Stick into wall
+    // Wall tiles + obj_wall instances (same as player movement).
     if (state == "fired") {
-        if (variable_global_exists("wall_tilemap_id") && global.wall_tilemap_id != noone) {
-            if (tilemap_get_at_pixel(global.wall_tilemap_id, bbox_left, bbox_top) != 0
-            || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_top) != 0
-            || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_left, bbox_bottom) != 0
-            || tilemap_get_at_pixel(global.wall_tilemap_id, bbox_right, bbox_bottom) != 0) {
-                speed = 0;
-                hspeed = 0;
-                vspeed = 0;
-                state = "stuck";
-            }
+        if (scr_wall_overlaps_rect(bbox_left, bbox_top, bbox_right, bbox_bottom)) {
+            speed = 0;
+            hspeed = 0;
+            vspeed = 0;
+            state = "stuck";
         }
     }
 }
@@ -63,7 +59,7 @@ if (state == "recall") {
     var target = noone;
     if (instance_exists(owner)) {
         target = owner;
-    } else if (instance_exists(global.player)) {
+    } else if (variable_global_exists("player") && instance_exists(global.player)) {
         target = global.player;
     }
 
@@ -72,7 +68,7 @@ if (state == "recall") {
         speed = global.recall_speed;
     }
 
-    if (place_meeting(x, y, obj_player)) {
+    if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)) {
         with (obj_player) {
             can_shoot = true;
         }
