@@ -6,8 +6,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"starting_room_objects",
-    "path":"folders/Objects/starting_room_objects.yy",
+    "name":"universal_objects",
+    "path":"folders/Objects/universal_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
