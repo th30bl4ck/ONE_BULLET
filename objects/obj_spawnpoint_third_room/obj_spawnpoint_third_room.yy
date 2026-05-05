@@ -6,8 +6,8 @@
   "name":"obj_spawnpoint_third_room",
   "overriddenProperties":[],
   "parent":{
-    "name":"third_room_objects",
-    "path":"folders/Objects/third_room_objects.yy",
+    "name":"universal_objects",
+    "path":"folders/Objects/universal_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
