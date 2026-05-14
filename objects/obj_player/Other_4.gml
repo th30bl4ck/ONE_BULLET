@@ -57,7 +57,7 @@ else
     show_debug_message("SPAWN SUCCESS");
 }
 
-// clear AFTER using
+// clear after using
 global.entry_spawn_tag = "";
 
 global.note_open = false;

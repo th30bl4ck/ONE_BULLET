@@ -2,9 +2,14 @@ function open_levelup_menu()
 {
     if (global.levelup_active) return;
 
+    var can_offer_medkit = true;
+    if (variable_global_exists("player_health") && is_struct(global.player_health))
+    {
+        can_offer_medkit = global.player_health.current < global.player_health.max;
+    }
+
     var upgrades = [
         "Rollershoes",
-        "Medkit",
         "Stim",
         "Sticky Finger",
         "Big Boy Boots",
@@ -12,6 +17,11 @@ function open_levelup_menu()
         "Trigger Finger",
         "Long Barrel"
     ];
+
+    if (can_offer_medkit)
+    {
+        array_push(upgrades, "Medkit");
+    }
 
     var upgrade_count = array_length(upgrades);
 
