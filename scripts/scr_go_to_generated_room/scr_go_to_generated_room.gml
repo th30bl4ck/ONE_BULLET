@@ -66,6 +66,7 @@ function scr_go_to_generated_room(_dir)
     // store everything safely
     global.map_x = next_x;
     global.map_y = next_y;
+    global.layout[next_y][next_x].visited = true;
 
     global.entry_spawn_tag = target_spawn;
     global.next_room = next_room;

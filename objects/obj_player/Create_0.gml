@@ -260,6 +260,8 @@ dash_dir = 0;
 
 can_shoot = true;
 bullet_id = noone;
+bullet_pickup_shoot_delay = 16;
+bullet_pickup_shoot_timer = 8;
 
 death_cam_locked = false;
 death_cam_x = x;
