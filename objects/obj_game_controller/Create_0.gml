@@ -47,6 +47,7 @@ for (var yy = 0; yy < global.grid_h; yy++)
     {
         global.layout[yy][xx] = {
             used: false,
+            visited: false,
             doors: 0,
             room_asset: -1
         };
@@ -59,6 +60,7 @@ show_debug_message("LAYOUT CREATED");
 // GENERATE + ASSIGN
 // ========================
 scr_generate_layout(global.map_x, global.map_y, 15);
+global.layout[global.map_y][global.map_x].visited = true;
 show_debug_message("LAYOUT GENERATED");
 
 scr_assign_room_assets();

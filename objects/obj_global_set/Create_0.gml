@@ -85,3 +85,10 @@ global.enemy_anchor_offsets = [
     [0, -64],
     [0, 64]
 ];
+
+global.room_lighting_enabled = true;
+global.room_lighting_time_uniform = shader_get_uniform(shader_normal_room, "u_time");
+global.room_lighting_view_pos_uniform = shader_get_uniform(shader_normal_room, "u_view_pos");
+global.room_lighting_view_size_uniform = shader_get_uniform(shader_normal_room, "u_view_size");
+global.room_lighting_screen_size_uniform = shader_get_uniform(shader_normal_room, "u_screen_size");
+global.room_lighting_room_size_uniform = shader_get_uniform(shader_normal_room, "u_room_size");

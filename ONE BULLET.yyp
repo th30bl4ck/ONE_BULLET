@@ -184,6 +184,7 @@
     {"id":{"name":"scr_rooms_init","path":"scripts/scr_rooms_init/scr_rooms_init.yy",},},
     {"id":{"name":"scr_shop","path":"scripts/scr_shop/scr_shop.yy",},},
     {"id":{"name":"scr_spawn_enemy_at_edge","path":"scripts/scr_spawn_enemy_at_edge/scr_spawn_enemy_at_edge.yy",},},
+    {"id":{"name":"shader_normal_room","path":"shaders/shader_normal_room/shader_normal_room.yy",},},
     {"id":{"name":"alsosludgelet","path":"sprites/alsosludgelet/alsosludgelet.yy",},},
     {"id":{"name":"animation","path":"sprites/animation/animation.yy",},},
     {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},

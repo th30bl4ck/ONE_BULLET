@@ -10,7 +10,9 @@ if (state == "stuck") {
 
     if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)) {
         with (obj_player) {
-            can_shoot = true;
+            can_shoot = false;
+            bullet_id = noone;
+            bullet_pickup_shoot_timer = bullet_pickup_shoot_delay;
         }
         instance_destroy();
     }
@@ -27,7 +29,9 @@ if (state == "stopped") {
 
     if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)) {
         with (obj_player) {
-            can_shoot = true;
+            can_shoot = false;
+            bullet_id = noone;
+            bullet_pickup_shoot_timer = bullet_pickup_shoot_delay;
         }
         instance_destroy();
     }
@@ -70,7 +74,9 @@ if (state == "recall") {
 
     if (collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, obj_player, false, true)) {
         with (obj_player) {
-            can_shoot = true;
+            can_shoot = false;
+            bullet_id = noone;
+            bullet_pickup_shoot_timer = bullet_pickup_shoot_delay;
         }
         instance_destroy();
     }
