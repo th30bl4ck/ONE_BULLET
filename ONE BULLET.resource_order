@@ -20,7 +20,7 @@
     {"name":"obj_game_controller","order":4,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"obj_pause_machanic","order":3,"path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},
     {"name":"obj_room1_changer_north","order":1,"path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},
-    {"name":"obj_room1_changer_southg","order":2,"path":"objects/obj_room1_changer_southg/obj_room1_changer_southg.yy",},
+    {"name":"obj_room1_changer_south","order":2,"path":"objects/obj_room1_changer_south/obj_room1_changer_south.yy",},
     {"name":"obj_room1_changer_west","order":3,"path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},
     {"name":"obj_scorepopup","order":2,"path":"objects/obj_scorepopup/obj_scorepopup.yy",},
     {"name":"obj_slideTransition","order":1,"path":"objects/obj_slideTransition/obj_slideTransition.yy",},
