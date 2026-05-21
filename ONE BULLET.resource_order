@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"items_objects","order":5,"path":"folders/Objects/items_objects.yy",},
     {"name":"random_rooms_objects","order":3,"path":"folders/Objects/random_rooms_objects.yy",},
     {"name":"boss_rooms","order":7,"path":"folders/Rooms/boss_rooms.yy",},
     {"name":"menu_rooms","order":2,"path":"folders/Rooms/menu_rooms.yy",},
@@ -10,10 +11,12 @@
     {"name":"shop_rooms","order":3,"path":"folders/Rooms/shop_rooms.yy",},
     {"name":"random_rooms","order":1,"path":"folders/Scripts/random_rooms.yy",},
     {"name":"splitter_sprites","order":1,"path":"folders/Sprites/enemy_sprites/splitter_sprites.yy",},
+    {"name":"items_sprites_in_game","order":1,"path":"folders/Sprites/items_sprites_in_game.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_door_parent","order":4,"path":"objects/obj_door_parent/obj_door_parent.yy",},
     {"name":"obj_enemy_splitter_kids_1","order":1,"path":"objects/obj_enemy_splitter_kids_1/obj_enemy_splitter_kids_1.yy",},
+    {"name":"obj_f_f_f","order":1,"path":"objects/obj_f_f_f/obj_f_f_f.yy",},
     {"name":"obj_game_controller","order":4,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"obj_pause_machanic","order":3,"path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},
     {"name":"obj_room1_changer_north","order":1,"path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},
@@ -73,6 +76,10 @@
     {"name":"spr_dash_right","order":6,"path":"sprites/spr_dash_right/spr_dash_right.yy",},
     {"name":"spr_enemy_splitter","order":3,"path":"sprites/spr_enemy_splitter/spr_enemy_splitter.yy",},
     {"name":"spr_exorsizm","order":3,"path":"sprites/spr_exorsizm/spr_exorsizm.yy",},
+    {"name":"spr_f_f_f_build_up_L","order":2,"path":"sprites/spr_f_f_f_build_up_L/spr_f_f_f_build_up_L.yy",},
+    {"name":"spr_f_f_f_build_up_R","order":3,"path":"sprites/spr_f_f_f_build_up_R/spr_f_f_f_build_up_R.yy",},
+    {"name":"spr_f_f_f_right","order":1,"path":"sprites/spr_f_f_f_right/spr_f_f_f_right.yy",},
+    {"name":"spr_fantastic_flesh_fel","order":9,"path":"sprites/spr_fantastic_flesh_fel/spr_fantastic_flesh_fel.yy",},
     {"name":"spr_forward","order":7,"path":"sprites/spr_forward/spr_forward.yy",},
     {"name":"spr_hooked","order":4,"path":"sprites/spr_hooked/spr_hooked.yy",},
     {"name":"spr_jogging_shorts","order":8,"path":"sprites/spr_jogging_shorts/spr_jogging_shorts.yy",},
