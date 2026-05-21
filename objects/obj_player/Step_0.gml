@@ -23,7 +23,7 @@ if (global.note_open) exit;
 
 
 // =========================
-// TILEMAP SETUP (FIXED)
+// TILEMAP SETUP 
 // =========================
 if (!variable_global_exists("wall_tilemap_id")) {
     global.wall_tilemap_id = noone;
@@ -109,10 +109,7 @@ if (state == "dying") {
     exit;
 }
 
-
-// =========================
-// NORMAL UPDATE
-// =========================
+
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
