@@ -10,7 +10,6 @@ if (arena_complete) exit;
 //------------------------------------
 if (!wave_in_progress)
 {
-    // If all waves are done, complete arena
     if (current_wave >= max_waves)
     {
         arena_complete = true;
@@ -55,7 +54,7 @@ if (!wave_in_progress)
 
 
 //------------------------------------
-// WAVE ACTIVE → SPAWN ENEMIES
+// WAVE ACTIVE SPAWN ENEMIES
 //------------------------------------
 if (wave_enemy_spawned < wave_enemy_total)
 {
@@ -85,7 +84,6 @@ if (spawn_timer >= spawn_delay)
         obj_enemy_splitter
     );
 
-    // CREATE + ASSIGN ANCHOR (Step 2)
     var e = instance_create_layer(xx, yy, "Instances", enemy_to_spawn);
     scr_assign_anchor(e);
 
@@ -95,7 +93,7 @@ if (spawn_timer >= spawn_delay)
 else
 {
     //------------------------------------
-    // WAVE COMPLETE → MOVE TO NEXT WAVE
+    // WAVE COMPLETE MOVE TO NEXT WAVE
     //------------------------------------
     if (instance_number(obj_enemy_walker) == 0 &&
         instance_number(obj_enemy_dasher) == 0 &&
