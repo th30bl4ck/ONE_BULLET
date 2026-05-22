@@ -7,6 +7,10 @@ if (instance_number(obj_game_controller) > 1)
 
 show_debug_message("CONTROLLER CREATE RUNNING");
 
+// Seed GameMaker's RNG before procedural generation so each new run gets a fresh layout.
+randomize();
+show_debug_message("RNG SEED: " + string(random_get_seed()));
+
 // ========================
 // GLOBAL INIT 
 // ========================

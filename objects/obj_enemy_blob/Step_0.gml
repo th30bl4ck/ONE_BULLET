@@ -4,7 +4,6 @@ y += lengthdir_y(spd, dir);
 life--;
 if (life <= 0) instance_destroy();
 
-// if you have walls, change obj_wall to your wall object name
 if (instance_exists(obj_wall) && place_meeting(x, y, obj_wall)) {
     instance_destroy();
 }
@@ -26,7 +25,7 @@ if (place_meeting(x, y, obj_player)) {
      
         }
 
-        // if HP is zero or below → start death
+        // if HP is zero or below start death
         if (hp <= 0) {
             state = "dying";
             sprite_index = spr_player_death;
