@@ -26,7 +26,7 @@ if (place_meeting(x, y, obj_player)) {
 
         }
 
-        // if HP is zero or below → start death
+        // if HP is zero or below start death
         if (hp <= 0) {
             state = "dying";
             sprite_index = spr_player_death;
