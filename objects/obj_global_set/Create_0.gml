@@ -30,12 +30,14 @@ for (var i = 0; i < global.player_health.max; i++)
     global.player_health.frames[i] = global.player_health.frame_full;
 }
 
+// stats
 global.xp_attract_range = 64;
 global.bullet_pierce = false;
 global.recall_speed = 6;
 global.player_bullet_speed = 10;
 global.bullet_max_distance = 300;
 global.semantic_orbit = false;
+global.the_jerk = false;
 game_speed = 1;
 
 if (variable_global_exists("upgrade_counts") && ds_exists(global.upgrade_counts, ds_type_map))
