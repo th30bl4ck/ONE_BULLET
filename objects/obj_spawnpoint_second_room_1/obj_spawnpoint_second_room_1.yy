@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"second_room_objects",
-    "path":"folders/Objects/second_room_objects.yy",
+    "path":"folders/Objects/random_rooms_objects/second_room_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

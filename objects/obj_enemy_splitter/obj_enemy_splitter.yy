@@ -11,13 +11,14 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy_shooter","path":"objects/obj_enemy_shooter/obj_enemy_shooter.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy_splitter_kids","path":"objects/obj_enemy_splitter_kids/obj_enemy_splitter_kids.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_enemy_splitter",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy_objects",
-    "path":"folders/Objects/enemy_objects.yy",
+    "name":"splitter_objs",
+    "path":"folders/Objects/enemy_objects/splitter_objs.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_parent",

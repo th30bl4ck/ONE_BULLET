@@ -1,3 +1,9 @@
-y = ystart + 4;
+if (!pressed)
+{
+    pressed = true;
+    press_timer = press_wait;
 
-alarm[0] = 10
+    sprite_index = spr_pressed;
+    image_index = 0;
+    image_speed = 1;
+}
