@@ -32,6 +32,8 @@ for (var i = 0; i < global.player_health.max; i++)
 
 // stats
 global.xp_attract_range = 64;
+global.player_move_speed_bonus = 0;
+global.player_dash_time_bonus = 0;
 global.bullet_pierce = false;
 global.recall_speed = 6;
 global.player_bullet_speed = 10;

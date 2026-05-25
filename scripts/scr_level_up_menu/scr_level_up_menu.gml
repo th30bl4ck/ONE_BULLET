@@ -54,6 +54,8 @@ function scr_apply_upgrade(choice)
     }
 
     if (!variable_global_exists("xp_attract_range")) global.xp_attract_range = 64;
+    if (!variable_global_exists("player_move_speed_bonus")) global.player_move_speed_bonus = 0;
+    if (!variable_global_exists("player_dash_time_bonus")) global.player_dash_time_bonus = 0;
     if (!variable_global_exists("recall_speed")) global.recall_speed = 6;
     if (!variable_global_exists("player_bullet_speed")) global.player_bullet_speed = 10;
     if (!variable_global_exists("bullet_max_distance")) global.bullet_max_distance = 300;
@@ -70,7 +72,8 @@ function scr_apply_upgrade(choice)
     switch (choice)
     {
         case "Rollershoes":
-            with (obj_player) { move_speed += 1; }
+            global.player_move_speed_bonus += 1;
+            with (obj_player) { move_speed = 3 + global.player_move_speed_bonus; }
         break;
 
         case "Medkit":
@@ -98,9 +101,10 @@ function scr_apply_upgrade(choice)
         break;
 
         case "Big Boy Boots":
+            global.player_dash_time_bonus += 2;
             with (obj_player)
             {
-                dash_time += 2;
+                dash_time = 8 + global.player_dash_time_bonus;
             }
         break;
     
