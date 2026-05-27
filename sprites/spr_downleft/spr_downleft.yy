@@ -68,7 +68,7 @@
     },
     "name":"spr_downleft",
     "playback":1,
-    "playbackSpeed":2.0,
+    "playbackSpeed":7.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
