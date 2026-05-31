@@ -88,6 +88,7 @@
     {"name":"spr_fantastic_flesh_fel","order":9,"path":"sprites/spr_fantastic_flesh_fel/spr_fantastic_flesh_fel.yy",},
     {"name":"spr_forward","order":7,"path":"sprites/spr_forward/spr_forward.yy",},
     {"name":"spr_hooked","order":4,"path":"sprites/spr_hooked/spr_hooked.yy",},
+    {"name":"spr_idle","order":1,"path":"sprites/spr_idle/spr_idle.yy",},
     {"name":"spr_jogging_shorts","order":8,"path":"sprites/spr_jogging_shorts/spr_jogging_shorts.yy",},
     {"name":"spr_liquid_lead","order":5,"path":"sprites/spr_liquid_lead/spr_liquid_lead.yy",},
     {"name":"spr_long_barrel","order":8,"path":"sprites/spr_long_barrel/spr_long_barrel.yy",},

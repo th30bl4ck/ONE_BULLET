@@ -50,7 +50,7 @@ if (state != new_state)
     switch(state)
     {
         case "idle":
-            sprite_index = spr_idle;
+            sprite_index = spr_idle_button;
         break;
 
         case "hover":

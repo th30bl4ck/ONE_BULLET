@@ -109,7 +109,8 @@ if (state == "dying") {
     exit;
 }
 
-
+
+
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
@@ -167,6 +168,7 @@ if (input_locked) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+// MOVING
 if (v == -1 && h == 1) sprite_index = spr_topright;
 else if (v == 1 && h == 1) sprite_index = spr_downright;
 else if (v == 1 && h == -1) sprite_index = spr_downleft;
@@ -175,6 +177,19 @@ else if (v == -1 && h == 0) sprite_index = spr_back;
 else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
+
+// IDLE
+else
+{
+    if (sprite_index == spr_topright) sprite_index = spr_idle;
+    else if (sprite_index == spr_downright) sprite_index = spr_idle;
+    else if (sprite_index == spr_downleft) sprite_index = spr_idle;
+    else if (sprite_index == spr_topleft) sprite_index = spr_idle;
+    else if (sprite_index == spr_back) sprite_index = spr_idle;
+    else if (sprite_index == spr_right) sprite_index = spr_idle;
+    else if (sprite_index == spr_player) sprite_index = spr_idle;
+    else if (sprite_index == spr_left) sprite_index = spr_idle;
+}
 
 
 // =========================

@@ -237,6 +237,7 @@
     {"id":{"name":"spr_health","path":"sprites/spr_health/spr_health.yy",},},
     {"id":{"name":"spr_healthbar","path":"sprites/spr_healthbar/spr_healthbar.yy",},},
     {"id":{"name":"spr_hooked","path":"sprites/spr_hooked/spr_hooked.yy",},},
+    {"id":{"name":"spr_idle","path":"sprites/spr_idle/spr_idle.yy",},},
     {"id":{"name":"spr_invisable","path":"sprites/spr_invisable/spr_invisable.yy",},},
     {"id":{"name":"spr_jogging_shorts","path":"sprites/spr_jogging_shorts/spr_jogging_shorts.yy",},},
     {"id":{"name":"spr_left","path":"sprites/spr_left/spr_left.yy",},},

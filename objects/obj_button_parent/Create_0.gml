@@ -5,7 +5,7 @@ pressed = false;
 
 button_text = "";
 
-spr_idle = noone;
+spr_idle_button = noone;
 spr_hover = noone;
 spr_pressed = noone;
 
