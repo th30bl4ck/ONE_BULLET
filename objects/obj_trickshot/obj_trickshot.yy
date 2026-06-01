@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_trickshot",
-    "path":"sprites/spr_trickshot/spr_trickshot.yy",
+    "name":"trickshot_spr",
+    "path":"sprites/trickshot_spr/trickshot_spr.yy",
   },
   "spriteMaskId":null,
   "visible":true,
