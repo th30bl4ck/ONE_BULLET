@@ -17,8 +17,8 @@
   "name":"obj_enemy_splitter_kids_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy_objects",
-    "path":"folders/Objects/enemy_objects.yy",
+    "name":"splitter_objs",
+    "path":"folders/Objects/enemy_objects/splitter_objs.yy",
   },
   "parentObjectId":{
     "name":"obj_enemy_parent",

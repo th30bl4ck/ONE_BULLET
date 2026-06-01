@@ -1,3 +1,9 @@
-// Inherit the parent event
-event_inherited();
+with (obj_button_parent)
+{
+    selected = false;
+}
 
+selected = true;
+
+// start game
+room_goto(starting_room);

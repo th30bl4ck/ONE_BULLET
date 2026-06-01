@@ -43,4 +43,3 @@ if (combo_count > 1) {
     draw_text(x, bar_y + 6, "x" + string(combo_count));
 }
 
-
