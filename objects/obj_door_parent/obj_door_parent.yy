@@ -10,8 +10,8 @@
   "name":"obj_door_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"starting_room_objects",
-    "path":"folders/Objects/starting_room_objects.yy",
+    "name":"random_rooms_objects",
+    "path":"folders/Objects/random_rooms_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
