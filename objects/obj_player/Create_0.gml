@@ -249,10 +249,13 @@ invuln = 0;
 hit_flash_timer = 0;
 
 // Base movement and dash tuning used by Step and upgrades.
-move_speed = 3;
+if (!variable_global_exists("player_move_speed_bonus")) global.player_move_speed_bonus = 0;
+if (!variable_global_exists("player_dash_time_bonus")) global.player_dash_time_bonus = 0;
+
+move_speed = 3 + global.player_move_speed_bonus;
 is_dashing = false;
 dash_speed = 10;
-dash_time = 8;
+dash_time = 8 + global.player_dash_time_bonus;
 dash_timer = 0;
 dash_cooldown = 45;
 dash_cd_timer = 0;

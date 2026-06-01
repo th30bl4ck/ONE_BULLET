@@ -82,4 +82,9 @@ if (state == "recall") {
     }
 }
 
+if (global.the_jerk == true) {
+    image_xscale = 2;
+    image_yscale = 2;
+}
+
 image_angle = direction - 90;
