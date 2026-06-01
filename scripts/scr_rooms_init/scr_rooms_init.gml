@@ -11,9 +11,13 @@ function scr_rooms_init()
     // helper
     function add_room(_room, _doors)
     {
+        var is_shop = false;
+        if (argument_count > 2) is_shop = argument[2];
+
         array_push(global.ROOMS, {
             room  : _room,
-            doors : _doors
+            doors : _doors,
+            shop  : is_shop
         });
     }
 
@@ -31,6 +35,12 @@ function scr_rooms_init()
 
     add_room(rm_W_v1, global.DOOR_W);
     add_room(rm_W_v2, global.DOOR_W);
+
+    // Shop rooms are part of random room selection, but assignment caps them to one per generation.
+    add_room(rm_shop_N, global.DOOR_N, true);
+    add_room(rm_shop_E, global.DOOR_E, true);
+    add_room(rm_shop_S, global.DOOR_S, true);
+    add_room(rm_shop_W, global.DOOR_W, true);
 
     // -----------------
     // 2 door rooms

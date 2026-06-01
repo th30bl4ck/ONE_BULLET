@@ -18,19 +18,33 @@ function scr_has_door(_mask, _door)
 
 function scr_pick_room_by_doors(_doors)
 {
+    if (!variable_global_exists("shop_room_used"))
+    {
+        global.shop_room_used = false;
+    }
+
     var matches = [];
 
     for (var i = 0; i < array_length(global.ROOMS); i++)
     {
-        if (global.ROOMS[i].doors == _doors)
+        var room_data = global.ROOMS[i];
+        var is_shop = variable_struct_exists(room_data, "shop") && room_data.shop;
+
+        if (global.ROOMS[i].doors == _doors && !(is_shop && global.shop_room_used))
         {
-            array_push(matches, global.ROOMS[i].room);
+            array_push(matches, room_data);
         }
     }
 
     if (array_length(matches) <= 0) return -1;
 
-    return matches[irandom(array_length(matches) - 1)];
+    var picked = matches[irandom(array_length(matches) - 1)];
+    if (variable_struct_exists(picked, "shop") && picked.shop)
+    {
+        global.shop_room_used = true;
+    }
+
+    return picked.room;
 }
 
 /// When several markers share the same tag, pick the one on the matching edge of the room.

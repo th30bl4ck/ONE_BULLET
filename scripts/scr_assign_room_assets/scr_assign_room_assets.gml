@@ -5,6 +5,8 @@ function scr_assign_room_assets()
         scr_rooms_init();
     }
 
+    global.shop_room_used = false;
+
     for (var yy = 0; yy < global.grid_h; yy++)
     {
         for (var xx = 0; xx < global.grid_w; xx++)
