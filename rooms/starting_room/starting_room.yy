@@ -9,7 +9,6 @@
     {"name":"inst_1EB58065","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_5475E517","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_37F423BC","path":"rooms/starting_room/starting_room.yy",},
-    {"name":"inst_5594D31F","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_20B44A09","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_64C47196","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_7E773B0F","path":"rooms/starting_room/starting_room.yy",},
@@ -40,6 +39,7 @@
     {"name":"inst_27626EB7","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_68144C0E","path":"rooms/starting_room/starting_room.yy",},
     {"name":"inst_6B864C83","path":"rooms/starting_room/starting_room.yy",},
+    {"name":"inst_5594D31F","path":"rooms/starting_room/starting_room.yy",},
   ],
   "isDnd":false,
   "layers":[
