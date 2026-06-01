@@ -128,6 +128,10 @@ debug_add_room("rm_NEW_v2", rm_NEW_v2);
 debug_add_room("rm_NESW_v1", rm_NESW_v1);
 debug_add_room("rm_NESW_v2", rm_NESW_v2);
 
+debug_add_room("rm_Chest", rm_Chest);
+debug_add_room("rm_Medbay", rm_Medbay);
+debug_add_room("rm_Boss_V2", rm_Boss_V2);
+
 debug_add_room("rm_shop_N", rm_shop_N);
 debug_add_room("rm_shop_E", rm_shop_E);
 debug_add_room("rm_shop_S", rm_shop_S);
