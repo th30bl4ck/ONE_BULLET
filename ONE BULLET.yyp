@@ -223,7 +223,6 @@
     {"id":{"name":"spr_dash_right","path":"sprites/spr_dash_right/spr_dash_right.yy",},},
     {"id":{"name":"spr_downleft","path":"sprites/spr_downleft/spr_downleft.yy",},},
     {"id":{"name":"spr_downright","path":"sprites/spr_downright/spr_downright.yy",},},
-    {"id":{"name":"spr_empty_mask","path":"sprites/spr_empty_mask/spr_empty_mask.yy",},},
     {"id":{"name":"spr_enemy_dasher","path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},},
     {"id":{"name":"spr_enemy_splitter","path":"sprites/spr_enemy_splitter/spr_enemy_splitter.yy",},},
     {"id":{"name":"spr_exorsizm","path":"sprites/spr_exorsizm/spr_exorsizm.yy",},},
