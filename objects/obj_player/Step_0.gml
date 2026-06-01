@@ -25,23 +25,7 @@ if (global.note_open) exit;
 // =========================
 // TILEMAP SETUP 
 // =========================
-if (!variable_global_exists("wall_tilemap_id")) {
-    global.wall_tilemap_id = noone;
-    global.wall_tilemap_room = noone;
-}
-
-if (global.wall_tilemap_room != room) {
-    global.wall_tilemap_room = room;
-
-    var wall_layer_id = layer_get_id("Walls");
-
-    if (wall_layer_id != -1) {
-        global.wall_tilemap_id = layer_tilemap_get_id(wall_layer_id);
-    } else {
-        global.wall_tilemap_id = noone;
-        show_debug_message("WARNING: No wall layer found");
-    }
-}
+scr_refresh_wall_tilemap();
 
 
 // =========================
@@ -220,50 +204,70 @@ if (is_dashing) {
 // =========================
 // COLLISION 
 // =========================
-function wall_tilemap_collision(_x, _y) {
-
-    if (global.wall_tilemap_id == noone) return false;
-
+function player_wall_collision(_x, _y) {
     var left   = bbox_left   + (_x - x);
     var right  = bbox_right  + (_x - x);
     var top    = bbox_top    + (_y - y);
     var bottom = bbox_bottom + (_y - y);
 
-    var t1 = tilemap_get_at_pixel(global.wall_tilemap_id, left, top);
-    var t2 = tilemap_get_at_pixel(global.wall_tilemap_id, right, top);
-    var t3 = tilemap_get_at_pixel(global.wall_tilemap_id, left, bottom);
-    var t4 = tilemap_get_at_pixel(global.wall_tilemap_id, right, bottom);
+    return scr_wall_overlaps_rect(left, top, right, bottom);
+}
 
-    return (t1 > 0) || (t2 > 0) || (t3 > 0) || (t4 > 0);
+function player_try_unstuck_from_wall() {
+    if (!player_wall_collision(x, y)) return false;
+
+    for (var r = 1; r <= 32; r++) {
+        for (var dx = -r; dx <= r; dx++) {
+            for (var dy = -r; dy <= r; dy++) {
+                if (abs(dx) != r && abs(dy) != r) continue;
+
+                if (!player_wall_collision(x + dx, y + dy)) {
+                    x += dx;
+                    y += dy;
+                    is_dashing = false;
+                    dash_timer = 0;
+                    return true;
+                }
+            }
+        }
+    }
+
+    return false;
 }
 
 
 // =========================
 // APPLY MOVEMENT
 // =========================
+player_try_unstuck_from_wall();
+
 if (move_x != 0) {
     var next_x = x + move_x;
 
-    if (!wall_tilemap_collision(next_x, y)) {
+    if (!player_wall_collision(next_x, y)) {
         x = next_x;
     } else {
         var step_x = sign(move_x);
-        while (!wall_tilemap_collision(x + step_x, y)) {
+        while (!player_wall_collision(x + step_x, y)) {
             x += step_x;
         }
+        is_dashing = false;
+        dash_timer = 0;
     }
 }
 
 if (move_y != 0) {
     var next_y = y + move_y;
 
-    if (!wall_tilemap_collision(x, next_y)) {
+    if (!player_wall_collision(x, next_y)) {
         y = next_y;
     } else {
         var step_y = sign(move_y);
-        while (!wall_tilemap_collision(x, y + step_y)) {
+        while (!player_wall_collision(x, y + step_y)) {
             y += step_y;
         }
+        is_dashing = false;
+        dash_timer = 0;
     }
 }
 

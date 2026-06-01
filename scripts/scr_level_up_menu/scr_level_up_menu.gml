@@ -2,10 +2,19 @@ function open_levelup_menu()
 {
     if (global.levelup_active) return;
 
-    var can_offer_medkit = true;
+    var can_offer_medkit = false;
     if (variable_global_exists("player_health") && is_struct(global.player_health))
     {
         can_offer_medkit = global.player_health.current < global.player_health.max;
+    }
+
+    if (instance_exists(obj_player))
+    {
+        var player = instance_find(obj_player, 0);
+        if (variable_instance_exists(player, "hp") && variable_instance_exists(player, "max_hp"))
+        {
+            can_offer_medkit = player.hp < player.max_hp;
+        }
     }
 
     var upgrades = [
@@ -59,6 +68,23 @@ function scr_apply_upgrade(choice)
     if (!variable_global_exists("recall_speed")) global.recall_speed = 6;
     if (!variable_global_exists("player_bullet_speed")) global.player_bullet_speed = 10;
     if (!variable_global_exists("bullet_max_distance")) global.bullet_max_distance = 300;
+
+    if (choice == "Medkit")
+    {
+        var can_use_medkit = false;
+        if (variable_global_exists("player_health") && is_struct(global.player_health))
+        {
+            can_use_medkit = global.player_health.current < global.player_health.max;
+        }
+
+        var player = instance_find(obj_player, 0);
+        if (variable_instance_exists(player, "hp") && variable_instance_exists(player, "max_hp"))
+        {
+            can_use_medkit = player.hp < player.max_hp;
+        }
+
+        if (!can_use_medkit) return;
+    }
     
     if (ds_map_exists(global.upgrade_counts, choice))
     {
