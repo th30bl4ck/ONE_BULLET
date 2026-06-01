@@ -1,13 +1,11 @@
-//------------------------------------
+
 // SAFETY
-//------------------------------------
 if (global.levelup_active) exit;
 if (!instance_exists(obj_player)) exit;
 
 
-//------------------------------------
+
 // TARGET DATA
-//------------------------------------
 var px = obj_player.x;
 var py = obj_player.y;
 
@@ -16,9 +14,8 @@ var to_player = point_direction(x, y, px, py);
 
 
 
-//------------------------------------
-// ORBIT DIRECTION TIMER (prevents twitching)
-//------------------------------------
+
+// ORBIT DIRECTION TIMER
 orbit_timer--;
 if (orbit_timer <= 0)
 {
@@ -27,22 +24,18 @@ if (orbit_timer <= 0)
 }
 
 
-//------------------------------------
+
 // ORBIT TARGET DISTANCE 
-//------------------------------------
 orbit_dist_timer--;
 if (orbit_dist_timer <= 0)
 {
     orbit_dist_timer = orbit_dist_timer_max;
 
-    // pick a new target distance inside THIS shooter's band
     orbit_target = irandom_range(orbit_min, orbit_max);
 
-    // occasional direction flip helps variety
     if (irandom(1) == 0) orbit_dir = -orbit_dir;
 }
 
-// smoothly drift toward target distance (no snapping)
 desired_orbit_dist = lerp(desired_orbit_dist, orbit_target, orbit_dist_lerp);
 
 
@@ -59,16 +52,12 @@ if (dist > enter_range)
 }
 else
 {
-    // Tangential orbit angle
     var tangential = to_player + 90 * orbit_dir;
 
-    // Radial correction: in/out to maintain desired distance
     var radial = (dist > desired_orbit_dist) ? to_player : to_player + 180;
 
-    // Blend amount: 0 near perfect distance, 1 when far off
     var t = clamp(abs(dist - desired_orbit_dist) / 120, 0, 1) * approach_strength;
 
-    // Angle blend using angle_difference (works on all GM versions)
     ang = tangential + angle_difference(tangential, radial) * t;
 }
 
@@ -77,9 +66,8 @@ x += lengthdir_x(move_spd, ang);
 y += lengthdir_y(move_spd, ang);
 
 
-//------------------------------------
+
 // SHOOTING
-//------------------------------------
 shoot_cd = max(0, shoot_cd - 1);
 
 if (state == 0)
@@ -145,10 +133,9 @@ else if (d < prefer_dist - slack)
 if (place_meeting(x, y, obj_player)) {
     with (obj_player) {
 
-        // only take damage if not invulnerable
         if (invuln <= 0) {
             take_damage(1);
-            invuln = 30; // half-second of safety
+            invuln = 30; 
             hit_flash_timer = 15;
 
             if (variable_global_exists("room_damage_taken")) {
@@ -156,7 +143,7 @@ if (place_meeting(x, y, obj_player)) {
             }
         }
 
-        // if HP is zero or below → start death
+        // if HP is zero or below start death
         if (hp <= 0) {
             state = "dying";
             sprite_index = spr_player_death;

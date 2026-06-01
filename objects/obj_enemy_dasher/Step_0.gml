@@ -16,7 +16,7 @@ if (state == "chase") {
     x += lengthdir_x(move_speed, dir);
     y += lengthdir_y(move_speed, dir);
 
-    // If player enters mid-range → begin charge
+    // If player enters mid-range begin charge
     if (dist < mid_range) {
         state = "charge";
         charge_timer = charge_time;
@@ -30,7 +30,7 @@ if (state == "chase") {
 
 
 // =====================
-// CHARGE STATE (wind-up)
+// CHARGE STATE 
 // =====================
 else if (state == "charge") {
 
@@ -49,7 +49,7 @@ else if (state == "charge") {
 
 
 // =====================
-// DASH STATE (rapid movement)
+// DASH STATE 
 // =====================
 else if (state == "dash") {
 
@@ -92,7 +92,7 @@ if (place_meeting(x, y, obj_player)) {
         // only take damage if not invulnerable
         if (invuln <= 0) {
             take_damage(1);
-            invuln = 30; // half-second of safety
+            invuln = 30; 
             hit_flash_timer = 15;
 
             if (variable_global_exists("room_damage_taken")) {
@@ -100,7 +100,7 @@ if (place_meeting(x, y, obj_player)) {
             }
         }
 
-        // if HP is zero or below → start death
+        // if HP is zero or below start death
         if (hp <= 0) {
             state = "dying";
             sprite_index = spr_player_death;
@@ -114,23 +114,19 @@ if (place_meeting(x, y, obj_player)) {
 // =====================
 // SEPARATION FROM OTHER DASHERS
 // =====================
-/// Put this at the *bottom* of the Step event
+
 with (obj_enemy_dasher)
 {
-    // 'other' = the dasher whose Step event is running
-    // 'id'    = the dasher in this loop
     if (id != other.id)
     {
         var sep_dist = point_distance(x, y, other.x, other.y);
 
-        if (sep_dist < 20 && sep_dist > 0) // 20px radius bubble
+        if (sep_dist < 20 && sep_dist > 0) 
         {
             var sep_dir = point_direction(other.x, other.y, x, y);
 
-            // Stronger push if either is dashing
             var sep_push =  (state == "dash" || other.state == "dash") ? 2 : 0.5;
 
-            // Move THIS dasher (id), not 'other'
             x += lengthdir_x(sep_push, sep_dir);
             y += lengthdir_y(sep_push, sep_dir);
         }

@@ -22,6 +22,7 @@ function scr_go_to_room(_dir)
 
     global.map_x = nx;
     global.map_y = ny;
+    global.layout[ny][nx].visited = true;
 
     
     show_debug_message("SET TAG BEFORE ROOM CHANGE: " + target_spawn);

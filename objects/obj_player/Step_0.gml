@@ -12,6 +12,8 @@ if (!variable_instance_exists(id, "dash_dir")) dash_dir = 0;
 
 if (!variable_instance_exists(id, "can_shoot")) can_shoot = true;
 if (!variable_instance_exists(id, "bullet_id")) bullet_id = noone;
+if (!variable_instance_exists(id, "bullet_pickup_shoot_delay")) bullet_pickup_shoot_delay = 8;
+if (!variable_instance_exists(id, "bullet_pickup_shoot_timer")) bullet_pickup_shoot_timer = 0;
 
 
 if (invuln > 0) invuln -= 1;
@@ -21,7 +23,7 @@ if (global.note_open) exit;
 
 
 // =========================
-// TILEMAP SETUP (FIXED)
+// TILEMAP SETUP 
 // =========================
 if (!variable_global_exists("wall_tilemap_id")) {
     global.wall_tilemap_id = noone;
@@ -98,15 +100,6 @@ if (state == "dying") {
     camera_set_view_pos(cam, death_cam_x, death_cam_y);
 
     if (image_index >= image_number - 1) {
-        if (variable_global_exists("upgrade_counts") && global.upgrade_counts != noone)
-        {
-            ds_map_destroy(global.upgrade_counts);
-        }
-        global.upgrade_counts = ds_map_create();
-        global.xp_attract_range = 64 + 32;
-        global.bullet_pierce = false;
-        global.semantic_orbit = false;
-        global.coins = 0;
         game_restart();
     }
 
@@ -116,10 +109,7 @@ if (state == "dying") {
     exit;
 }
 
-
-// =========================
-// NORMAL UPDATE
-// =========================
+
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
@@ -281,6 +271,12 @@ if (move_y != 0) {
 // COOLDOWNS
 // =========================
 if (dash_cd_timer > 0) dash_cd_timer--;
+if (bullet_pickup_shoot_timer > 0) {
+    bullet_pickup_shoot_timer--;
+    if (bullet_pickup_shoot_timer <= 0) {
+        can_shoot = true;
+    }
+}
 
 
 // =========================
@@ -288,13 +284,13 @@ if (dash_cd_timer > 0) dash_cd_timer--;
 // =========================
 var semantic_orbit_active = variable_global_exists("semantic_orbit") && global.semantic_orbit;
 
-if (semantic_orbit_active && can_shoot && !instance_exists(bullet_id)) {
+if (semantic_orbit_active && can_shoot && bullet_pickup_shoot_timer <= 0 && !instance_exists(bullet_id)) {
     bullet_id = instance_create_layer(x, y, shoot_layer, obj_bullet);
     bullet_id.owner = id;
     bullet_id.state = "orbit";
 }
 
-if (can_shoot && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
+if (can_shoot && bullet_pickup_shoot_timer <= 0 && (mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space))) {
     var dir = point_direction(x, y, mouse_x, mouse_y);
 
     var bx = x + lengthdir_x(12, dir);
