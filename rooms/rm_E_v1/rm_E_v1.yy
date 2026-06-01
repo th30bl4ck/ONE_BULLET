@@ -23,12 +23,11 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"tileset_wall","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset_wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
-          -49,0,1,28,-29,29,1,268435484,-12,0,1,36,-29,0,1,44,-12,0,1,36,-29,0,1,44,-5,0,1,42,-6,0,1,36,-29,0,
-          1,44,-12,0,1,36,-42,0,1,36,-42,0,1,36,-42,0,1,36,-42,0,1,36,-29,0,1,44,-12,0,1,36,-29,0,1,44,-12,0,1,
-          36,-29,0,1,44,-5,0,1,37,-6,0,1,36,-11,0,1,28,-17,53,1,805306396,-12,0,1,36,-11,0,1,44,-30,0,1,36,-11,
-          0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,
-          1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,536870940,-11,53,1,805306396,-67,
-          0,
+          -49,0,1,28,-29,29,1,268435484,-12,0,1,36,-29,0,1,44,-12,0,1,36,-29,0,1,44,-12,0,1,36,-29,0,1,44,-12,
+          0,1,36,-42,0,1,36,-42,0,1,36,-42,0,1,36,-42,0,1,36,-29,0,1,44,-12,0,1,36,-29,0,1,44,-12,0,1,36,-29,0,
+          1,44,-12,0,1,36,-11,0,1,28,-17,53,1,805306396,-12,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,
+          -11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,
+          0,1,36,-11,0,1,44,-30,0,1,36,-11,0,1,44,-30,0,1,536870940,-11,53,1,805306396,-67,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"basic_tileset","path":"tilesets/basic_tileset/basic_tileset.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_7398F24F1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7398F24F1_1_1","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.25,"scaleY":4.25,"x":1184.0,"y":224.0,},
