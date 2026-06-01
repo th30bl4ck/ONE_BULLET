@@ -1,9 +1,9 @@
 // ======================
 // GLOBAL HEALTH INIT 
 // ======================
-if (!variable_global_exists("player_health"))
+function player_health_create_default()
 {
-    global.player_health = {
+    var hp = {
         max: 5,
         current: 5,
         frame_full: 0,
@@ -12,14 +12,23 @@ if (!variable_global_exists("player_health"))
         frames: array_create(5, 0)
     };
 
-    for (var i = 0; i < global.player_health.max; i++)
+    for (var i = 0; i < hp.max; i++)
     {
-        global.player_health.frames[i] = global.player_health.frame_full;
+        hp.frames[i] = hp.frame_full;
     }
+
+    return hp;
+}
+
+var _player_health_exists = variable_global_exists("player_health");
+
+if (!_player_health_exists || !is_struct(global.player_health))
+{
+    global.player_health = player_health_create_default();
 }
 else
 {
-    // Recover from death/restart states and ensure arrays match max HP.
+    // Recover from death/restart states and ensure arrays match max HP
     if (!is_array(global.player_health.segments) || !is_array(global.player_health.frames))
     {
         global.player_health.segments = array_create(global.player_health.max, 0);

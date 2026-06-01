@@ -8,11 +8,11 @@ if (pressed)
         switch(button_action)
         {
             case "play":
-                room_goto(rm_game);
+                room_goto(starting_room);
             break;
 
             case "settings":
-                room_goto(rm_settings);
+                room_goto(settings_room);
             break;
 
             case "quit":
