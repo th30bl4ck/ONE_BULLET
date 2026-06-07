@@ -8,7 +8,7 @@ life = 12;
 max_life = life;
 
 // damage enemies once
-with (obj_enemy) {
+with (obj_enemy_parent) {
     var dist = point_distance(x, y, other.x, other.y);
 
     if (dist <= other.radius) {
