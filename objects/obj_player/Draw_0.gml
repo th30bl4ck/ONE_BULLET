@@ -18,7 +18,7 @@ if (combo_count > 1) {
     var bar_h = 4;
 
     var bar_x = x - bar_w / 2;
-    var bar_y = bbox_bottom + 4; // BELOW the player
+    var bar_y = bbox_bottom + 4; 
 
     var pct = combo_timer / combo_timer_max;
 
