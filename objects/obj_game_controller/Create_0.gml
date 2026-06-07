@@ -37,6 +37,11 @@ global.grid_h = 4;
 // Player starting position in grid
 global.map_x = 1;
 global.map_y = 1;
+global.start_map_x = global.map_x;
+global.start_map_y = global.map_y;
+global.mouse_last_room = noone;
+global.mouse_spawn_delay = -1;
+global.mouse_room_chance = 25;
 
 // ========================
 // CREATE LAYOUT GRID 
