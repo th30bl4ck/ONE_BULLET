@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_parent",
+  "%Name":"obj_alexs_arsanal",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy_parent",
+  "name":"obj_alexs_arsanal",
   "overriddenProperties":[],
   "parent":{
-    "name":"enemy_objects",
-    "path":"folders/Objects/enemy_objects.yy",
+    "name":"shop_items_objects",
+    "path":"folders/Objects/shop_objects/shop_items_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
