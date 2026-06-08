@@ -17,7 +17,11 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"boss_objects","folderPath":"folders/Objects/boss_objects.yy","name":"boss_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"bullet_objects","folderPath":"folders/Objects/bullet_objects.yy","name":"bullet_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+<<<<<<< Updated upstream
     {"$GMFolder":"","%Name":"decor_objects","folderPath":"folders/Objects/decor_objects.yy","name":"decor_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+=======
+    {"$GMFolder":"","%Name":"chest_rm_objects","folderPath":"folders/Objects/chest_rm_objects.yy","name":"chest_rm_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+>>>>>>> Stashed changes
     {"$GMFolder":"","%Name":"diffirent_enemy_spawners_objects","folderPath":"folders/Objects/diffirent_enemy_spawners_objects.yy","name":"diffirent_enemy_spawners_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemy_objects","folderPath":"folders/Objects/enemy_objects.yy","name":"enemy_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"splitter_objs","folderPath":"folders/Objects/enemy_objects/splitter_objs.yy","name":"splitter_objs","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -37,6 +41,7 @@
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"boss_rooms","folderPath":"folders/Rooms/boss_rooms.yy","name":"boss_rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"special_rooms","folderPath":"folders/Rooms/special_rooms.yy","name":"special_rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"menu_rooms","folderPath":"folders/Rooms/menu_rooms.yy","name":"menu_rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms_1door","folderPath":"folders/Rooms/rooms_1door.yy","name":"rooms_1door","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms_2door","folderPath":"folders/Rooms/rooms_2door.yy","name":"rooms_2door","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -82,7 +87,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"ONE BULLET",
   "resources":[
@@ -126,6 +131,7 @@
     {"id":{"name":"obj_room1_changer_north","path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},},
     {"id":{"name":"obj_room1_changer_south","path":"objects/obj_room1_changer_south/obj_room1_changer_south.yy",},},
     {"id":{"name":"obj_room1_changer_west","path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},},
+    {"id":{"name":"obj_safe","path":"objects/obj_safe/obj_safe.yy",},},
     {"id":{"name":"obj_scale","path":"objects/obj_scale/obj_scale.yy",},},
     {"id":{"name":"obj_scorepopup","path":"objects/obj_scorepopup/obj_scorepopup.yy",},},
     {"id":{"name":"obj_sematic_orbit","path":"objects/obj_sematic_orbit/obj_sematic_orbit.yy",},},
@@ -144,6 +150,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_XP_bar","path":"objects/obj_XP_bar/obj_XP_bar.yy",},},
     {"id":{"name":"obj_XP","path":"objects/obj_XP/obj_XP.yy",},},
+    {"id":{"name":"ParticleSystem1","path":"particles/ParticleSystem1/ParticleSystem1.yy",},},
     {"id":{"name":"main_menu","path":"rooms/main_menu/main_menu.yy",},},
     {"id":{"name":"rm_Boss_V2","path":"rooms/rm_Boss_V2/rm_Boss_V2.yy",},},
     {"id":{"name":"rm_Chest","path":"rooms/rm_Chest/rm_Chest.yy",},},
@@ -271,6 +278,7 @@
     {"id":{"name":"Spr_quit","path":"sprites/Spr_quit/Spr_quit.yy",},},
     {"id":{"name":"spr_right","path":"sprites/spr_right/spr_right.yy",},},
     {"id":{"name":"spr_rollershoes","path":"sprites/spr_rollershoes/spr_rollershoes.yy",},},
+    {"id":{"name":"spr_safe","path":"sprites/spr_safe/spr_safe.yy",},},
     {"id":{"name":"spr_semantic_orbit","path":"sprites/spr_semantic_orbit/spr_semantic_orbit.yy",},},
     {"id":{"name":"spr_settings_select","path":"sprites/spr_settings_select/spr_settings_select.yy",},},
     {"id":{"name":"spr_settings","path":"sprites/spr_settings/spr_settings.yy",},},
