@@ -1,4 +1,4 @@
-var enemy_count = instance_number(obj_enemy);
+var enemy_count = instance_number(obj_enemy_parent);
 
 // If moving, bounce around like DVD logo
 if (is_moving)

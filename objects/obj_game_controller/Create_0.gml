@@ -37,6 +37,11 @@ global.grid_h = 4;
 // Player starting position in grid
 global.map_x = 1;
 global.map_y = 1;
+global.start_map_x = global.map_x;
+global.start_map_y = global.map_y;
+global.mouse_last_room = noone;
+global.mouse_spawn_delay = -1;
+global.mouse_room_chance = 25;
 
 // ========================
 // CREATE LAYOUT GRID 
@@ -127,6 +132,10 @@ debug_add_room("rm_NEW_v2", rm_NEW_v2);
 
 debug_add_room("rm_NESW_v1", rm_NESW_v1);
 debug_add_room("rm_NESW_v2", rm_NESW_v2);
+
+debug_add_room("rm_Chest", rm_Chest);
+debug_add_room("rm_Medbay", rm_Medbay);
+debug_add_room("rm_Boss_V2", rm_Boss_V2);
 
 debug_add_room("rm_shop_N", rm_shop_N);
 debug_add_room("rm_shop_E", rm_shop_E);

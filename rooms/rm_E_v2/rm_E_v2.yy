@@ -23,7 +23,7 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRTileLayer":"","%Name":"tileset_wall","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset_wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"tileset","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
           1,28,-40,53,3,268435484,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,
           -40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-42,19,1,36,
           -42,19,1,36,-42,19,1,36,-42,19,1,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,19,36,-40,19,3,44,

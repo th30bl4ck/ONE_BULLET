@@ -7,7 +7,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
     var placed = 1;
 
     global.layout[_start_y][_start_x].used = true;
-    array_push(frontier, [_start_x, _start_y]);
 
     // Ensure the starting room's east door always has a valid destination.
     var start_east_x = _start_x + 1;
@@ -23,6 +22,10 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
         global.layout[_start_y][_start_x].doors |= global.DOOR_E;
         global.layout[start_east_y][start_east_x].doors |= global.DOOR_W;
+    }
+    else
+    {
+        array_push(frontier, [_start_x, _start_y]);
     }
 
     while (array_length(frontier) > 0 && placed < _target_count)
@@ -98,7 +101,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
                 var nx = fx;
                 var ny = fy - 1;
-                if (ny >= 0 && global.layout[ny][nx].used)
+                if (ny >= 0 && global.layout[ny][nx].used && !(nx == _start_x && ny == _start_y))
                 {
                     global.layout[fy][fx].used = true;
                     global.layout[fy][fx].doors |= global.DOOR_N;
@@ -110,7 +113,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
                 nx = fx + 1;
                 ny = fy;
-                if (nx < global.grid_w && global.layout[ny][nx].used)
+                if (nx < global.grid_w && global.layout[ny][nx].used && !(nx == _start_x && ny == _start_y))
                 {
                     global.layout[fy][fx].used = true;
                     global.layout[fy][fx].doors |= global.DOOR_E;
@@ -122,7 +125,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
                 nx = fx;
                 ny = fy + 1;
-                if (ny < global.grid_h && global.layout[ny][nx].used)
+                if (ny < global.grid_h && global.layout[ny][nx].used && !(nx == _start_x && ny == _start_y))
                 {
                     global.layout[fy][fx].used = true;
                     global.layout[fy][fx].doors |= global.DOOR_S;
@@ -134,7 +137,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
                 nx = fx - 1;
                 ny = fy;
-                if (nx >= 0 && global.layout[ny][nx].used)
+                if (nx >= 0 && global.layout[ny][nx].used && !(nx == _start_x && ny == _start_y))
                 {
                     global.layout[fy][fx].used = true;
                     global.layout[fy][fx].doors |= global.DOOR_W;

@@ -13,6 +13,15 @@ function scr_assign_room_assets()
         {
             if (global.layout[yy][xx].used)
             {
+                if (variable_global_exists("start_map_x")
+                 && variable_global_exists("start_map_y")
+                 && xx == global.start_map_x
+                 && yy == global.start_map_y)
+                {
+                    global.layout[yy][xx].room_asset = starting_room;
+                    continue;
+                }
+
                 var door_mask = global.layout[yy][xx].doors;
                 var picked_room = scr_pick_room_by_doors(door_mask);
 

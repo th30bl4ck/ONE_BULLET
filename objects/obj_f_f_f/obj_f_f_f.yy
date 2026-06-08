@@ -11,8 +11,8 @@
   "name":"obj_f_f_f",
   "overriddenProperties":[],
   "parent":{
-    "name":"items_objects",
-    "path":"folders/Objects/items_objects.yy",
+    "name":"shop_items_objects",
+    "path":"folders/Objects/shop_objects/shop_items_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
