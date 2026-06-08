@@ -58,8 +58,8 @@
   ],
   "name":"rm_Medbay",
   "parent":{
-    "name":"special_rooms",
-    "path":"folders/Rooms/special_rooms.yy",
+    "name":"rooms_1door",
+    "path":"folders/Rooms/rooms_1door.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
