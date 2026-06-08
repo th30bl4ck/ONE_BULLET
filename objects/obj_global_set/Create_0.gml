@@ -1,3 +1,9 @@
+if (instance_number(obj_global_set) > 1)
+{
+    instance_destroy();
+    exit;
+}
+
 global.game_initialized = true;
 
 // =========================
