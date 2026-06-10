@@ -8,6 +8,7 @@ show_hint = point_distance(x, y, obj_player.x, obj_player.y) < 24;
 if (show_hint && keyboard_check_pressed(ord("E"))) {
     if (scr_shop(item_cost)) {
         global.alexs_arsanal = true;
-        instance_destroy();
+        audio_play_sound(snd_buy, 1, false);
+		instance_destroy();
     }
 }

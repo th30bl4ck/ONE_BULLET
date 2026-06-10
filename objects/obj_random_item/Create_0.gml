@@ -18,6 +18,12 @@ global.items = {
 		sprite_index: spr_alexs_arsanal,
 		object_index: obj_alexs_arsanal
        	},
+		
+		f_f_f: {
+			name: "f_f_f",
+			sprite_index: spr_fantastic_flesh_fel,
+			object_index: obj_f_f_f
+		},
     
 };
 
