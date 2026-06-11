@@ -112,6 +112,7 @@
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},},
     {"id":{"name":"obj_global_set","path":"objects/obj_global_set/obj_global_set.yy",},},
     {"id":{"name":"obj_intro_controller","path":"objects/obj_intro_controller/obj_intro_controller.yy",},},
+    {"id":{"name":"obj_JS","path":"objects/obj_JS/obj_JS.yy",},},
     {"id":{"name":"obj_letter_1st","path":"objects/obj_letter_1st/obj_letter_1st.yy",},},
     {"id":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},},
     {"id":{"name":"obj_pause_machanic","path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},},

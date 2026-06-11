@@ -39,6 +39,7 @@
     {"name":"obj_enemy_splitter_kids_1","order":2,"path":"objects/obj_enemy_splitter_kids_1/obj_enemy_splitter_kids_1.yy",},
     {"name":"obj_enemy_splitter_kids","order":1,"path":"objects/obj_enemy_splitter_kids/obj_enemy_splitter_kids.yy",},
     {"name":"obj_game_controller","order":13,"path":"objects/obj_game_controller/obj_game_controller.yy",},
+    {"name":"obj_JS","order":4,"path":"objects/obj_JS/obj_JS.yy",},
     {"name":"obj_pause_machanic","order":3,"path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},
     {"name":"obj_perice","order":1,"path":"objects/obj_perice/obj_perice.yy",},
     {"name":"obj_random_item","order":2,"path":"objects/obj_random_item/obj_random_item.yy",},
