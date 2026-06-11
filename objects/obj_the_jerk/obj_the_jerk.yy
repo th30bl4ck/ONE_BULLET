@@ -10,8 +10,8 @@
   "name":"obj_the_jerk",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_objects",
-    "path":"folders/Objects/shop_objects.yy",
+    "name":"shop_items_objects",
+    "path":"folders/Objects/shop_objects/shop_items_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
