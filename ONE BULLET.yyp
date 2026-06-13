@@ -76,6 +76,8 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"2026-06-13 23-58-22.mp4","CopyToMask":-1,"filePath":"datafiles","name":"2026-06-13 23-58-22.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"2026-06-14 00-03-04.mp4","CopyToMask":-1,"filePath":"datafiles","name":"2026-06-14 00-03-04.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"floor.csv","CopyToMask":-1,"filePath":"datafiles","name":"floor.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"walls.csv","CopyToMask":-1,"filePath":"datafiles","name":"walls.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
@@ -204,6 +206,8 @@
     {"id":{"name":"shader_normal_room","path":"shaders/shader_normal_room/shader_normal_room.yy",},},
     {"id":{"name":"snd_buy","path":"sounds/snd_buy/snd_buy.yy",},},
     {"id":{"name":"snd_coinz","path":"sounds/snd_coinz/snd_coinz.yy",},},
+    {"id":{"name":"snd_enemy_grunt","path":"sounds/snd_enemy_grunt/snd_enemy_grunt.yy",},},
+    {"id":{"name":"snd_fire_bullet","path":"sounds/snd_fire_bullet/snd_fire_bullet.yy",},},
     {"id":{"name":"alsosludgelet","path":"sprites/alsosludgelet/alsosludgelet.yy",},},
     {"id":{"name":"animation","path":"sprites/animation/animation.yy",},},
     {"id":{"name":"boxx","path":"sprites/boxx/boxx.yy",},},

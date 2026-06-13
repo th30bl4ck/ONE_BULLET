@@ -98,6 +98,8 @@
     {"name":"scr_random_item","order":2,"path":"scripts/scr_random_item/scr_random_item.yy",},
     {"name":"scr_room_helpers","order":1,"path":"scripts/scr_room_helpers/scr_room_helpers.yy",},
     {"name":"snd_coinz","order":1,"path":"sounds/snd_coinz/snd_coinz.yy",},
+    {"name":"snd_enemy_grunt","order":3,"path":"sounds/snd_enemy_grunt/snd_enemy_grunt.yy",},
+    {"name":"snd_fire_bullet","order":2,"path":"sounds/snd_fire_bullet/snd_fire_bullet.yy",},
     {"name":"alsosludgelet","order":1,"path":"sprites/alsosludgelet/alsosludgelet.yy",},
     {"name":"chestrm","order":1,"path":"sprites/chestrm/chestrm.yy",},
     {"name":"medbay_tileset","order":1,"path":"sprites/medbay_tileset/medbay_tileset.yy",},
