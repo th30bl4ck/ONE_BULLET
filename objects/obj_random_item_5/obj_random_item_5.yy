@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_random_item",
+  "%Name":"obj_random_item_5",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_random_item",
+  "name":"obj_random_item_5",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_objects",
-    "path":"folders/Objects/shop_objects.yy",
+    "name":"item_id_objects",
+    "path":"folders/Objects/shop_objects/item_id_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
