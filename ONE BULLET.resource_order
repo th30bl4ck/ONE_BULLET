@@ -94,6 +94,7 @@
     {"name":"scr_generate_layout","order":2,"path":"scripts/scr_generate_layout/scr_generate_layout.yy",},
     {"name":"scr_go_to_generated_room","order":5,"path":"scripts/scr_go_to_generated_room/scr_go_to_generated_room.yy",},
     {"name":"scr_go_to_room","order":4,"path":"scripts/scr_go_to_room/scr_go_to_room.yy",},
+    {"name":"scr_random_item","order":2,"path":"scripts/scr_random_item/scr_random_item.yy",},
     {"name":"scr_room_helpers","order":1,"path":"scripts/scr_room_helpers/scr_room_helpers.yy",},
     {"name":"snd_coinz","order":1,"path":"sounds/snd_coinz/snd_coinz.yy",},
     {"name":"alsosludgelet","order":1,"path":"sprites/alsosludgelet/alsosludgelet.yy",},
