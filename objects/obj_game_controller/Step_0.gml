@@ -10,7 +10,6 @@ if (global.do_room_change)
     }
 
     room_goto(global.next_room);
-    // Spawn resolution must run in the new room (after instances exist), not in the old room this step.
     alarm[0] = 1;
     exit;
 }

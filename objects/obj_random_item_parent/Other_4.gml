@@ -1,0 +1,1 @@
+//needs to save the item for that random object without effecting other shops needs to disapear if purchesed need to stop duplacate items  
