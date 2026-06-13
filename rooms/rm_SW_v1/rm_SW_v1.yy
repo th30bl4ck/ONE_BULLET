@@ -25,6 +25,7 @@
     {"name":"inst_714AB959","path":"rooms/rm_SW_v1/rm_SW_v1.yy",},
     {"name":"inst_1693047","path":"rooms/rm_SW_v1/rm_SW_v1.yy",},
     {"name":"inst_3F4B478","path":"rooms/rm_SW_v1/rm_SW_v1.yy",},
+    {"name":"inst_361113F1","path":"rooms/rm_SW_v1/rm_SW_v1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -40,6 +41,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2FF52C9E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FF52C9E","objectId":{"name":"obj_room1_changer_west","path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":4.0,"scaleY":4.25,"x":32.0,"y":96.0,},
         {"$GMRInstance":"v4","%Name":"inst_2BD31701","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2BD31701","objectId":{"name":"obj_room1_changer_south","path":"objects/obj_room1_changer_south/obj_room1_changer_south.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":3.5,"scaleY":4.75,"x":1152.0,"y":768.0,},
+        {"$GMRInstance":"v4","%Name":"inst_361113F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_361113F1","objectId":{"name":"obj_normal_room_music","path":"objects/obj_normal_room_music/obj_normal_room_music.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":64.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"GUI","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"GUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"Effect_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_1","properties":[],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

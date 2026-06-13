@@ -16,6 +16,20 @@ global.coins = 500;
 
 global.room_enemy_kills = 0;
 global.room_damage_taken = 0;
+//==========================
+//MUSIC
+//==========================
+with (obj_music_controller)
+{
+    if (instance_number(obj_enemy_parent) > 0)
+    {
+        play_music(snd_music_combat);
+    }
+    else
+    {
+        play_music(snd_music_general);
+    }
+}
 
 // =========================
 // PLAYER STATS
