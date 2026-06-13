@@ -40,12 +40,14 @@ for (var i = 0; i < global.player_health.max; i++)
 global.xp_attract_range = 64;
 global.player_move_speed_bonus = 0;
 global.player_dash_time_bonus = 0;
-global.bullet_pierce = false;
 global.recall_speed = 6;
 global.player_bullet_speed = 10;
 global.bullet_max_distance = 300;
+//item activate
 global.semantic_orbit = false;
 global.the_jerk = false;
+global.bullet_pierce = false;
+
 game_speed = 1;
 
 if (variable_global_exists("upgrade_counts") && ds_exists(global.upgrade_counts, ds_type_map))
