@@ -12,7 +12,7 @@ global.game_initialized = true;
 global.level = 1;
 global.xp = 0;
 global.xp_required = 20;
-global.coins = 0;
+global.coins = 500;
 
 global.room_enemy_kills = 0;
 global.room_damage_taken = 0;
@@ -40,12 +40,14 @@ for (var i = 0; i < global.player_health.max; i++)
 global.xp_attract_range = 64;
 global.player_move_speed_bonus = 0;
 global.player_dash_time_bonus = 0;
-global.bullet_pierce = false;
 global.recall_speed = 6;
 global.player_bullet_speed = 10;
 global.bullet_max_distance = 300;
+//item activate
 global.semantic_orbit = false;
 global.the_jerk = false;
+global.bullet_pierce = false;
+
 game_speed = 1;
 
 if (variable_global_exists("upgrade_counts") && ds_exists(global.upgrade_counts, ds_type_map))
@@ -102,3 +104,8 @@ global.room_lighting_view_pos_uniform = shader_get_uniform(shader_normal_room, "
 global.room_lighting_view_size_uniform = shader_get_uniform(shader_normal_room, "u_view_size");
 global.room_lighting_screen_size_uniform = shader_get_uniform(shader_normal_room, "u_screen_size");
 global.room_lighting_room_size_uniform = shader_get_uniform(shader_normal_room, "u_room_size");
+
+// ===========
+// shop items
+// ===========
+global.shop_item_1 = noone;
