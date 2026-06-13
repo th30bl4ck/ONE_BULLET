@@ -1,18 +1,18 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_enemy_grunt",
+  "%Name":"snd_splitter_die",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
-  "bitDepth":0,
+  "bitDepth":1,
   "channelFormat":0,
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.0080045,
+  "duration":0.5040136,
   "exportDir":"",
-  "name":"snd_enemy_grunt",
+  "name":"snd_splitter_die",
   "parent":{
     "name":"enemy_sounds",
     "path":"folders/Sounds/enemy_sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_enemy_grunt.mp3",
+  "soundFile":"snd_splitter_die.mp3",
   "volume":1.0,
 }
