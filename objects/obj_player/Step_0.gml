@@ -152,6 +152,8 @@ if (input_locked) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+
+
 if (v == -1 && h == 1) sprite_index = spr_topright;
 else if (v == 1 && h == 1) sprite_index = spr_downright;
 else if (v == 1 && h == -1) sprite_index = spr_downleft;
@@ -161,10 +163,20 @@ else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
 
+if(sprite_index == last_sprite)
+    sprite_timer++;
+else{
+    last_sprite = sprite_index;
+    sprite_timer = 0;
+}
+
 
 // =========================
 // MOVEMENT
 // =========================
+
+var time = current_time
+
 var move_x = 0;
 var move_y = 0;
 
@@ -176,6 +188,14 @@ if (!is_dashing) {
     }
 }
 
+
+if (global.JS == true) {
+    if (sprite_index == last_sprite){
+     
+           global.JS_bonus += 0.01;
+         with (obj_player) { move_speed = 3 + global.JS_bonus; }
+     }
+}
 
 // =========================
 // DASH
