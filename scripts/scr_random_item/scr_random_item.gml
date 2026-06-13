@@ -28,7 +28,12 @@ global.items = {
     
 };
 
-var item = choose(global.items.pierce, global.items.the_jerk , global.items.alexs_arsanal);
+var item = choose(
+    global.items.pierce,
+    global.items.the_jerk,
+    global.items.alexs_arsanal,
+    global.items.f_f_f
+);
 instance_create_layer(x, y, "Instances", item.object_index);
 instance_destroy();
 
