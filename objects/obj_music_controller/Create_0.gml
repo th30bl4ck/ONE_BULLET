@@ -7,7 +7,9 @@ function play_music(_music)
 {
     if (current_music == _music) exit;
 
-    audio_stop_all();
+    if (current_music != noone) {
+        audio_stop_sound(current_music);
+    }
     audio_play_sound(_music, 1, true);
 
     current_music = _music;
