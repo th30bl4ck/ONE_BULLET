@@ -129,6 +129,7 @@
     {"id":{"name":"obj_random_item_6","path":"objects/obj_random_item_6/obj_random_item_6.yy",},},
     {"id":{"name":"obj_random_item_7","path":"objects/obj_random_item_7/obj_random_item_7.yy",},},
     {"id":{"name":"obj_random_item_8","path":"objects/obj_random_item_8/obj_random_item_8.yy",},},
+    {"id":{"name":"obj_random_item_parent","path":"objects/obj_random_item_parent/obj_random_item_parent.yy",},},
     {"id":{"name":"obj_room_spawn","path":"objects/obj_room_spawn/obj_room_spawn.yy",},},
     {"id":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},},
     {"id":{"name":"obj_room1_changer_north","path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},},

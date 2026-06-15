@@ -51,6 +51,7 @@
     {"name":"obj_random_item_6","order":7,"path":"objects/obj_random_item_6/obj_random_item_6.yy",},
     {"name":"obj_random_item_7","order":8,"path":"objects/obj_random_item_7/obj_random_item_7.yy",},
     {"name":"obj_random_item_8","order":9,"path":"objects/obj_random_item_8/obj_random_item_8.yy",},
+    {"name":"obj_random_item_parent","order":11,"path":"objects/obj_random_item_parent/obj_random_item_parent.yy",},
     {"name":"obj_room1_changer_north","order":1,"path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},
     {"name":"obj_room1_changer_south","order":2,"path":"objects/obj_room1_changer_south/obj_room1_changer_south.yy",},
     {"name":"obj_room1_changer_west","order":3,"path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},

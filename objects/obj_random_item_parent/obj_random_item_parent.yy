@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_random_item_2",
+  "%Name":"obj_random_item_parent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_random_item_2",
+  "name":"obj_random_item_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"item_id_objects",
     "path":"folders/Objects/shop_objects/item_id_objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_random_item_parent",
-    "path":"objects/obj_random_item_parent/obj_random_item_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
