@@ -163,7 +163,9 @@ else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
 
-if(sprite_index == last_sprite)
+var same_sprite = (sprite_index == last_sprite)
+
+if (same_sprite)
     sprite_timer++;
 else{
     last_sprite = sprite_index;
@@ -190,12 +192,17 @@ if (!is_dashing) {
 
 
 if (global.JS == true) {
-    if (sprite_index == last_sprite){
-     
-           global.JS_bonus += 0.01;
+    if (same_sprite){
+     if (global.JS_bonus <= 3){
+           global.JS_bonus += 0.1;
          with (obj_player) { move_speed = 3 + global.JS_bonus; }
      }
+    }
+    else if (!same_sprite){
+    global.JS_bonus = 0
 }
+}
+
 
 // =========================
 // DASH
