@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_JS",
+  "%Name":"obj_random_item_5",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_JS",
+  "name":"obj_random_item_5",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_objects",
-    "path":"folders/Objects/shop_objects.yy",
+    "name":"item_id_objects",
+    "path":"folders/Objects/shop_objects/item_id_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_random_item_parent",
+    "path":"objects/obj_random_item_parent/obj_random_item_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_jogging_shorts",
-    "path":"sprites/spr_jogging_shorts/spr_jogging_shorts.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -25,6 +25,12 @@ global.items = {
 			sprite_index: spr_fantastic_flesh_fel,
 			object_index: obj_f_f_f
 		},
+        
+    JS: {
+        name: "Jogging Shorts",
+        sprite_index: spr_jogging_shorts,
+        object_index: obj_JS
+    },
     
 };
 
@@ -32,7 +38,7 @@ var item = choose(
     global.items.pierce,
     global.items.the_jerk,
     global.items.alexs_arsanal,
-    global.items.f_f_f
+    global.items.JS
 );
 instance_create_layer(x, y, "Instances", item.object_index);
 instance_destroy();
