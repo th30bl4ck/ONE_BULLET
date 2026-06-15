@@ -163,7 +163,7 @@ else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
 
-var same_sprite = (sprite_index == last_sprite)
+var same_sprite = (sprite_index == last_sprite);
 
 if (same_sprite)
     sprite_timer++;
