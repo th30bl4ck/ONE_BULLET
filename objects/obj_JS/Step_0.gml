@@ -10,7 +10,7 @@ if (show_hint && keyboard_check_pressed(ord("E"))) {
         audio_play_sound(snd_buy, 1, false);
 
         global.JS = true;
-		audio_play_sound(snd_buy, 1, false);
+		instance_destroy();
         instance_destroy();
     }
 }
