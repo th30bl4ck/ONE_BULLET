@@ -11,6 +11,5 @@ if (show_hint && keyboard_check_pressed(ord("E"))) {
 
         global.JS = true;
 		instance_destroy();
-        instance_destroy();
     }
 }
