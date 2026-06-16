@@ -1,3 +1,3 @@
 // Inherit the parent event
 event_inherited();
-shop_item = global.shop_item_1;
+shop_item = global.shop_item_4;

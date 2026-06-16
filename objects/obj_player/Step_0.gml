@@ -147,6 +147,8 @@ if (input_locked) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+
+
 if (v == -1 && h == 1) sprite_index = spr_topright;
 else if (v == 1 && h == 1) sprite_index = spr_downright;
 else if (v == 1 && h == -1) sprite_index = spr_downleft;
@@ -156,11 +158,23 @@ else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
 
+var same_sprite = (sprite_index == last_sprite);
+
+if (same_sprite)
+    sprite_timer++;
+else{
+    last_sprite = sprite_index;
+    sprite_timer = 0;
+}
+
 
 
 // =========================
 // MOVEMENT
 // =========================
+
+var time = current_time
+
 var move_x = 0;
 var move_y = 0;
 
@@ -170,6 +184,19 @@ if (!is_dashing) {
         move_x = lengthdir_x(move_speed, dir);
         move_y = lengthdir_y(move_speed, dir);
     }
+}
+
+
+if (global.JS == true) {
+    if (same_sprite){
+     if (global.JS_bonus <= 3){
+           global.JS_bonus += 0.1;
+         with (obj_player) { move_speed = 3 + global.JS_bonus; }
+     }
+    }
+    else if (!same_sprite){
+    global.JS_bonus = 0
+}
 }
 
 
