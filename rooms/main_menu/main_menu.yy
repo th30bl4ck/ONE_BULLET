@@ -22,7 +22,7 @@
   "name":"main_menu",
   "parent":{
     "name":"menu_rooms",
-    "path":"folders/Rooms/boss_rooms/menu_rooms.yy",
+    "path":"folders/Rooms/menu_rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

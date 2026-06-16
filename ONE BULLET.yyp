@@ -39,7 +39,7 @@
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"boss_rooms","folderPath":"folders/Rooms/boss_rooms.yy","name":"boss_rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"menu_rooms","folderPath":"folders/Rooms/boss_rooms/menu_rooms.yy","name":"menu_rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"menu_rooms","folderPath":"folders/Rooms/menu_rooms.yy","name":"menu_rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms_1door","folderPath":"folders/Rooms/rooms_1door.yy","name":"rooms_1door","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms_2door","folderPath":"folders/Rooms/rooms_2door.yy","name":"rooms_2door","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms_3door","folderPath":"folders/Rooms/rooms_3door.yy","name":"rooms_3door","resourceType":"GMFolder","resourceVersion":"2.0",},
