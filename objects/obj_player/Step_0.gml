@@ -15,10 +15,6 @@ if (!variable_instance_exists(id, "bullet_id")) bullet_id = noone;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_delay")) bullet_pickup_shoot_delay = 8;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_timer")) bullet_pickup_shoot_timer = 0;
 
-
-if (invuln > 0) invuln -= 1;
-
-
 if (global.note_open) exit;
 
 
@@ -94,7 +90,6 @@ if (state == "dying") {
 }
 
 
-
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
@@ -160,6 +155,7 @@ else if (v == -1 && h == 0) sprite_index = spr_back;
 else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
+
 
 
 // =========================
