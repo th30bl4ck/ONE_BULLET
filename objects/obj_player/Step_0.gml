@@ -15,10 +15,6 @@ if (!variable_instance_exists(id, "bullet_id")) bullet_id = noone;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_delay")) bullet_pickup_shoot_delay = 8;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_timer")) bullet_pickup_shoot_timer = 0;
 
-
-if (invuln > 0) invuln -= 1;
-
-
 if (global.note_open) exit;
 
 
@@ -94,7 +90,6 @@ if (state == "dying") {
 }
 
 
-
 if (invuln > 0) invuln -= 1;
 if (hit_flash_timer > 0) hit_flash_timer -= 1;
 
@@ -152,6 +147,8 @@ if (input_locked) {
 var h = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var v = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+
+
 if (v == -1 && h == 1) sprite_index = spr_topright;
 else if (v == 1 && h == 1) sprite_index = spr_downright;
 else if (v == 1 && h == -1) sprite_index = spr_downleft;
@@ -161,10 +158,23 @@ else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
 
+var same_sprite = (sprite_index == last_sprite);
+
+if (same_sprite)
+    sprite_timer++;
+else{
+    last_sprite = sprite_index;
+    sprite_timer = 0;
+}
+
+
 
 // =========================
 // MOVEMENT
 // =========================
+
+var time = current_time
+
 var move_x = 0;
 var move_y = 0;
 
@@ -174,6 +184,19 @@ if (!is_dashing) {
         move_x = lengthdir_x(move_speed, dir);
         move_y = lengthdir_y(move_speed, dir);
     }
+}
+
+
+if (global.JS == true) {
+    if (same_sprite){
+     if (global.JS_bonus <= 3){
+           global.JS_bonus += 0.1;
+         with (obj_player) { move_speed = 3 + global.JS_bonus; }
+     }
+    }
+    else if (!same_sprite){
+    global.JS_bonus = 0
+}
 }
 
 
@@ -341,3 +364,22 @@ if (combo_count >= 10) {
 }
 
 player_health_update_visuals();
+
+
+//=======================
+//NPC/shopkeeper
+//=======================
+if (keyboard_check_pressed(ord("E"))) {
+    var npc = instance_nearest(x, y, obj_shopkeeper);
+
+    if (npc != noone && point_distance(x, y, npc.x, npc.y) < 48) {
+        var d = instance_find(obj_dialouge_controller, 0);
+
+        if (d != noone) {
+            d.dialogue_lines = npc.dialogue;
+            d.line_index = 0;
+			d.text_pos = 0;
+            d.active = true;
+        }
+    }
+}

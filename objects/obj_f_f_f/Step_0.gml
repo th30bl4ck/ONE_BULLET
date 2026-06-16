@@ -26,14 +26,14 @@ if (is_moving)
     {
         y = 0;
         vsp = abs(vsp);
-        // Do NOT change sprite direction vertically
+        // no change sprite direction vertically
     }
 
     if (y >= room_height - sprite_height)
     {
         y = room_height - sprite_height;
         vsp = -abs(vsp);
-        // Do NOT change sprite direction vertically
+        // Donot change sprite direction vertically
     }
 
     // Slowly lose speed over time
@@ -83,5 +83,22 @@ else
         // No enemies, follow player with delay
         x = lerp(x, obj_player.x, follow_speed);
         y = lerp(y, obj_player.y, follow_speed);
+    }
+}
+
+if (!instance_exists(obj_player)) { 
+    show_hint = false;
+    exit;
+}
+
+show_hint = point_distance(x, y, obj_player.x, obj_player.y) < 24;
+
+if (show_hint && keyboard_check_pressed(ord("E"))) {
+    if (scr_shop(item_cost)) {
+        audio_play_sound(snd_buy, 1, false);
+
+        global.f_f_f = true;
+		audio_play_sound(snd_buy, 1, false);
+        instance_destroy();
     }
 }
