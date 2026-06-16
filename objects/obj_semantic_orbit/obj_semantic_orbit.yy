@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_JS",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_semantic_orbit",
+  "eventList":[],
   "managed":true,
-  "name":"obj_JS",
+  "name":"obj_semantic_orbit",
   "overriddenProperties":[],
   "parent":{
     "name":"shop_items_objects",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_jogging_shorts",
-    "path":"sprites/spr_jogging_shorts/spr_jogging_shorts.yy",
+    "name":"spr_semantic_orbit",
+    "path":"sprites/spr_semantic_orbit/spr_semantic_orbit.yy",
   },
   "spriteMaskId":null,
   "visible":true,
