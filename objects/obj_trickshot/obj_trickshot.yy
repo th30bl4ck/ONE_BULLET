@@ -6,8 +6,8 @@
   "name":"obj_trickshot",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_upgrades_objects",
-    "path":"folders/Objects/shop_objects/shop_upgrades_objects.yy",
+    "name":"shop_items_objects",
+    "path":"folders/Objects/shop_objects/shop_items_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"trickshot_spr",
-    "path":"sprites/trickshot_spr/trickshot_spr.yy",
+    "name":"spr_trickshot",
+    "path":"sprites/spr_trickshot/spr_trickshot.yy",
   },
   "spriteMaskId":null,
   "visible":true,
