@@ -15,10 +15,6 @@ if (!variable_instance_exists(id, "bullet_id")) bullet_id = noone;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_delay")) bullet_pickup_shoot_delay = 8;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_timer")) bullet_pickup_shoot_timer = 0;
 
-
-if (invuln > 0) invuln -= 1;
-
-
 if (global.note_open) exit;
 
 
@@ -92,7 +88,6 @@ if (state == "dying") {
 
     exit;
 }
-
 
 
 if (invuln > 0) invuln -= 1;
@@ -171,6 +166,7 @@ else{
     last_sprite = sprite_index;
     sprite_timer = 0;
 }
+
 
 
 // =========================
