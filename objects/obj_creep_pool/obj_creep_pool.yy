@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alexs_arsanal",
+  "%Name":"obj_creep_pool",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_alexs_arsanal",
+  "name":"obj_creep_pool",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_items_objects",
-    "path":"folders/Objects/shop_objects/shop_items_objects.yy",
+    "name":"shop_objects",
+    "path":"folders/Objects/shop_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_alexs_arsanal",
-    "path":"sprites/spr_alexs_arsanal/spr_alexs_arsanal.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -23,8 +23,15 @@ global.items = {
 		f_f_f: {
 			name: "f_f_f",
 			sprite_index: spr_fantastic_flesh_fel,
-			object_index: obj_f_f_f
+			object_index: obj_f_f_f_in_shop
 		},
+        
+        liquid_lead: {
+            name: "liquid_lead",
+            sprite_index: spr_liquid_lead,
+            object_index: obj_liquid_lead
+           
+        },
     
 };
 
@@ -32,7 +39,8 @@ var item = choose(
     global.items.pierce,
     global.items.the_jerk,
     global.items.alexs_arsanal,
-    global.items.f_f_f
+    global.items.f_f_f,
+    global.items.liquid_lead
 );
 instance_create_layer(x, y, "Instances", item.object_index);
 instance_destroy();

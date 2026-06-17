@@ -14,8 +14,8 @@ if (!variable_instance_exists(id, "can_shoot")) can_shoot = true;
 if (!variable_instance_exists(id, "bullet_id")) bullet_id = noone;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_delay")) bullet_pickup_shoot_delay = 8;
 if (!variable_instance_exists(id, "bullet_pickup_shoot_timer")) bullet_pickup_shoot_timer = 0;
-
-
+if (!variable_instance_exists(id, "has_creep_bullet_item")) has_creep_bullet_item = false;
+if (!variable_global_exists("liquid_lead")) global.liquid_lead = false;
 if (invuln > 0) invuln -= 1;
 
 
@@ -306,12 +306,15 @@ if (can_shoot && bullet_pickup_shoot_timer <= 0 && (mouse_check_button_pressed(m
     bullet_id.speed = global.player_bullet_speed;
     bullet_id.owner = id;
 
-    bullet_id.start_x = bullet_id.x;
-    bullet_id.start_y = bullet_id.y;
-    bullet_id.max_distance = global.bullet_max_distance;
-    bullet_id.state = "fired";
+ bullet_id.start_x = bullet_id.x;
+bullet_id.start_y = bullet_id.y;
+bullet_id.max_distance = global.bullet_max_distance;
+bullet_id.state = "fired";
 
-    can_shoot = false;
+// Liquid Lead item effect
+bullet_id.has_liquid_lead = global.liquid_lead;
+
+can_shoot = false;
 }
 
 if (keyboard_check_pressed(ord("R"))) {

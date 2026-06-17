@@ -11,3 +11,9 @@ xp_value = 3;
 
 stuck_timer = 0;
 last_player_dist = 999999;
+
+event_inherited();
+
+event_inherited();
+
+hp = 30;

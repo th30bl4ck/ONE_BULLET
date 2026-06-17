@@ -20,6 +20,8 @@ function player_health_create_default()
     return hp;
 }
 
+has_creep_bullet_item = false;
+
 var _player_health_exists = variable_global_exists("player_health");
 
 if (!_player_health_exists || !is_struct(global.player_health))

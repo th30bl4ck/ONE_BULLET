@@ -1,3 +1,5 @@
+
+
 if (in_shop)
 {
     play_music(snd_music_shop);
