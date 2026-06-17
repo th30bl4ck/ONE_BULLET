@@ -1,4 +1,8 @@
-if (global.note_open) exit;
+var enemy_speed = move_speed;
+
+if (variable_instance_exists(id, "slowed") && slowed) {
+    enemy_speed *= slow_multiplier;
+}if (global.note_open) exit;
 
 if (global.levelup_active) exit;
 
@@ -13,7 +17,7 @@ if (state == "chase") {
 
     // Move toward player
     var dir = point_direction(x, y, px, py);
-    x += lengthdir_x(move_speed, dir);
+    x += lengthdir_x(enemy_speed, dir);
     y += lengthdir_y(move_speed, dir);
 
     // If player enters mid-range begin charge
@@ -156,6 +160,6 @@ ty += anchor_jitter * 0.5;
 if (state != "charge")
 {
     var dir = point_direction(x, y, tx, ty);
-    x += lengthdir_x(move_speed, dir);
+    x += lengthdir_x(enemy_speed, dir);
     y += lengthdir_y(move_speed, dir);
 }

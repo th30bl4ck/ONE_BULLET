@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_f_f_f",
+  "%Name":"obj_f_f_f_in_shop",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_f_f_f",
+  "name":"obj_f_f_f_in_shop",
   "overriddenProperties":[],
   "parent":{
     "name":"shop_items_objects",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_f_f_f_right",
-    "path":"sprites/spr_f_f_f_right/spr_f_f_f_right.yy",
+    "name":"spr_fantastic_flesh_fel",
+    "path":"sprites/spr_fantastic_flesh_fel/spr_fantastic_flesh_fel.yy",
   },
   "spriteMaskId":null,
   "visible":true,
