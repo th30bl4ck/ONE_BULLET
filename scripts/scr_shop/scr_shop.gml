@@ -20,8 +20,8 @@ function scr_shop(_cost)
             case 8: global.shop_item_8 = -1; break; 
         }
     }
+        return true;
     }
-    return true;
-
+    
     return false;
 }

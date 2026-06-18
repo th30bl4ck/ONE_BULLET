@@ -8,31 +8,31 @@ switch (object_index) {
         shop_item = global.shop_item_1; 
         break;
     case obj_random_item_2:
-        shop_item_slot = 1;
+        shop_item_slot = 2;
         shop_item = global.shop_item_2; 
         break;
     case obj_random_item_3:
-        shop_item_slot = 1;
+        shop_item_slot = 3;
         shop_item = global.shop_item_3; 
         break;
     case obj_random_item_4:
-        shop_item_slot = 1;
+        shop_item_slot = 4;
         shop_item = global.shop_item_4; 
         break;
     case obj_random_item_5:
-        shop_item_slot = 1;
+        shop_item_slot = 5;
         shop_item = global.shop_item_5; 
         break;
     case obj_random_item_6:
-        shop_item_slot = 1;
+        shop_item_slot = 6;
         shop_item = global.shop_item_6; 
         break;
     case obj_random_item_7:
-        shop_item_slot = 1;
+        shop_item_slot = 7;
         shop_item = global.shop_item_7; 
         break;
     case obj_random_item_8:
-        shop_item_slot = 1;
+        shop_item_slot = 8;
         shop_item = global.shop_item_8; 
         break;
 }
