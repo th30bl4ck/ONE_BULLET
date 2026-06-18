@@ -28,7 +28,6 @@ if (!_player_health_exists || !is_struct(global.player_health))
 }
 else
 {
-    // Recover from death/restart states and ensure arrays match max HP
     if (!is_array(global.player_health.segments) || !is_array(global.player_health.frames))
     {
         global.player_health.segments = array_create(global.player_health.max, 0);

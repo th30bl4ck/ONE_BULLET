@@ -191,7 +191,7 @@ if (global.JS == true) {
     if (same_sprite){
      if (global.JS_bonus <= 3){
            global.JS_bonus += 0.1;
-         with (obj_player) { move_speed = 3 + global.JS_bonus; }
+         with (obj_player) { move_speed = 3 + global.JS_bonus + global.player_move_speed_bonus; }
      }
     }
     else if (!same_sprite){
