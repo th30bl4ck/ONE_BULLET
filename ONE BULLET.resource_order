@@ -147,7 +147,6 @@
     {"name":"Sprite73","order":1,"path":"sprites/Sprite73/Sprite73.yy",},
     {"name":"Sprite78","order":1,"path":"sprites/Sprite78/Sprite78.yy",},
     {"name":"Sprite90","order":2,"path":"sprites/Sprite90/Sprite90.yy",},
-    {"name":"trickshot_spr","order":1,"path":"sprites/trickshot_spr/trickshot_spr.yy",},
     {"name":"boss","order":2,"path":"tilesets/boss/boss.yy",},
     {"name":"chestrm_tileset","order":3,"path":"tilesets/chestrm_tileset/chestrm_tileset.yy",},
     {"name":"rm_medbay","order":4,"path":"tilesets/rm_medbay/rm_medbay.yy",},
