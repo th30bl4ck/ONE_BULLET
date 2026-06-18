@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_4FC1150C","path":"rooms/rm_shop_W/rm_shop_W.yy",},
     {"name":"inst_464E3331","path":"rooms/rm_shop_W/rm_shop_W.yy",},
-    {"name":"inst_5E2DEF2B","path":"rooms/rm_shop_W/rm_shop_W.yy",},
     {"name":"inst_7C4EDE4E","path":"rooms/rm_shop_W/rm_shop_W.yy",},
     {"name":"inst_6905DE12","path":"rooms/rm_shop_W/rm_shop_W.yy",},
     {"name":"inst_123BB1F1","path":"rooms/rm_shop_W/rm_shop_W.yy",},
