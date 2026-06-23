@@ -3,13 +3,15 @@
   "%Name":"obj_JS",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_JS",
   "overriddenProperties":[],
   "parent":{
-    "name":"shop_objects",
-    "path":"folders/Objects/shop_objects.yy",
+    "name":"shop_items_objects",
+    "path":"folders/Objects/shop_objects/shop_items_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_jogging_shorts",
+    "path":"sprites/spr_jogging_shorts/spr_jogging_shorts.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

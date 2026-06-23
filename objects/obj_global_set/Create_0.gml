@@ -61,6 +61,12 @@ global.bullet_max_distance = 300;
 global.semantic_orbit = false;
 global.the_jerk = false;
 global.bullet_pierce = false;
+global.JS = false;
+global.exorsizm = false;
+global.trickshot = false;
+global.f_f_f = false;
+global.alexs_arsanal =false;
+
 
 game_speed = 1;
 
@@ -123,3 +129,19 @@ global.room_lighting_room_size_uniform = shader_get_uniform(shader_normal_room, 
 // shop items
 // ===========
 global.shop_item_1 = noone;
+global.shop_item_2 = noone;
+global.shop_item_3 = noone;
+global.shop_item_4 = noone;
+global.shop_item_5 = noone;
+global.shop_item_6 = noone;
+global.shop_item_7 = noone;
+global.shop_item_8 = noone;
+
+global.bought_1 = false;
+global.bought_2 = false;
+global.bought_3 = false;
+global.bought_4 = false;
+global.bought_5 = false;
+global.bought_6 = false;
+global.bought_7 = false;
+global.bought_8 = false;

@@ -1,27 +1,27 @@
 {
   "$GMSprite":"v2",
-  "%Name":"medbay_tileset",
+  "%Name":"Sprite90",
   "bboxMode":0,
-  "bbox_bottom":127,
-  "bbox_left":14,
-  "bbox_right":127,
-  "bbox_top":48,
+  "bbox_bottom":223,
+  "bbox_left":16,
+  "bbox_right":239,
+  "bbox_top":32,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a790210c-6a03-4778-9766-6d675ad29b0c","name":"a790210c-6a03-4778-9766-6d675ad29b0c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"dda5c7f5-30ab-4b83-bcd1-0290d9642e6e","name":"dda5c7f5-30ab-4b83-bcd1-0290d9642e6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":128,
+  "height":256,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ca5a881a-1732-4d20-b771-deb3b189b1c2","blendMode":0,"displayName":"default","isLocked":false,"name":"ca5a881a-1732-4d20-b771-deb3b189b1c2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"01762353-58b9-456b-90fd-d6ddf0e72ff2","blendMode":0,"displayName":"default","isLocked":false,"name":"01762353-58b9-456b-90fd-d6ddf0e72ff2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"medbay_tileset",
+  "name":"Sprite90",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"medbay_tileset",
+    "%Name":"Sprite90",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"medbay_tileset",
+    "name":"Sprite90",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a790210c-6a03-4778-9766-6d675ad29b0c","path":"sprites/medbay_tileset/medbay_tileset.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1d78535b-ed80-486f-b71b-bc46959e83d2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dda5c7f5-30ab-4b83-bcd1-0290d9642e6e","path":"sprites/Sprite90/Sprite90.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4c4e304c-48be-452f-acd7-5b5ac3132654","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":256,
 }

@@ -30,7 +30,6 @@ if (!_player_health_exists || !is_struct(global.player_health))
 }
 else
 {
-    // Recover from death/restart states and ensure arrays match max HP
     if (!is_array(global.player_health.segments) || !is_array(global.player_health.frames))
     {
         global.player_health.segments = array_create(global.player_health.max, 0);
@@ -263,7 +262,9 @@ hit_flash_timer = 0;
 if (!variable_global_exists("player_move_speed_bonus")) global.player_move_speed_bonus = 0;
 if (!variable_global_exists("player_dash_time_bonus")) global.player_dash_time_bonus = 0;
 
-move_speed = 3 + global.player_move_speed_bonus;
+bonus = 0;
+global.JS_bonus = 0;
+move_speed = 3 + global.player_move_speed_bonus + global.JS_bonus;
 is_dashing = false;
 dash_speed = 10;
 dash_time = 8 + global.player_dash_time_bonus;
@@ -284,3 +285,6 @@ death_cam_y = y;
 // Fallback bullet spawn layer used in Step when firing/orbiting.
 shoot_layer = layer;
 if (layer_exists("Instances")) shoot_layer = "Instances";
+
+last_sprite = sprite_index;
+sprite_timer = 0;

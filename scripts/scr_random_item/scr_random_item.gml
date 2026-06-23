@@ -23,27 +23,43 @@ global.items = {
 		f_f_f: {
 			name: "f_f_f",
 			sprite_index: spr_fantastic_flesh_fel,
-			object_index: obj_f_f_f_in_shop
+			object_index: obj_f_f_f
 		},
         
-        liquid_lead: {
-            name: "liquid_lead",
-            sprite_index: spr_liquid_lead,
-            object_index: obj_liquid_lead
-           
-        },
+    JS: {
+        name: "Jogging Shorts",
+        sprite_index: spr_jogging_shorts,
+        object_index: obj_JS
+    },
     
+    exorsizm: {
+        name: "Exorsizm",
+        sprite_index: spr_exorsizm,
+        object_index: obj_exorsizm
+    },
+    
+    semantic_orbit: {
+        name: "Semantic Orbit",
+        sprite_index: spr_semantic_orbit,
+        object_index: obj_semantic_orbit
+    },
+    
+    trickshot: {
+        name: "Trickshot",
+        sprite_index: spr_trickshot,
+        object_index: obj_trickshot
+    },
 };
 
 var item = choose(
     global.items.pierce,
     global.items.the_jerk,
     global.items.alexs_arsanal,
-    global.items.f_f_f,
-    global.items.liquid_lead
+    global.items.JS,
+    global.items.exorsizm,
+    global.items.semantic_orbit,
+    global.items.trickshot,
 );
-instance_create_layer(x, y, "Instances", item.object_index);
-instance_destroy();
 
     return item
 }
