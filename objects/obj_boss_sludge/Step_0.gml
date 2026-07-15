@@ -2,7 +2,6 @@ if (global.levelup_active) exit;
 if (variable_global_exists("note_open") && global.note_open) exit;
 
 if (hit_flash_timer > 0) hit_flash_timer--;
-if (bar_beat_timer > 0) bar_beat_timer--;
 if (touch_damage_cooldown > 0) touch_damage_cooldown--;
 
 if (state == "dead")
@@ -60,6 +59,7 @@ if (touch_damage_cooldown <= 0 && place_meeting(x, y, obj_player))
 if (state == "idle")
 {
     boss_face_player();
+    boss_set_sprite(spr_boss_idle, 0.2, false);
     attack_cooldown--;
 
     var drift_dir = point_direction(x, y, obj_player.x, obj_player.y);
@@ -89,7 +89,7 @@ else if (state == "bounce")
     x += hsp;
     y += vsp;
 
-    var pad = 24;
+    var pad = 64;
     var hit_wall = false;
 
     if (x < pad)
@@ -121,7 +121,7 @@ else if (state == "bounce")
     if (hit_wall)
     {
         bounce_hits++;
-        bar_beat_timer = 8;
+        boss_set_sprite(spr_bounce, 0.45, true);
     }
 
     if (bounce_hits >= bounce_max_hits)
@@ -133,15 +133,7 @@ else if (state == "dash_windup")
 {
     attack_timer--;
     boss_face_player();
-
-    if (facing == 1)
-    {
-        boss_set_sprite(spr_f_f_f_build_up_R, 0.35, false);
-    }
-    else
-    {
-        boss_set_sprite(spr_f_f_f_build_up_L, 0.35, false);
-    }
+    boss_set_sprite(spr_boss_idle, 0.35, false);
 
     if (attack_timer <= 0)
     {
@@ -152,12 +144,12 @@ else if (state == "dash_windup")
         if (lengthdir_x(1, dash_dir) >= 0)
         {
             facing = 1;
-            boss_set_sprite(spr_dash_right, 0.5, true);
+            boss_set_sprite(spr_dash_right, 0.55, true);
         }
         else
         {
             facing = -1;
-            boss_set_sprite(spr_dash_left, 0.5, true);
+            boss_set_sprite(spr_dash_left, 0.55, true);
         }
     }
 }
@@ -168,8 +160,8 @@ else if (state == "dash")
     x += lengthdir_x(dash_speed, dash_dir);
     y += lengthdir_y(dash_speed, dash_dir);
 
-    x = clamp(x, 24, room_width - 24);
-    y = clamp(y, 24, room_height - 24);
+    x = clamp(x, 64, room_width - 64);
+    y = clamp(y, 64, room_height - 64);
 
     if (attack_timer <= 0)
     {
@@ -215,5 +207,5 @@ else if (state == "spit_windup")
     }
 }
 
-x = clamp(x, 16, room_width - 16);
-y = clamp(y, 16, room_height - 16);
+x = clamp(x, 48, room_width - 48);
+y = clamp(y, 48, room_height - 48);
