@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"boss",
-    "path":"folders/Sprites/enemy_sprites/boss.yy",
+    "name":"boss_sprites",
+    "path":"folders/Sprites/boss_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
