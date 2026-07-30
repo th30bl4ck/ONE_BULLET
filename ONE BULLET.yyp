@@ -131,6 +131,7 @@
     {"id":{"name":"obj_liquid_lead","path":"objects/obj_liquid_lead/obj_liquid_lead.yy",},},
     {"id":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},},
     {"id":{"name":"obj_music_controller","path":"objects/obj_music_controller/obj_music_controller.yy",},},
+    {"id":{"name":"obj_navigation_manager","path":"objects/obj_navigation_manager/obj_navigation_manager.yy",},},
     {"id":{"name":"obj_normal_room_music","path":"objects/obj_normal_room_music/obj_normal_room_music.yy",},},
     {"id":{"name":"obj_pause_machanic","path":"objects/obj_pause_machanic/obj_pause_machanic.yy",},},
     {"id":{"name":"obj_perice","path":"objects/obj_perice/obj_perice.yy",},},
@@ -227,6 +228,7 @@
     {"id":{"name":"scr_level_up_menu","path":"scripts/scr_level_up_menu/scr_level_up_menu.yy",},},
     {"id":{"name":"scr_load_text_file","path":"scripts/scr_load_text_file/scr_load_text_file.yy",},},
     {"id":{"name":"scr_music","path":"scripts/scr_music/scr_music.yy",},},
+    {"id":{"name":"scr_navigation","path":"scripts/scr_navigation/scr_navigation.yy",},},
     {"id":{"name":"scr_paint_tilemap","path":"scripts/scr_paint_tilemap/scr_paint_tilemap.yy",},},
     {"id":{"name":"scr_random_item","path":"scripts/scr_random_item/scr_random_item.yy",},},
     {"id":{"name":"scr_room_helpers","path":"scripts/scr_room_helpers/scr_room_helpers.yy",},},
@@ -271,11 +273,8 @@
     {"id":{"name":"spr_body_bags","path":"sprites/spr_body_bags/spr_body_bags.yy",},},
     {"id":{"name":"spr_boss_bar_beat","path":"sprites/spr_boss_bar_beat/spr_boss_bar_beat.yy",},},
     {"id":{"name":"spr_boss_defeat","path":"sprites/spr_boss_defeat/spr_boss_defeat.yy",},},
-<<<<<<< HEAD
-    {"id":{"name":"spr_boss_room","path":"sprites/spr_boss_room/spr_boss_room.yy",},},
-=======
     {"id":{"name":"spr_boss_idle","path":"sprites/spr_boss_idle/spr_boss_idle.yy",},},
->>>>>>> main
+    {"id":{"name":"spr_boss_room","path":"sprites/spr_boss_room/spr_boss_room.yy",},},
     {"id":{"name":"spr_boss_spit_right","path":"sprites/spr_boss_spit_right/spr_boss_spit_right.yy",},},
     {"id":{"name":"spr_bossbar","path":"sprites/spr_bossbar/spr_bossbar.yy",},},
     {"id":{"name":"spr_bounce","path":"sprites/spr_bounce/spr_bounce.yy",},},

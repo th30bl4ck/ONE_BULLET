@@ -145,3 +145,8 @@ show_debug_message("CONTROLLER READY");
 
 
 global.alexs_arsanal = false;
+
+if (!instance_exists(obj_navigation_manager))
+{
+    instance_create_depth(0, 0, 0, obj_navigation_manager);
+}

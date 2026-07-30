@@ -6,6 +6,8 @@ wave_enemy_spawned = 0;
 
 spawn_delay = 60;
 spawn_timer = 0;
+spawn_min_player_distance = 160;
+spawn_attempts = 96;
 
 wave_break_time = 200; 
 wave_break_timer = 0;
