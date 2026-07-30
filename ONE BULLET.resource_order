@@ -147,6 +147,7 @@
     {"name":"spr_liquid_lead_creep","order":4,"path":"sprites/spr_liquid_lead_creep/spr_liquid_lead_creep.yy",},
     {"name":"spr_liquid_lead","order":5,"path":"sprites/spr_liquid_lead/spr_liquid_lead.yy",},
     {"name":"spr_long_barrel","order":8,"path":"sprites/spr_long_barrel/spr_long_barrel.yy",},
+    {"name":"spr_main_menu_backround","order":2,"path":"sprites/spr_main_menu_backround/spr_main_menu_backround.yy",},
     {"name":"spr_semantic_orbit","order":6,"path":"sprites/spr_semantic_orbit/spr_semantic_orbit.yy",},
     {"name":"spr_shopkeeper_face","order":1,"path":"sprites/spr_shopkeeper_face/spr_shopkeeper_face.yy",},
     {"name":"spr_spit_left","order":6,"path":"sprites/spr_spit_left/spr_spit_left.yy",},
