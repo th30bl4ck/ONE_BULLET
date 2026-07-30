@@ -7,7 +7,6 @@ if (instance_number(obj_game_controller) > 1)
 
 show_debug_message("CONTROLLER CREATE RUNNING");
 
-// Seed GameMaker's RNG before procedural generation so each new run gets a fresh layout.
 randomize();
 show_debug_message("RNG SEED: " + string(random_get_seed()));
 
@@ -66,7 +65,7 @@ for (var yy = 0; yy < global.grid_h; yy++)
 show_debug_message("LAYOUT CREATED");
 
 // ========================
-// GENERATE + ASSIGN
+// GENERATE
 // ========================
 scr_generate_layout(global.map_x, global.map_y, 15);
 global.layout[global.map_y][global.map_x].visited = true;

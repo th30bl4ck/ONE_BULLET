@@ -1,4 +1,3 @@
-// Runs one step after room_goto so spawn markers exist in the *new* room.
 if (!variable_global_exists("entry_spawn_tag")) exit;
 if (global.entry_spawn_tag == "") exit;
 

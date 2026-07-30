@@ -14,3 +14,4 @@ start_y = y;
 max_distance = 300;
 
 scr_refresh_wall_tilemap();
+audio_play_sound(snd_fire_bullet,1, false);

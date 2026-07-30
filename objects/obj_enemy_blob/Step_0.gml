@@ -15,7 +15,7 @@ if (place_meeting(x, y, obj_player)) {
         // only take damage if not invulnerable
         if (invuln <= 0) {
             take_damage(1);
-            invuln = 30; // half-second of safety
+            invuln = 90; 
             hit_flash_timer = 15;
 
             if (variable_global_exists("room_damage_taken")) {
