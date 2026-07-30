@@ -1,104 +1,39 @@
-var enemy_count = instance_number(obj_enemy_parent);
-
-// If moving, bounce around like DVD logo
-if (is_moving)
+if (!instance_exists(obj_enemy_parent))
 {
-    x += hsp;
-    y += vsp;
+    mode = "follow";
 
-    // Bounce off room left/right walls
-    if (x <= 0)
-    {
-        x = 0;
-        hsp = abs(hsp);
-        image_xscale = 1; // face right
-    }
+    x = lerp(x, obj_player.x, follow_speed);
+    y = lerp(y, obj_player.y, follow_speed);
 
-    if (x >= room_width - sprite_width)
-    {
-        x = room_width - sprite_width;
-        hsp = -abs(hsp);
-        image_xscale = -1; // face left
-    }
-
-    // Bounce off top/bottom walls
-    if (y <= 0)
-    {
-        y = 0;
-        vsp = abs(vsp);
-        // no change sprite direction vertically
-    }
-
-    if (y >= room_height - sprite_height)
-    {
-        y = room_height - sprite_height;
-        vsp = -abs(vsp);
-        // Donot change sprite direction vertically
-    }
-
-    // Slowly lose speed over time
-    var current_speed = point_distance(0, 0, hsp, vsp);
-
-    if (current_speed > 0)
-    {
-        var new_speed = max(current_speed - friction_amount, 0);
-
-        if (new_speed <= 0.05)
-        {
-            hsp = 0;
-            vsp = 0;
-            is_moving = false;
-        }
-        else
-        {
-            var dir = point_direction(0, 0, hsp, vsp);
-            hsp = lengthdir_x(new_speed, dir);
-            vsp = lengthdir_y(new_speed, dir);
-        }
-    }
+    move_speed = normal_speed;
 }
 else
 {
-    // If stopped and enemies exist, launch in random direction
-    if (enemy_count > 0)
+    if (mode == "follow")
     {
-        var dir = irandom_range(0, 359);
-
-        hsp = lengthdir_x(move_speed, dir);
-        vsp = lengthdir_y(move_speed, dir);
-
-        if (hsp >= 0)
-        {
-            image_xscale = 1;
-        }
-        else
-        {
-            image_xscale = -1;
-        }
-
-        is_moving = true;
+        start_attack();
     }
-    else
+
+    var next_x = x + dir_x * move_speed;
+    var next_y = y + dir_y * move_speed;
+
+    if (place_meeting(next_x, y, obj_wall))
     {
-        // No enemies, follow player with delay
-        x = lerp(x, obj_player.x, follow_speed);
-        y = lerp(y, obj_player.y, follow_speed);
+        dir_x = -dir_x;
+        move_speed *= 0.75;
     }
-}
 
-if (!instance_exists(obj_player)) { 
-    show_hint = false;
-    exit;
-}
+    if (place_meeting(x, next_y, obj_wall))
+    {
+        dir_y = -dir_y;
+        move_speed *= 0.75;
+    }
 
-show_hint = point_distance(x, y, obj_player.x, obj_player.y) < 24;
+    x += dir_x * move_speed;
+    y += dir_y * move_speed;
 
-if (show_hint && keyboard_check_pressed(ord("E"))) {
-    if (scr_shop(item_cost)) {
-        audio_play_sound(snd_buy, 1, false);
-
-        global.f_f_f = true;
-		audio_play_sound(snd_buy, 1, false);
-        instance_destroy();
+    if (move_speed < min_speed)
+    {
+        start_attack();
     }
 }

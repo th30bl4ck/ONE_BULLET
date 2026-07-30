@@ -20,6 +20,8 @@ function player_health_create_default()
     return hp;
 }
 
+has_creep_bullet_item = false;
+
 var _player_health_exists = variable_global_exists("player_health");
 
 if (!_player_health_exists || !is_struct(global.player_health))
@@ -28,7 +30,6 @@ if (!_player_health_exists || !is_struct(global.player_health))
 }
 else
 {
-    // Recover from death/restart states and ensure arrays match max HP
     if (!is_array(global.player_health.segments) || !is_array(global.player_health.frames))
     {
         global.player_health.segments = array_create(global.player_health.max, 0);

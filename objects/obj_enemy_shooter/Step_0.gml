@@ -1,5 +1,9 @@
+var enemy_speed = move_speed;
 
-// SAFETY
+if (variable_instance_exists(id, "slowed") && slowed) {
+    enemy_speed *= slow_multiplier;
+}
+    // SAFETY
 if (global.levelup_active) exit;
 if (!instance_exists(obj_player)) exit;
 
@@ -121,12 +125,12 @@ var dir = point_direction(x, y, tx, ty);
 
 if (d > prefer_dist + slack)
 {
-    x += lengthdir_x(move_speed, dir);
+    x += lengthdir_x(enemy_speed, dir);
     y += lengthdir_y(move_speed, dir);
 }
 else if (d < prefer_dist - slack)
 {
-    x -= lengthdir_x(move_speed, dir);
+    x -= lengthdir_x(enemy_speed, dir);
     y -= lengthdir_y(move_speed, dir);
 }
 

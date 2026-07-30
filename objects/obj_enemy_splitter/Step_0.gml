@@ -1,3 +1,8 @@
+var enemy_speed = move_speed;
+
+if (variable_instance_exists(id, "slowed") && slowed) {
+    enemy_speed *= slow_multiplier;
+}
 if (global.note_open) exit;
 
 if (global.levelup_active) exit;
@@ -7,7 +12,7 @@ if (!ai_enabled) exit;
 
 var p = obj_player;
 direction = point_direction(x, y, p.x, p.y);
-x += lengthdir_x(move_speed, direction);
+x += lengthdir_x(enemy_speed, direction);
 y += lengthdir_y(move_speed, direction);
 
 if (place_meeting(x, y, obj_player)) {
@@ -83,5 +88,5 @@ if (point_distance(x, y, tx, ty) <= anchor_snap || stuck_timer >= 15)
 
 var dir = point_direction(x, y, tx, ty);
 
-x += lengthdir_x(move_speed, dir);
+x += lengthdir_x(enemy_speed, dir);
 y += lengthdir_y(move_speed, dir);

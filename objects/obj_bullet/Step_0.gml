@@ -89,3 +89,14 @@ if (global.the_jerk == true) {
 }
 
 image_angle = direction - 90;
+
+if (has_liquid_lead) {
+    liquid_trail_timer--;
+
+    if (liquid_trail_timer <= 0) {
+ var p = instance_create_layer(x, y, "Instances", obj_creep_pool);
+        liquid_trail_timer = liquid_trail_delay;
+
+        show_debug_message("LIQUID POOL SPAWNED");
+    }
+}

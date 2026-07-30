@@ -1,26 +1,34 @@
-radius = 96;
-inner_radius = 60;
+radius = 150;
+inner_radius = 50;
 
-damage = 20;
-push_force = 8;
+explosion_damage = 20;
+push_force = 16;
 
-life = 12;
+life = 20;
 max_life = life;
 
-// damage enemies once
-with (obj_enemy_parent) {
+with (obj_enemy_parent)
+{
     var dist = point_distance(x, y, other.x, other.y);
 
-    if (dist <= other.radius) {
+    if (dist <= other.radius)
+    {
         var dir = point_direction(other.x, other.y, x, y);
 
-        if (dist <= other.inner_radius) {
-            hp -= other.damage;
-            x += lengthdir_x(other.push_force, dir);
-            y += lengthdir_y(other.push_force, dir);
-        } else {
-            x += lengthdir_x(other.push_force * 1.5, dir);
-            y += lengthdir_y(other.push_force * 1.5, dir);
+        // inner explosion = damage
+        if (dist <= other.inner_radius)
+        {
+            hp -= other.explosion_damage;
+            show_debug_message("Explosion damaged enemy. HP: " + string(hp));
+        }
+
+        // whole explosion = push
+        x += lengthdir_x(other.push_force, dir);
+        y += lengthdir_y(other.push_force, dir);
+
+        if (hp <= 0)
+        {
+            instance_destroy();
         }
     }
 }
