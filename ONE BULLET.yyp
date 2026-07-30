@@ -274,6 +274,7 @@
     {"id":{"name":"spr_boss_bar_beat","path":"sprites/spr_boss_bar_beat/spr_boss_bar_beat.yy",},},
     {"id":{"name":"spr_boss_defeat","path":"sprites/spr_boss_defeat/spr_boss_defeat.yy",},},
     {"id":{"name":"spr_boss_idle","path":"sprites/spr_boss_idle/spr_boss_idle.yy",},},
+    {"id":{"name":"spr_boss_room","path":"sprites/spr_boss_room/spr_boss_room.yy",},},
     {"id":{"name":"spr_boss_spit_right","path":"sprites/spr_boss_spit_right/spr_boss_spit_right.yy",},},
     {"id":{"name":"spr_bossbar","path":"sprites/spr_bossbar/spr_bossbar.yy",},},
     {"id":{"name":"spr_bounce","path":"sprites/spr_bounce/spr_bounce.yy",},},
