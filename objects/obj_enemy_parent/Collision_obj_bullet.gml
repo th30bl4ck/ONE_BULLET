@@ -42,3 +42,5 @@ if (bullet_moving)
         instance_destroy();
     }
 }
+
+flash_red = 6;

@@ -164,3 +164,8 @@ if (obj_player.x > x) {
 } else {
     image_xscale = -1;   // Face left
 }
+
+if (flash_red > 0)
+{
+    flash_red--;
+}
