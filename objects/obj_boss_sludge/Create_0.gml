@@ -108,6 +108,9 @@ function boss_die()
     hp = 0;
     boss_set_sprite(spr_boss_defeat, 0.35, true);
 
+    var _coins = max(0, boss_coin_reward - global.room_damage_taken);
+    if (_coins > 0) scr_coins_spawn(_coins);
+
     with (obj_door_parent)
     {
         unlocked = true;
