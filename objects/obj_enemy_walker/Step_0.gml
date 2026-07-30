@@ -90,3 +90,8 @@ var dir = point_direction(x, y, tx, ty);
 
 x += lengthdir_x(enemy_speed, dir);
 y += lengthdir_y(enemy_speed, dir);
+
+if (flash_red > 0)
+{
+    flash_red--;
+}

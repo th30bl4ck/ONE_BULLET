@@ -14,3 +14,5 @@ if (!variable_instance_exists(id, "base_speed")) {
 ;
 hsp = 0;
 vsp = 0;
+
+flash_red = 0;

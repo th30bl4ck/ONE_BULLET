@@ -163,3 +163,8 @@ if (state != "charge")
     x += lengthdir_x(enemy_speed, dir);
     y += lengthdir_y(move_speed, dir);
 }
+
+if (flash_red > 0)
+{
+    flash_red--;
+}
