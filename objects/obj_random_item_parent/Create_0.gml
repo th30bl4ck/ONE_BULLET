@@ -40,14 +40,14 @@ switch (object_index) {
 if (shop_item == noone){
     shop_item = scr_random_item();
       switch (shop_item_slot){
-            case 1: global.shop_item_1 = -1; break;
-            case 2: global.shop_item_2 = -1; break;
-            case 3: global.shop_item_3 = -1; break;
-            case 4: global.shop_item_4 = -1; break;
-            case 5: global.shop_item_5 = -1; break;
-            case 6: global.shop_item_6 = -1; break;
-            case 7: global.shop_item_7 = -1; break;
-            case 8: global.shop_item_8 = -1; break; 
+            case 1: global.shop_item_1 = shop_item; break;
+            case 2: global.shop_item_2 = shop_item; break;
+            case 3: global.shop_item_3 = shop_item; break;
+            case 4: global.shop_item_4 = shop_item; break;
+            case 5: global.shop_item_5 = shop_item; break;
+            case 6: global.shop_item_6 = shop_item; break;
+            case 7: global.shop_item_7 = shop_item; break;
+            case 8: global.shop_item_8 = shop_item; break;
         }
 }
 
