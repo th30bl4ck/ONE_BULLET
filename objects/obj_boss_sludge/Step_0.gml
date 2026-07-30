@@ -1,4 +1,4 @@
-if (global.levelup_active) exit;
+if (variable_global_exists("levelup_active") && global.levelup_active) exit;
 if (variable_global_exists("note_open") && global.note_open) exit;
 
 if (hit_flash_timer > 0) hit_flash_timer--;
