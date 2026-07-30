@@ -45,6 +45,7 @@
     {"name":"obj_enemy_splitter_kids","order":1,"path":"objects/obj_enemy_splitter_kids/obj_enemy_splitter_kids.yy",},
     {"name":"obj_f_f_f_in_shop","order":5,"path":"objects/obj_f_f_f_in_shop/obj_f_f_f_in_shop.yy",},
     {"name":"obj_game_controller","order":13,"path":"objects/obj_game_controller/obj_game_controller.yy",},
+    {"name":"obj_navigation_manager","order":14,"path":"objects/obj_navigation_manager/obj_navigation_manager.yy",},
     {"name":"obj_JS","order":4,"path":"objects/obj_JS/obj_JS.yy",},
     {"name":"obj_liquid_lead","order":4,"path":"objects/obj_liquid_lead/obj_liquid_lead.yy",},
     {"name":"obj_music_controller","order":18,"path":"objects/obj_music_controller/obj_music_controller.yy",},
