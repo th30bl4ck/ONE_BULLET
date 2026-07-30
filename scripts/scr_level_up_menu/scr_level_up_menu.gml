@@ -99,7 +99,7 @@ function scr_apply_upgrade(choice)
     {
         case "Rollershoes":
             global.player_move_speed_bonus += 1;
-            with (obj_player) { move_speed = 3 + global.player_move_speed_bonus; }
+            with (obj_player) { move_speed = 3 + global.player_move_speed_bonus + global.JS_bonus; }
         break;
 
         case "Medkit":

@@ -142,3 +142,6 @@ debug_add_room("rm_shop_S", rm_shop_S);
 debug_add_room("rm_shop_W", rm_shop_W);
 
 show_debug_message("CONTROLLER READY");
+
+
+global.alexs_arsanal = false;

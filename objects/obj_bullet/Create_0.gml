@@ -15,3 +15,11 @@ max_distance = 300;
 
 scr_refresh_wall_tilemap();
 audio_play_sound(snd_fire_bullet,1, false);
+has_liquid_lead = false;
+liquid_lead_pool = noone;
+
+damage=10 
+
+has_liquid_lead = false;
+liquid_trail_timer = 0;
+liquid_trail_delay = 2;

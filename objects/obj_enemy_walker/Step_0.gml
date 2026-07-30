@@ -4,11 +4,16 @@ if (global.levelup_active) exit;
 
 if (!ai_enabled) exit;
 
+var enemy_speed = move_speed;
+
+if (variable_instance_exists(id, "slowed") && slowed) {
+    enemy_speed *= slow_multiplier;
+}
 
 var p = obj_player;
 direction = point_direction(x, y, p.x, p.y);
-x += lengthdir_x(move_speed, direction);
-y += lengthdir_y(move_speed, direction);
+x += lengthdir_x(enemy_speed, direction);
+y += lengthdir_y(enemy_speed, direction);
 
 
 if (place_meeting(x, y, obj_player)) {
@@ -22,11 +27,8 @@ if (place_meeting(x, y, obj_player)) {
             if (variable_global_exists("room_damage_taken")) {
                 global.room_damage_taken += 1;
             }
-
-
         }
 
-        // if HP is zero or below start death
         if (hp <= 0) {
             state = "dying";
             sprite_index = spr_player_death;
@@ -37,12 +39,11 @@ if (place_meeting(x, y, obj_player)) {
 }
 
 
-
 // Face direction of player
 if (obj_player.x > x) {
-    image_xscale = 1;    // Face right
+    image_xscale = 1;
 } else {
-    image_xscale = -1;   // Face left
+    image_xscale = -1;
 }
 
 
@@ -87,5 +88,5 @@ if (point_distance(x, y, tx, ty) <= anchor_snap || stuck_timer >= 15)
 
 var dir = point_direction(x, y, tx, ty);
 
-x += lengthdir_x(move_speed, dir);
-y += lengthdir_y(move_speed, dir);
+x += lengthdir_x(enemy_speed, dir);
+y += lengthdir_y(enemy_speed, dir);

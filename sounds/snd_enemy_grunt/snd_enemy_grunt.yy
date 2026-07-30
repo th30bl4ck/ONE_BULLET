@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_enemy_grunt",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"enemy_sounds",
+    "path":"folders/Sounds/enemy_sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
