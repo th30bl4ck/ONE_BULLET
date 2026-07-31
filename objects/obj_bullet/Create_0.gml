@@ -18,7 +18,7 @@ audio_play_sound(snd_fire_bullet,1, false);
 has_liquid_lead = false;
 liquid_lead_pool = noone;
 
-damage=10 
+damage = 10;
 
 has_liquid_lead = false;
 liquid_trail_timer = 0;
