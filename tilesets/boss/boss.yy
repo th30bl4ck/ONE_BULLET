@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_boss_room",
-    "path":"sprites/spr_boss_room/spr_boss_room.yy",
+    "name":"Sprite78",
+    "path":"sprites/Sprite78/Sprite78.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
