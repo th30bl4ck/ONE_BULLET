@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"spooger_sprites",
-    "path":"folders/Sprites/enemy_sprites/spooger_sprites.yy",
+    "path":"folders/Sprites/enemy_sprites/area1/spooger_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
