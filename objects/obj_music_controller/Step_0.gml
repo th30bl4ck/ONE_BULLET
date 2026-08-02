@@ -1,6 +1,12 @@
+if (global.sound_muted)
+{
+    audio_master_gain(0);
+}
+else
+{
+    audio_master_gain(1);
+}if (in_shop)
 
-
-if (in_shop)
 {
     play_music(snd_music_shop);
 }

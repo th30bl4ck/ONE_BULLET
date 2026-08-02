@@ -22,6 +22,7 @@
     {"name":"inst_6C9F2F3A","path":"rooms/rm_ESW_v1/rm_ESW_v1.yy",},
     {"name":"inst_3159D571","path":"rooms/rm_ESW_v1/rm_ESW_v1.yy",},
     {"name":"inst_7949390C","path":"rooms/rm_ESW_v1/rm_ESW_v1.yy",},
+    {"name":"inst_142EC324","path":"rooms/rm_ESW_v1/rm_ESW_v1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,6 +30,7 @@
         {"$GMRInstance":"v4","%Name":"inst_37CB401A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37CB401A","objectId":{"name":"obj_room1_changer_west","path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":4.0,"scaleY":4.25,"x":96.0,"y":352.0,},
         {"$GMRInstance":"v4","%Name":"inst_4BF00BC5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4BF00BC5","objectId":{"name":"obj_room1_changer_south","path":"objects/obj_room1_changer_south/obj_room1_changer_south.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":3.5,"scaleY":4.75,"x":320.0,"y":736.0,},
         {"$GMRInstance":"v4","%Name":"inst_122606A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_122606A0","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.25,"scaleY":4.25,"x":1312.0,"y":352.0,},
+        {"$GMRInstance":"v4","%Name":"inst_142EC324","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_142EC324","objectId":{"name":"obj_normal_room_music","path":"objects/obj_normal_room_music/obj_normal_room_music.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":352.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tileset","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
           -347,0,1,28,-36,29,1,1073741852,-21,0,3,51,0,51,-153,0,1,36,-26,0,1,28,-9,29,1,805306396,-5,0,1,36,-26,

@@ -108,7 +108,22 @@ if (variable_global_exists("layout") && is_array(global.layout))
         }
     }
 }
+// ==============================
+//MUTE STUFF
+//===============================
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 
+var text = "Press M to Mute";
+
+if (global.sound_muted)
+{
+    text = "Press M to Unmute";
+}
+
+draw_text(display_get_gui_width() * 0.5,
+          display_get_gui_height() - 40,
+          text);
 
 // ===============================
 // BOTTOM-LEFT: UPGRADES LIST 
