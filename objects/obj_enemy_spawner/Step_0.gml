@@ -66,7 +66,10 @@ if (spawn_timer >= spawn_delay)
 
     // Full mix every wave
     var enemy_to_spawn = choose(
-       obj_enemy_dasher,
+        obj_enemy_walker,
+        obj_enemy_dasher,
+        obj_enemy_shooter,
+        obj_enemy_splitter
     );
 
     var spawn_pos = scr_nav_get_enemy_spawn_position(spawn_min_player_distance, spawn_attempts);

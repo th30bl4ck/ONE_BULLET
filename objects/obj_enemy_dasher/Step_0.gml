@@ -38,7 +38,6 @@ if (state == "chase") {
         dash_target_y = py;
     }
 }
-    else {alarm[0] = 0.1}
 }
 
 
