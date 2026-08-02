@@ -11,9 +11,6 @@ y += vsp;
 
 hsp *= 0.85;
 vsp *= 0.85;
-{
-    instance_destroy();
-}
 
 if (hp <= 0)
 {

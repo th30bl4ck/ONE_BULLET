@@ -158,6 +158,7 @@
     {"id":{"name":"obj_scale","path":"objects/obj_scale/obj_scale.yy",},},
     {"id":{"name":"obj_scorepopup","path":"objects/obj_scorepopup/obj_scorepopup.yy",},},
     {"id":{"name":"obj_semantic_orbit","path":"objects/obj_semantic_orbit/obj_semantic_orbit.yy",},},
+    {"id":{"name":"obj_set_up_path","path":"objects/obj_set_up_path/obj_set_up_path.yy",},},
     {"id":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},},
     {"id":{"name":"obj_shop_music_trigger","path":"objects/obj_shop_music_trigger/obj_shop_music_trigger.yy",},},
     {"id":{"name":"obj_shopkeeper","path":"objects/obj_shopkeeper/obj_shopkeeper.yy",},},
