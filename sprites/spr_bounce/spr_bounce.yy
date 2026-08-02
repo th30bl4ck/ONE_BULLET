@@ -47,8 +47,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"ooze",
-    "path":"folders/Sprites/boss_sprites/ooze.yy",
+    "name":"boss_sprites",
+    "path":"folders/Sprites/boss_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

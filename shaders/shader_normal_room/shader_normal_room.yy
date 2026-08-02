@@ -4,7 +4,7 @@
   "name":"shader_normal_room",
   "parent":{
     "name":"Shaders",
-    "path":"folders/Sounds/Shaders.yy",
+    "path":"folders/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",
