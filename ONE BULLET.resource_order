@@ -1,6 +1,17 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"area_1","order":1,"path":"folders/Sprites/enemy_sprites/area_1.yy",},
+    {"name":"spooger_sprites","order":1,"path":"folders/Sprites/enemy_sprites/area_1/spooger_sprites.yy",},
+    {"name":"area_2","order":2,"path":"folders/Sprites/enemy_sprites/area_2.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"obj_random_item_9","order":1,"path":"objects/obj_random_item_9/obj_random_item_9.yy",},
+    {"name":"spawn","order":4,"path":"sprites/spawn/spawn.yy",},
+    {"name":"spr_angry_harry","order":1,"path":"sprites/spr_angry_harry/spr_angry_harry.yy",},
+    {"name":"spr_basic_enemy","order":2,"path":"sprites/spr_basic_enemy/spr_basic_enemy.yy",},
+    {"name":"spr_deaflate_roids","order":2,"path":"sprites/spr_deaflate_roids/spr_deaflate_roids.yy",},
+    {"name":"spr_enemy_dasher","order":3,"path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},
+    {"name":"spr_inflate_roids","order":1,"path":"sprites/spr_inflate_roids/spr_inflate_roids.yy",},
+    {"name":"spr_roidz","order":1,"path":"sprites/spr_roidz/spr_roidz.yy",},
   ],
 }
