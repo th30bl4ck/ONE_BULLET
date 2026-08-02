@@ -49,6 +49,11 @@ global.items = {
         sprite_index: spr_trickshot,
         object_index: obj_trickshot
     },
+    liquid_lead: {
+        name: "liquid lead",
+        sprite_index:spr_liquid_lead,
+        object_index:obj_liquid_lead
+    },
 };
 
 var available_items = ds_list_create();
@@ -60,6 +65,7 @@ ds_list_add(available_items, global.items.JS);
 ds_list_add(available_items, global.items.exorsizm);
 ds_list_add(available_items, global.items.semantic_orbit);
 ds_list_add(available_items, global.items.trickshot);
+    ds_list_add(available_items, global.items.liquid_lead);
 
 var remove_used_item = function(_available_items, _used_item) {
     if (_used_item == noone || _used_item == -1) {

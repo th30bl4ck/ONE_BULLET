@@ -35,6 +35,10 @@ switch (object_index) {
         shop_item_slot = 8;
         shop_item = global.shop_item_8; 
         break;
+    case obj_random_item_9:
+        shop_item_slot = 8;
+        shop_item = global.shop_item_9; 
+        break;
 }
 
 if (shop_item == noone){
@@ -47,7 +51,8 @@ if (shop_item == noone){
             case 5: global.shop_item_5 = shop_item; break;
             case 6: global.shop_item_6 = shop_item; break;
             case 7: global.shop_item_7 = shop_item; break;
-            case 8: global.shop_item_8 = shop_item; break;
+            case 8: global.shop_item_8 = shop_item; break; 
+            case 9: global.shop_item_9 = shop_item; break;
         }
 }
 

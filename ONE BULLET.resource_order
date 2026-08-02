@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_random_item_9","order":1,"path":"objects/obj_random_item_9/obj_random_item_9.yy",},
+  ],
 }
