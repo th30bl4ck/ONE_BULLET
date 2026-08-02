@@ -84,7 +84,10 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_effect_glow-1.0.0","name":"io.gamemaker.gm_effect_glow-1.0.0","path":"io.gamemaker.gm_effect_glow-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_underwater-1.0.0","name":"io.gamemaker.gm_filter_underwater-1.0.0","path":"io.gamemaker.gm_filter_underwater-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"2026-06-13 23-58-22.mp4","CopyToMask":-1,"filePath":"datafiles","name":"2026-06-13 23-58-22.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"2026-06-14 00-03-04.mp4","CopyToMask":-1,"filePath":"datafiles","name":"2026-06-14 00-03-04.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
