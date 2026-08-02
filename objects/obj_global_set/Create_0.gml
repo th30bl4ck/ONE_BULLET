@@ -110,6 +110,15 @@ global.next_room = noone;
 global.spawn_object = undefined;
 global.wall_tilemap_id = noone;
 global.wall_tilemap_room = noone;
+global.nav_cell_size = 32;
+global.nav_grid = noone;
+global.nav_grid_room = noone;
+global.nav_grid_cell_size = global.nav_cell_size;
+global.nav_grid_cols = 0;
+global.nav_grid_rows = 0;
+global.nav_blocker_objects = [obj_wall];
+global.enemy_spawn_min_player_distance = 160;
+global.enemy_spawn_attempts = 96;
 global.enemy_anchor_counts = [0, 0, 0, 0];
 global.enemy_anchor_offsets = [
     [-64, 0],

@@ -1,18 +1,12 @@
-function spawn_enemy_at_edge(){
 function spawn_enemy_at_edge()
 {
-    var side = irandom(3);
-    var xx, yy;
+    var enemy_to_spawn = enemy_type;
+    var min_dist = variable_global_exists("enemy_spawn_min_player_distance") ? global.enemy_spawn_min_player_distance : 160;
+    var attempts = variable_global_exists("enemy_spawn_attempts") ? global.enemy_spawn_attempts : 64;
+    var pos = scr_nav_get_enemy_spawn_position(min_dist, attempts);
 
-    switch (side)
-    {
-        case 0: xx = -32; yy = irandom(room_height); break;           // left
-        case 1: xx = room_width + 32; yy = irandom(room_height); break; // right
-        case 2: xx = irandom(room_width); yy = -32; break;             // top
-        case 3: xx = irandom(room_width); yy = room_height + 32; break; // bottom
-    }
+    if (!pos.found)
+        return noone;
 
-    instance_create_layer(xx, yy, "Instances", enemy_type);
-}
-
+    return instance_create_layer(pos.x, pos.y, "Instances", enemy_to_spawn);
 }

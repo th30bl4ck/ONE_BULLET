@@ -64,18 +64,6 @@ if (spawn_timer >= spawn_delay)
 {
     spawn_timer = 0;
 
-    // Spawn from room edges
-    var side = irandom(3);
-    var xx, yy;
-
-    switch (side)
-    {
-        case 0: xx = -32; yy = irandom(room_height); break;
-        case 1: xx = room_width + 32; yy = irandom(room_height); break;
-        case 2: xx = irandom(room_width); yy = -32; break;
-        case 3: xx = irandom(room_width); yy = room_height + 32; break;
-    }
-
     // Full mix every wave
     var enemy_to_spawn = choose(
         obj_enemy_walker,
@@ -84,10 +72,18 @@ if (spawn_timer >= spawn_delay)
         obj_enemy_splitter
     );
 
-    var e = instance_create_layer(xx, yy, "Instances", enemy_to_spawn);
-    scr_assign_anchor(e);
+    var spawn_pos = scr_nav_get_enemy_spawn_position(spawn_min_player_distance, spawn_attempts);
 
-    wave_enemy_spawned++;
+    if (spawn_pos.found)
+    {
+        var e = instance_create_layer(spawn_pos.x, spawn_pos.y, "Instances", enemy_to_spawn);
+        scr_assign_anchor(e);
+        wave_enemy_spawned++;
+    }
+    else
+    {
+        show_debug_message("Enemy spawn failed: no walkable navigation cell found.");
+    }
 }
 }
 else
