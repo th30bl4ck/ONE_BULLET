@@ -6,8 +6,8 @@
   "name":"obj_bandage_man_kyle",
   "overriddenProperties":[],
   "parent":{
-    "name":"npc_obj",
-    "path":"folders/Objects/npc_obj.yy",
+    "name":"npc_objects",
+    "path":"folders/Objects/npc_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

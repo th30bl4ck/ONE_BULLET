@@ -88,7 +88,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
         }
     }
 
-    // If the main loop stopped early, attach any unused cell that borders the dungeon.
     while (placed < _target_count)
     {
         var added = false;
