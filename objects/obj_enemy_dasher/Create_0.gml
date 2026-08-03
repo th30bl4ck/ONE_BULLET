@@ -25,3 +25,14 @@ event_inherited();
 event_inherited();
 
 hp = 20;
+
+path = path_add();
+
+target_y = obj_player.y;
+target_x = obj_player.x;
+
+
+px = obj_player.x;
+py = obj_player.y;
+global.dasher_dist = point_distance(x, y, px, py);
+start = true;
