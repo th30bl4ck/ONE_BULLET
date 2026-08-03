@@ -1,5 +1,5 @@
 // Movement speeds
-move_speed = 0.8;
+move_speed = 1.25;
 dash_speed = 12;
 
 // Ranges
@@ -33,5 +33,5 @@ target_x = obj_player.x;
 
 px = obj_player.x;
 py = obj_player.y;
-global.dasher_dist = point_distance(x, y, px, py);
+dasher_dist = point_distance(x, y, px, py);
 start = true;

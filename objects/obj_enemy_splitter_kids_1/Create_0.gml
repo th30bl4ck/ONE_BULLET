@@ -1,4 +1,6 @@
-move_speed = 0.8;
+event_inherited();
+
+move_speed = 1.25;
 
 ai_enabled = true;
 
@@ -6,10 +8,6 @@ xp_value = 3;
 
 stuck_timer = 0;
 last_player_dist = 999999;
-
-event_inherited();
-
-event_inherited();
 
 hp = 10;
 
