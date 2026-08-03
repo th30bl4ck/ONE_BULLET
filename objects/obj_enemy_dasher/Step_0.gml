@@ -15,7 +15,7 @@ if (global.levelup_active) exit;
 
 var px = obj_player.x;
 var py = obj_player.y;
-global.dasher_dist = point_distance(x, y, px, py);
+dasher_dist = point_distance(x, y, px, py);
 
 // =====================
 // CHASE STATE
@@ -29,7 +29,7 @@ if (state == "chase") {
     y += lengthdir_y(move_speed, dir);
 
     // If player enters mid-range begin charge
-    if (global.dasher_dist < mid_range) {
+    if (dasher_dist < mid_range) {
         state = "charge";
         charge_timer = charge_time;
 
@@ -40,14 +40,12 @@ if (state == "chase") {
 }
 }
 
-
 // =====================
 // CHARGE STATE 
 // =====================
  if (sight == noone){
     path_end();
-
-
+    
  if (state == "charge") {
 
     // Flash red while charging
@@ -64,9 +62,6 @@ if (state == "chase") {
 }
 }
 
-else {
-    state = "chase"
-}
 
 // =====================
 // DASH STATE 
@@ -77,7 +72,7 @@ else {
     x += lengthdir_x(dash_speed, d);
     y += lengthdir_y(dash_speed, d);
 
-    // When he arrives close to destination → go into cooldown
+
     if (point_distance(x, y, dash_target_x, dash_target_y) < 8) {
         state = "cooldown";
         cooldown_timer = cooldown_time;
