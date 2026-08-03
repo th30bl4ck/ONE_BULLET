@@ -32,7 +32,6 @@ if (state == "chase") {
 }
 
 
-
 // =====================
 // CHARGE STATE 
 // =====================
@@ -61,7 +60,7 @@ else if (state == "dash") {
     x += lengthdir_x(dash_speed, d);
     y += lengthdir_y(dash_speed, d);
 
-    // When he arrives close to destination → go into cooldown
+
     if (point_distance(x, y, dash_target_x, dash_target_y) < 8) {
         state = "cooldown";
         cooldown_timer = cooldown_time;

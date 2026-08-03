@@ -22,6 +22,5 @@ image_yscale = 1.3;
 
 event_inherited();
 
-event_inherited();
 
 hp = 20;
