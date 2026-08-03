@@ -5,3 +5,9 @@ if (variable_instance_exists(id, "anchor_id") && variable_global_exists("enemy_a
         global.enemy_anchor_counts[anchor_id] = max(0, global.enemy_anchor_counts[anchor_id] - 1);
     }
 }
+
+// ======================
+// DESTROY PATH
+// ======================
+path_end();
+path_delete(path);
