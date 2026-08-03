@@ -28,7 +28,7 @@
   "origin":4,
   "parent":{
     "name":"splitter_sprites",
-    "path":"folders/Sprites/enemy_sprites/splitter_sprites.yy",
+    "path":"folders/Sprites/enemy_sprites/area_1/splitter_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

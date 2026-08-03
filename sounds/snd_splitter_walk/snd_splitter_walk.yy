@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_splitter_walk.mp3",
-  "volume":0.7,
+  "volume":0.49,
 }

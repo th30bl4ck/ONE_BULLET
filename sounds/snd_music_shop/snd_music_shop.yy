@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_music_shop.mpeg",
-  "volume":0.65,
+  "volume":0.77,
 }
