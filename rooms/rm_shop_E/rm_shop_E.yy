@@ -12,6 +12,7 @@
     {"name":"inst_26FD8049","path":"rooms/rm_shop_E/rm_shop_E.yy",},
     {"name":"inst_1A260335","path":"rooms/rm_shop_E/rm_shop_E.yy",},
     {"name":"inst_4F11356A","path":"rooms/rm_shop_E/rm_shop_E.yy",},
+    {"name":"inst_5CE3E3F2","path":"rooms/rm_shop_E/rm_shop_E.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -19,6 +20,7 @@
         {"$GMRInstance":"v4","%Name":"inst_1B7B4F62","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B7B4F62","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.5,"scaleY":3.25,"x":1358.25,"y":480.0,},
         {"$GMRInstance":"v4","%Name":"inst_37E8E999","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37E8E999","objectId":{"name":"obj_spawn_east","path":"objects/obj_spawn_east/obj_spawn_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":448.0,},
         {"$GMRInstance":"v4","%Name":"inst_26FD8049","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_26FD8049","objectId":{"name":"obj_dialouge_controller","path":"objects/obj_dialouge_controller/obj_dialouge_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":288.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5CE3E3F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5CE3E3F2","objectId":{"name":"obj_shop_music_trigger","path":"objects/obj_shop_music_trigger/obj_shop_music_trigger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":448.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tileset_wall","depth":100,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset_wall","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           1,177,-83,179,3,212,-2147483648,193,-83,124,3,212,-2147483648,193,-83,124,3,212,-2147483648,193,-83,

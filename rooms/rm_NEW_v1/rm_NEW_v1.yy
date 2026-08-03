@@ -22,6 +22,7 @@
     {"name":"inst_B6EBBF4","path":"rooms/rm_NEW_v1/rm_NEW_v1.yy",},
     {"name":"inst_6FD25753","path":"rooms/rm_NEW_v1/rm_NEW_v1.yy",},
     {"name":"inst_54B6AA66","path":"rooms/rm_NEW_v1/rm_NEW_v1.yy",},
+    {"name":"inst_17AE85C4","path":"rooms/rm_NEW_v1/rm_NEW_v1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -29,6 +30,7 @@
         {"$GMRInstance":"v4","%Name":"inst_7E0C0D32","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E0C0D32","objectId":{"name":"obj_room1_changer_north","path":"objects/obj_room1_changer_north/obj_room1_changer_north.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":3.75,"scaleY":4.25,"x":544.0,"y":32.0,},
         {"$GMRInstance":"v4","%Name":"inst_796D2F8A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_796D2F8A","objectId":{"name":"obj_room1_changer_east","path":"objects/obj_room1_changer_east/obj_room1_changer_east.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.25,"scaleY":4.25,"x":1120.0,"y":288.0,},
         {"$GMRInstance":"v4","%Name":"inst_5A2E9FEC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A2E9FEC","objectId":{"name":"obj_room1_changer_west","path":"objects/obj_room1_changer_west/obj_room1_changer_west.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":4.0,"scaleY":4.25,"x":32.0,"y":320.0,},
+        {"$GMRInstance":"v4","%Name":"inst_17AE85C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17AE85C4","objectId":{"name":"obj_normal_room_music","path":"objects/obj_normal_room_music/obj_normal_room_music.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":160.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tileset","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
           -44,0,1,28,-13,29,-4,0,-15,29,1,805306420,-9,0,1,36,-32,0,1,36,-9,0,1,36,-32,0,1,36,-9,0,1,36,-32,0,

@@ -1,3 +1,10 @@
+if (start == true){
+    alarm[0] = 1
+    start = false
+}
+
+sight = collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, false) 
+
 var enemy_speed = move_speed;
 
 if (variable_instance_exists(id, "slowed") && slowed) {
@@ -8,20 +15,21 @@ if (global.levelup_active) exit;
 
 var px = obj_player.x;
 var py = obj_player.y;
-var dist = point_distance(x, y, px, py);
+global.dasher_dist = point_distance(x, y, px, py);
 
 // =====================
 // CHASE STATE
 // =====================
 if (state == "chase") {
-
+    if (sight == noone){
+        
     // Move toward player
     var dir = point_direction(x, y, px, py);
     x += lengthdir_x(enemy_speed, dir);
     y += lengthdir_y(move_speed, dir);
 
     // If player enters mid-range begin charge
-    if (dist < mid_range) {
+    if (global.dasher_dist < mid_range) {
         state = "charge";
         charge_timer = charge_time;
 
@@ -30,12 +38,16 @@ if (state == "chase") {
         dash_target_y = py;
     }
 }
-
+}
 
 // =====================
 // CHARGE STATE 
 // =====================
-else if (state == "charge") {
+ if (sight == noone){
+    path_end();
+
+
+ if (state == "charge") {
 
     // Flash red while charging
     image_blend = (charge_timer mod 6 < 3) ? c_red : c_white;
@@ -49,12 +61,16 @@ else if (state == "charge") {
         state = "dash";
     }
 }
+}
 
+else {
+    state = "chase"
+}
 
 // =====================
 // DASH STATE 
 // =====================
-else if (state == "dash") {
+ if (state == "dash") {
 
     var d = point_direction(x, y, dash_target_x, dash_target_y);
     x += lengthdir_x(dash_speed, d);
