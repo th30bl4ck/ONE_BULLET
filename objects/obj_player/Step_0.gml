@@ -16,8 +16,6 @@ if (!variable_instance_exists(id, "bullet_pickup_shoot_delay")) bullet_pickup_sh
 if (!variable_instance_exists(id, "bullet_pickup_shoot_timer")) bullet_pickup_shoot_timer = 0;
 if (!variable_instance_exists(id, "has_creep_bullet_item")) has_creep_bullet_item = false;
 if (!variable_global_exists("liquid_lead")) global.liquid_lead = false;
-if (invuln > 0) invuln -= 1;
-
 
 if (global.note_open) exit;
 
@@ -47,6 +45,10 @@ if (state == "dying") {
     for (var i = 0; i < 5; i++)
     {
         with (obj_enemy_splitter_kids) instance_destroy();
+    }
+    for (var i = 0; i < 5; i++)
+    {
+        with (obj_enemy_splitter_kids_1) instance_destroy();
     }
 
     var cam = view_camera[0];

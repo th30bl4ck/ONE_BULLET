@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bandage_man_kyle",
+  "%Name":"obj_log",
   "eventList":[],
   "managed":true,
-  "name":"obj_bandage_man_kyle",
+  "name":"obj_log",
   "overriddenProperties":[],
   "parent":{
-    "name":"npc_objects",
-    "path":"folders/Objects/npc_objects.yy",
+    "name":"shop_decor_objects",
+    "path":"folders/Objects/shop_objects/shop_decor_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bandage_man_kyle",
-    "path":"sprites/spr_bandage_man_kyle/spr_bandage_man_kyle.yy",
+    "name":"spr_tablelog",
+    "path":"sprites/spr_tablelog/spr_tablelog.yy",
   },
   "spriteMaskId":null,
   "visible":true,

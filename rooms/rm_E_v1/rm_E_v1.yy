@@ -57,8 +57,8 @@
   ],
   "name":"rm_E_v1",
   "parent":{
-    "name":"shop_rooms",
-    "path":"folders/Rooms/shop_rooms.yy",
+    "name":"rooms_1door",
+    "path":"folders/Rooms/rooms_1door.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
