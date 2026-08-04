@@ -42,4 +42,6 @@ event_inherited();
 
 event_inherited();
 
+path = path_add();
+
 hp = 15;
