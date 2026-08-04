@@ -25,7 +25,6 @@ function scr_assign_room_assets()
                 var door_mask = global.layout[yy][xx].doors;
                 var picked_room = scr_pick_room_by_doors(door_mask);
 
-                // Fallback keeps generation alive if a mask has no registered room.
                 if (picked_room == -1)
                 {
                     picked_room = rm_EW_v1;

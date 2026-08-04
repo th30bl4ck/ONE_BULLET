@@ -35,7 +35,7 @@ if (touch_damage_cooldown <= 0 && place_meeting(x, y, obj_player))
         if (invuln <= 0)
         {
             take_damage(1);
-            invuln = 45;
+            invuln = 60;
             hit_flash_timer = 15;
 
             if (variable_global_exists("room_damage_taken"))

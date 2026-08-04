@@ -36,11 +36,12 @@ function scr_rooms_init()
     add_room(rm_W_v1, global.DOOR_W);
     add_room(rm_W_v2, global.DOOR_W);
 
-    // Shop rooms are part of random room selection, but assignment caps them to one per generation.
     add_room(rm_shop_N, global.DOOR_N, true);
     add_room(rm_shop_E, global.DOOR_E, true);
     add_room(rm_shop_S, global.DOOR_S, true);
     add_room(rm_shop_W, global.DOOR_W, true);
+    
+    add_room(rm_Boss_V2, global.DOOR_S, true)
 
     // -----------------
     // 2 door rooms
@@ -83,6 +84,5 @@ function scr_rooms_init()
     // -----------------
     add_room(rm_NESW_v1, global.DOOR_N | global.DOOR_E | global.DOOR_S | global.DOOR_W);
     add_room(rm_NESW_v2, global.DOOR_N | global.DOOR_E | global.DOOR_S | global.DOOR_W);
-
 
 }
