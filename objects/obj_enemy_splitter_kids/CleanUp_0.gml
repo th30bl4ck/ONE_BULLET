@@ -6,8 +6,3 @@ if (variable_instance_exists(id, "anchor_id") && variable_global_exists("enemy_a
     }
 }
 
-// ======================
-// DESTROY PATH
-// ======================
-path_end();
-path_delete(path);

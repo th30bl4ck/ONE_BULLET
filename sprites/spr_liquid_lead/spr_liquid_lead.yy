@@ -23,7 +23,7 @@
   ],
   "name":"spr_liquid_lead",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Items_sprites",
     "path":"folders/Sprites/Items_sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":16,
+    "yorigin":25,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

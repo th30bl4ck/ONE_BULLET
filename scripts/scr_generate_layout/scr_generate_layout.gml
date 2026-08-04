@@ -66,7 +66,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
             if (global.layout[ny][nx].used) continue;
 
-            // Below target, always grow when possible so we reliably hit room count on small grids.
             if (placed >= _target_count && irandom(100) > 55) continue;
 
             // mark used

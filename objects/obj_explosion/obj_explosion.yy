@@ -10,8 +10,8 @@
   "name":"obj_explosion",
   "overriddenProperties":[],
   "parent":{
-    "name":"particals",
-    "path":"folders/Objects/particals.yy",
+    "name":"partical_objects",
+    "path":"folders/Objects/partical_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

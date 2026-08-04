@@ -24,7 +24,7 @@
   ],
   "name":"spr_start",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"main_menu_sprites",
     "path":"folders/Sprites/main_menu_sprites.yy",
@@ -79,7 +79,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":44,
+    "xorigin":51,
     "yorigin":10,
   },
   "swatchColours":null,

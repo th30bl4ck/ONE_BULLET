@@ -10,7 +10,7 @@ if (place_meeting(x, y, obj_player)) {
 
         if (invuln <= 0) {
             take_damage(1);
-            invuln = 30;
+            invuln = 60;
             hit_flash_timer = 15;
 
             if (variable_global_exists("room_damage_taken")) {
