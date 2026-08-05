@@ -40,3 +40,9 @@ if (variable_global_exists("room_enemy_kills")) {
 } else {
     global.room_enemy_kills = 1;
 }
+
+// ======================
+// DESTROY PATH
+// ======================
+path_end();
+path_delete(path);

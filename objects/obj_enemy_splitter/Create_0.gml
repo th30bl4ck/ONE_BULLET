@@ -3,7 +3,7 @@ dead = false;
 
 // Start noise timer
 alarm[0] = room_speed * 0.75;
-move_speed = 0.8;
+move_speed = 1.25;
 
 ai_enabled = true;
 
@@ -17,3 +17,10 @@ event_inherited();
 event_inherited();
 
 hp = 30;
+
+path = path_add();
+
+target_y = obj_player.y;
+target_x = obj_player.x;
+
+alarm[1] = 1;

@@ -1,6 +1,6 @@
 event_inherited();
 
-move_speed = 500;
+move_speed = 1.25;
 
 ai_enabled = true;
 

@@ -10,8 +10,8 @@
   "name":"obj_portal_particle",
   "overriddenProperties":[],
   "parent":{
-    "name":"portals",
-    "path":"folders/Objects/portals.yy",
+    "name":"portal_objects",
+    "path":"folders/Objects/portal_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

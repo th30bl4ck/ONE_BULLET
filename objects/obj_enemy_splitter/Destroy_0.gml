@@ -6,3 +6,9 @@ audio_play_sound(snd_splitter_die, 1, false);
 
 // Destroy enemy
 instance_destroy();
+
+// ======================
+// DESTROY PATH
+// ======================
+path_end();
+path_delete(path);
