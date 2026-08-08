@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"items_sprites_in_game",
-    "path":"folders/Sprites/items_sprites_in_game.yy",
+    "name":"items_in_game_sprites",
+    "path":"folders/Sprites/items_in_game_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
