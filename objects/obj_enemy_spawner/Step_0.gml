@@ -60,31 +60,32 @@ if (wave_enemy_spawned < wave_enemy_total)
 {
     spawn_timer++;
 
-if (spawn_timer >= spawn_delay)
-{
-    spawn_timer = 0;
-
-    // Full mix every wave
-    var enemy_to_spawn = choose(
-        obj_enemy_walker,
-        obj_enemy_dasher,
-        obj_enemy_shooter,
-        obj_enemy_splitter
-    );
-
-    var spawn_pos = scr_nav_get_enemy_spawn_position(spawn_min_player_distance, spawn_attempts);
-
-    if (spawn_pos.found)
+    if (spawn_timer >= spawn_delay)
     {
-        var e = instance_create_layer(spawn_pos.x, spawn_pos.y, "Instances", enemy_to_spawn);
-        scr_assign_anchor(e);
-        wave_enemy_spawned++;
+        spawn_timer = 0;
+
+        // Full mix every wave
+        var enemy_to_spawn = choose(
+            obj_enemy_walker,
+            obj_enemy_dasher,
+            obj_enemy_shooter,
+            obj_enemy_splitter
+        );
+
+        var spawn_pos = scr_nav_get_enemy_spawn_position(spawn_min_player_distance, spawn_attempts);
+
+        if (spawn_pos.found)
+        {
+            var _portal = instance_create_layer(spawn_pos.x, spawn_pos.y, "Instances", obj_spawn_portal);
+            _portal.enemy_to_spawn = enemy_to_spawn;
+            
+            wave_enemy_spawned++;
+        }
+        else
+        {
+            show_debug_message("Enemy spawn failed: no walkable navigation cell found.");
+        }
     }
-    else
-    {
-        show_debug_message("Enemy spawn failed: no walkable navigation cell found.");
-    }
-}
 }
 else
 {
@@ -93,9 +94,10 @@ else
     //------------------------------------
     if (instance_number(obj_enemy_walker) == 0 &&
         instance_number(obj_enemy_dasher) == 0 &&
-        instance_number(obj_enemy_shooter) == 0&&
-		instance_number(obj_enemy_splitter_kids) == 0&&
-        instance_number(obj_enemy_splitter) == 0)
+        instance_number(obj_enemy_shooter) == 0 &&
+        instance_number(obj_enemy_splitter_kids) == 0 &&
+        instance_number(obj_enemy_splitter) == 0 &&
+        instance_number(obj_spawn_portal) == 0)
     {
         current_wave++;
         wave_in_progress = false;
