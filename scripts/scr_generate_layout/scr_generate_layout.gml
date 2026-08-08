@@ -67,7 +67,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
             if (placed >= _target_count && irandom(100) > 55) continue;
 
-            // mark used
             global.layout[ny][nx].used = true;
 
             global.layout[cy][cx].doors |= dir_flag;
@@ -76,8 +75,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
             array_push(frontier, [nx, ny]);
             placed++;
             expanded = true;
-
-            if (placed >= _target_count) break;
+            break;
         }
 
         if (!expanded)
