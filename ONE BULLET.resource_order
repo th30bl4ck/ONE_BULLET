@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings":[
     {"name":"shop_decor_objects","order":1,"path":"folders/Objects/shop_objects/shop_decor_objects.yy",},
+    {"name":"decor_sprites","order":1,"path":"folders/Sprites/decor_sprites.yy",},
     {"name":"area_1","order":1,"path":"folders/Sprites/enemy_sprites/area_1.yy",},
     {"name":"spooger_sprites","order":1,"path":"folders/Sprites/enemy_sprites/area_1/spooger_sprites.yy",},
     {"name":"area_2","order":2,"path":"folders/Sprites/enemy_sprites/area_2.yy",},
-    {"name":"decor_sprites","order":1,"path":"folders/Sprites/decor_sprites.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_random_item_9","order":1,"path":"objects/obj_random_item_9/obj_random_item_9.yy",},

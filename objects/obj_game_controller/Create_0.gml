@@ -134,10 +134,10 @@ debug_add_room("rm_NESW_v2", rm_NESW_v2);
 
 debug_add_room("rm_Chest", rm_Chest);
 debug_add_room("rm_Medbay", rm_Medbay);
-debug_add_room("rm_Boss_V2", rm_Boss_S);
-debug_add_room("rm_Boss_V2", rm_Boss_E);
-debug_add_room("rm_Boss_V2", rm_Boss_N);
-debug_add_room("rm_Boss_V2", rm_Boss_W);
+debug_add_room("rm_Boss_S", rm_Boss_S);
+debug_add_room("rm_Boss_E", rm_Boss_E);
+debug_add_room("rm_Boss_N", rm_Boss_N);
+debug_add_room("rm_Boss_W", rm_Boss_W);
 
 debug_add_room("rm_shop_N", rm_shop_N);
 debug_add_room("rm_shop_E", rm_shop_E);
