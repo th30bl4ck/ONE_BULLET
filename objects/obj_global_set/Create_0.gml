@@ -57,6 +57,7 @@ global.player_dash_time_bonus = 0;
 global.recall_speed = 6;
 global.player_bullet_speed = 10;
 global.bullet_max_distance = 300;
+
 //item activate
 global.semantic_orbit = false;
 global.the_jerk = false;
@@ -65,7 +66,7 @@ global.JS = false;
 global.exorsizm = false;
 global.trickshot = false;
 global.f_f_f = false;
-global.alexs_arsanal =false;
+global.alexs_arsanal = false;
 
 
 game_speed = 1;

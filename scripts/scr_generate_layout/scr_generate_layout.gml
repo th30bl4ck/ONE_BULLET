@@ -8,7 +8,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
     global.layout[_start_y][_start_x].used = true;
 
-    // Ensure the starting room's east door always has a valid destination.
     var start_east_x = _start_x + 1;
     var start_east_y = _start_y;
     if (start_east_x >= 0 && start_east_x < global.grid_w)

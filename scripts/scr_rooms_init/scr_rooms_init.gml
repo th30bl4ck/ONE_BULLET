@@ -1,5 +1,7 @@
 function scr_rooms_init()
 {
+    randomize();
+    
     global.ROOMS = [];
 
     // Door constants
@@ -40,8 +42,6 @@ function scr_rooms_init()
     add_room(rm_shop_E, global.DOOR_E, true);
     add_room(rm_shop_S, global.DOOR_S, true);
     add_room(rm_shop_W, global.DOOR_W, true);
-    
-    add_room(rm_Boss_V2, global.DOOR_S, true)
 
     // -----------------
     // 2 door rooms
