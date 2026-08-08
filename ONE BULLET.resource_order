@@ -4,9 +4,13 @@
     {"name":"area_1","order":1,"path":"folders/Sprites/enemy_sprites/area_1.yy",},
     {"name":"spooger_sprites","order":1,"path":"folders/Sprites/enemy_sprites/area_1/spooger_sprites.yy",},
     {"name":"area_2","order":2,"path":"folders/Sprites/enemy_sprites/area_2.yy",},
+    {"name":"decor_sprites","order":1,"path":"folders/Sprites/decor_sprites.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_random_item_9","order":1,"path":"objects/obj_random_item_9/obj_random_item_9.yy",},
+    {"name":"rm_Boss_E","order":2,"path":"rooms/rm_Boss_E/rm_Boss_E.yy",},
+    {"name":"rm_Boss_N","order":1,"path":"rooms/rm_Boss_N/rm_Boss_N.yy",},
+    {"name":"rm_Boss_W","order":3,"path":"rooms/rm_Boss_W/rm_Boss_W.yy",},
     {"name":"rm_Chest","order":7,"path":"rooms/rm_Chest/rm_Chest.yy",},
     {"name":"rm_E_v1","order":9,"path":"rooms/rm_E_v1/rm_E_v1.yy",},
     {"name":"rm_E_v2","order":2,"path":"rooms/rm_E_v2/rm_E_v2.yy",},

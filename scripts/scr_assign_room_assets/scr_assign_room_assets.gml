@@ -7,18 +7,57 @@ function scr_assign_room_assets()
 
     global.shop_room_used = false;
 
+    var boss_x = -1;
+    var boss_y = -1;
+    var max_dist = -1;
+
     for (var yy = 0; yy < global.grid_h; yy++)
     {
         for (var xx = 0; xx < global.grid_w; xx++)
         {
             if (global.layout[yy][xx].used)
             {
-                if (variable_global_exists("start_map_x")
-                 && variable_global_exists("start_map_y")
-                 && xx == global.start_map_x
-                 && yy == global.start_map_y)
+                if (xx == global.start_map_x && yy == global.start_map_y) continue;
+
+                var d_mask = global.layout[yy][xx].doors;
+
+                var is_dead_end = (d_mask == global.DOOR_N || d_mask == global.DOOR_E || d_mask == global.DOOR_S || d_mask == global.DOOR_W);
+
+                if (is_dead_end)
+                {
+                    var dist = abs(xx - global.start_map_x) + abs(yy - global.start_map_y);
+
+                    if (dist > max_dist)
+                    {
+                        max_dist = dist;
+                        boss_x = xx;
+                        boss_y = yy;
+                    }
+                }
+            }
+        }
+    }
+
+
+    for (var yy = 0; yy < global.grid_h; yy++)
+    {
+        for (var xx = 0; xx < global.grid_w; xx++)
+        {
+            if (global.layout[yy][xx].used)
+            {
+                if (xx == global.start_map_x && yy == global.start_map_y)
                 {
                     global.layout[yy][xx].room_asset = starting_room;
+                    continue;
+                }
+
+                if (xx == boss_x && yy == boss_y)
+                {
+                    var d_mask = global.layout[yy][xx].doors;
+                    if (d_mask == global.DOOR_N) global.layout[yy][xx].room_asset = rm_Boss_N;
+                    if (d_mask == global.DOOR_E) global.layout[yy][xx].room_asset = rm_Boss_E;
+                    if (d_mask == global.DOOR_S) global.layout[yy][xx].room_asset = rm_Boss_S;
+                    if (d_mask == global.DOOR_W) global.layout[yy][xx].room_asset = rm_Boss_W;
                     continue;
                 }
 

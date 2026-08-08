@@ -32,6 +32,4 @@ function scr_go_to_room(_dir)
     show_debug_message("TAG STORED: " + string(global.entry_spawn_tag));
 
     room_goto(next_room);
-    
-    room_goto(next_room);
 }
