@@ -66,6 +66,8 @@
     {"$GMFolder":"","%Name":"area_2","folderPath":"folders/Sprites/enemy_sprites/area_2.yy","name":"area_2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"items_in_game_sprites","folderPath":"folders/Sprites/items_in_game_sprites.yy","name":"items_in_game_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Items_sprites","folderPath":"folders/Sprites/Items_sprites.yy","name":"Items_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"levelup_item_sprites","folderPath":"folders/Sprites/Items_sprites/levelup_item_sprites.yy","name":"levelup_item_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"shop_item_sprites","folderPath":"folders/Sprites/Items_sprites/shop_item_sprites.yy","name":"shop_item_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"letters_sprites","folderPath":"folders/Sprites/letters_sprites.yy","name":"letters_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"main_menu_sprites","folderPath":"folders/Sprites/main_menu_sprites.yy","name":"main_menu_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"msc_sprites","folderPath":"folders/Sprites/msc_sprites.yy","name":"msc_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
