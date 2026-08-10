@@ -162,6 +162,9 @@ else if (v == -1 && h == 0) sprite_index = spr_back;
 else if (v == 0 && h == 1) sprite_index = spr_right;
 else if (v == 1 && h == 0) sprite_index = spr_player;
 else if (v == 0 && h == -1) sprite_index = spr_left;
+else {
+    sprite_index = spr_player_idle
+}
 
 
 // =========================

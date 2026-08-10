@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Items_sprites",
-    "path":"folders/Sprites/Items_sprites.yy",
+    "name":"levelup_item_sprites",
+    "path":"folders/Sprites/Items_sprites/levelup_item_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

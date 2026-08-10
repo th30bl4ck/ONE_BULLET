@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"msc",
-    "path":"folders/Sprites/msc.yy",
+    "name":"msc_sprites",
+    "path":"folders/Sprites/msc_sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -8,7 +8,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
     global.layout[_start_y][_start_x].used = true;
 
-    // Ensure the starting room's east door always has a valid destination.
     var start_east_x = _start_x + 1;
     var start_east_y = _start_y;
     if (start_east_x >= 0 && start_east_x < global.grid_w)
@@ -68,7 +67,6 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
 
             if (placed >= _target_count && irandom(100) > 55) continue;
 
-            // mark used
             global.layout[ny][nx].used = true;
 
             global.layout[cy][cx].doors |= dir_flag;
@@ -77,8 +75,7 @@ function scr_generate_layout(_start_x, _start_y, _target_count)
             array_push(frontier, [nx, ny]);
             placed++;
             expanded = true;
-
-            if (placed >= _target_count) break;
+            break;
         }
 
         if (!expanded)
