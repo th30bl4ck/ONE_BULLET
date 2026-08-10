@@ -2,6 +2,7 @@
   "FolderOrderSettings":[
     {"name":"shop_decor_objects","order":1,"path":"folders/Objects/shop_objects/shop_decor_objects.yy",},
     {"name":"area_1","order":1,"path":"folders/Sprites/enemy_sprites/area_1.yy",},
+    {"name":"shielder_sprites","order":5,"path":"folders/Sprites/enemy_sprites/area_1/shielder_sprites.yy",},
     {"name":"spooger_sprites","order":1,"path":"folders/Sprites/enemy_sprites/area_1/spooger_sprites.yy",},
     {"name":"area_2","order":2,"path":"folders/Sprites/enemy_sprites/area_2.yy",},
   ],
@@ -23,5 +24,6 @@
     {"name":"spr_enemy_dasher","order":3,"path":"sprites/spr_enemy_dasher/spr_enemy_dasher.yy",},
     {"name":"spr_inflate_roids","order":1,"path":"sprites/spr_inflate_roids/spr_inflate_roids.yy",},
     {"name":"spr_roidz","order":1,"path":"sprites/spr_roidz/spr_roidz.yy",},
+    {"name":"spr_shielder_shield","order":1,"path":"sprites/spr_shielder_shield/spr_shielder_shield.yy",},
   ],
 }
