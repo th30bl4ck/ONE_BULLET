@@ -3,7 +3,7 @@ if (start == true){
     start = false
 }
 
-sight = collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, false) 
+sight = collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, false);
 
 var enemy_speed = move_speed;
 

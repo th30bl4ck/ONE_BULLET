@@ -1,5 +1,7 @@
 draw_self();
 
+draw_path(path, x, y, 1);
+  
 if (state == 1 && instance_exists(obj_player)) {
     var a = point_direction(x, y, obj_player.x, obj_player.y);
     var len = 18 + (windup_max - windup) * 0.4;

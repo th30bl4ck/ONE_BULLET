@@ -1,4 +1,11 @@
+if (start == true){
+    alarm[0] = 1
+    start = false
+}
+
 var enemy_speed = move_speed;
+
+sight = collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, false);
 
 if (variable_instance_exists(id, "slowed") && slowed) {
     enemy_speed *= slow_multiplier;
@@ -10,11 +17,11 @@ if (!instance_exists(obj_player)) exit;
 
 
 // TARGET DATA
-var px = obj_player.x;
-var py = obj_player.y;
+px = obj_player.x;
+py = obj_player.y;
 
-var dist      = point_distance(x, y, px, py);
-var to_player = point_direction(x, y, px, py);
+dist      = point_distance(x, y, px, py);
+to_player = point_direction(x, y, px, py);
 
 
 
@@ -47,27 +54,43 @@ desired_orbit_dist = lerp(desired_orbit_dist, orbit_target, orbit_dist_lerp);
 // MOVEMENT
 //------------------------------------
 var ang = to_player; // default
-var enter_range = desired_orbit_dist + 80;
+enter_range = desired_orbit_dist + 80;
 
 if (dist > enter_range)
 {
     // Walk in
-    ang = to_player;
+    alarm[0] = 1;
 }
 else
 {
-    var tangential = to_player + 90 * orbit_dir;
+    tangential = to_player + 90 * orbit_dir;
 
-    var radial = (dist > desired_orbit_dist) ? to_player : to_player + 180;
+    radial = (dist > desired_orbit_dist) ? to_player : to_player + 180;
 
-    var t = clamp(abs(dist - desired_orbit_dist) / 120, 0, 1) * approach_strength;
+    t = clamp(abs(dist - desired_orbit_dist) / 120, 0, 1) * approach_strength;
 
     ang = tangential + angle_difference(tangential, radial) * t;
 }
 
+var hspd = lengthdir_x(move_speed, ang);
+var vspd = lengthdir_y(move_speed, ang);
+
+if (place_meeting(x + hspd, y + vspd, obj_wall)){
+    orbit_dir = -orbit_dir;
+    
+    if (dist <= enter_range){
+        tangential = to_player + 90 * orbit_dir;
+        ang = tangential + angle_difference(tangential, radial) * t;
+        hspd = lengthdir_x(move_speed, ang); 
+        vspd = lengthdir_y(move_speed, ang);
+    }
+}
+
+
+
 // Apply movement
-x += lengthdir_x(move_spd, ang);
-y += lengthdir_y(move_spd, ang);
+x += lengthdir_x(move_speed, ang);
+y += lengthdir_y(move_speed, ang);
 
 
 
@@ -76,7 +99,7 @@ shoot_cd = max(0, shoot_cd - 1);
 
 if (state == 0)
 {
-    if (dist <= shoot_range && shoot_cd <= 0)
+    if (dist <= shoot_range && shoot_cd <= 0 and sight == noone)
     {
         state = 1;
         windup = windup_max;
@@ -116,7 +139,9 @@ var ty = obj_player.y + oy;
 tx += anchor_jitter;
 ty += anchor_jitter * 0.5;
 
-// Shooter spacing movement 
+// Shooter spacing movement
+
+ 
 var prefer_dist = 140; 
 var slack = 20;
 
