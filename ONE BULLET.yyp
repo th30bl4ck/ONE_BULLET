@@ -61,6 +61,7 @@
     {"$GMFolder":"","%Name":"decor_sprites","folderPath":"folders/Sprites/decor_sprites.yy","name":"decor_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemy_sprites","folderPath":"folders/Sprites/enemy_sprites.yy","name":"enemy_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"area_1","folderPath":"folders/Sprites/enemy_sprites/area_1.yy","name":"area_1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"shielder_sprites","folderPath":"folders/Sprites/enemy_sprites/area_1/shielder_sprites.yy","name":"shielder_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"splitter_sprites","folderPath":"folders/Sprites/enemy_sprites/area_1/splitter_sprites.yy","name":"splitter_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"spooger_sprites","folderPath":"folders/Sprites/enemy_sprites/area_1/spooger_sprites.yy","name":"spooger_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"area_2","folderPath":"folders/Sprites/enemy_sprites/area_2.yy","name":"area_2","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -100,7 +101,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"ONE BULLET",
   "resources":[
@@ -341,6 +342,8 @@
     {"id":{"name":"spr_semantic_orbit","path":"sprites/spr_semantic_orbit/spr_semantic_orbit.yy",},},
     {"id":{"name":"spr_settings_select","path":"sprites/spr_settings_select/spr_settings_select.yy",},},
     {"id":{"name":"spr_settings","path":"sprites/spr_settings/spr_settings.yy",},},
+    {"id":{"name":"spr_shielder_shield","path":"sprites/spr_shielder_shield/spr_shielder_shield.yy",},},
+    {"id":{"name":"spr_shielder","path":"sprites/spr_shielder/spr_shielder.yy",},},
     {"id":{"name":"spr_shopkeeper_face","path":"sprites/spr_shopkeeper_face/spr_shopkeeper_face.yy",},},
     {"id":{"name":"spr_shopkeeper","path":"sprites/spr_shopkeeper/spr_shopkeeper.yy",},},
     {"id":{"name":"spr_snot_rocket","path":"sprites/spr_snot_rocket/spr_snot_rocket.yy",},},
