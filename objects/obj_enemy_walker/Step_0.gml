@@ -1,9 +1,4 @@
-if (global.note_open) exit;
-
-if (global.levelup_active) exit;
-
-if (!ai_enabled) exit;
-
+if (global.note_open || global.levelup_active || !ai_enabled) exit;
 
 if (place_meeting(x, y, obj_player)) {
     with (obj_player) {

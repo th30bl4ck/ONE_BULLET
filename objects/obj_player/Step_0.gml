@@ -50,6 +50,8 @@ if (state == "dying") {
     {
         with (obj_enemy_splitter_kids_1) instance_destroy();
     }
+    with (obj_enemy_shielder) instance_destroy();
+    with (obj_enemy_shield) instance_destroy();
 
     var cam = view_camera[0];
 
