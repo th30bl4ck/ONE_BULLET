@@ -18,6 +18,29 @@ if (!variable_instance_exists(id, "has_creep_bullet_item")) has_creep_bullet_ite
 if (!variable_global_exists("liquid_lead")) global.liquid_lead = false;
 
 if (global.note_open) exit;
+// ==========================
+// BANDAGE GUY DIOLOUGE
+//===========================
+if (keyboard_check_pressed(ord("E")))
+{
+    var npc = instance_nearest(x, y, obj_bandage_man_kyle);
+
+    if (npc != noone)
+    {
+        if (point_distance(x, y, npc.x, npc.y) < 48)
+        {
+            var d = instance_find(obj_dialouge_controller, 0);
+
+            if (d != noone)
+            {
+                d.dialogue_lines = npc.dialogue;
+                d.line_index = 0;
+                d.text_pos = 0;
+                d.active = true;
+            }
+        }
+    }
+}
 
 
 // =========================
