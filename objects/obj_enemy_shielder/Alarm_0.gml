@@ -1,4 +1,4 @@
-if (global.note_open || global.levelup_active) exit;
+if (global.note_open || global.levelup_active || !ai_enabled) exit;
 
 if (dasher_dist > 250 or sight == noone){
 

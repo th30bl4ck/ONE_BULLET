@@ -1,3 +1,5 @@
+if (global.note_open || global.levelup_active || !ai_enabled) exit;
+
 var enemy_speed = move_speed;
 
 if (variable_instance_exists(id, "slowed") && slowed) {

@@ -1,3 +1,5 @@
+if (global.note_open || global.levelup_active) exit;
+
 if (start == true){
     alarm[0] = 1
     start = false
