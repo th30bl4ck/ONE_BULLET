@@ -28,7 +28,7 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"npc's",
+    "name":"npc's_sprites",
     "path":"folders/Sprites/npc's_sprites.yy",
   },
   "preMultiplyAlpha":false,
