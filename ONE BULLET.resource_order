@@ -1,9 +1,15 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"area_2","order":1,"path":"folders/Sprites/Items_sprites/area_2.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"obj_enemy_shield","order":2,"path":"objects/obj_enemy_shield/obj_enemy_shield.yy",},
     {"name":"obj_enemy_shielder","order":1,"path":"objects/obj_enemy_shielder/obj_enemy_shielder.yy",},
     {"name":"snd_boss1","order":1,"path":"sounds/snd_boss1/snd_boss1.yy",},
+    {"name":"spr_chicken_pox","order":2,"path":"sprites/spr_chicken_pox/spr_chicken_pox.yy",},
+    {"name":"Spr_cluster_bomb","order":4,"path":"sprites/Spr_cluster_bomb/Spr_cluster_bomb.yy",},
     {"name":"spr_fish_in_buissness_suit","order":1,"path":"sprites/spr_fish_in_buissness_suit/spr_fish_in_buissness_suit.yy",},
+    {"name":"spr_shock_and_awe","order":3,"path":"sprites/spr_shock_and_awe/spr_shock_and_awe.yy",},
+    {"name":"spr_summer_storm","order":1,"path":"sprites/spr_summer_storm/spr_summer_storm.yy",},
   ],
 }
