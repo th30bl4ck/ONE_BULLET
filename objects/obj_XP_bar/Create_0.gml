@@ -14,6 +14,7 @@ if (!variable_global_exists("upgrade_icons"))
     global.upgrade_icons[? "Magnet Core"] = spr_magnet_core;
     global.upgrade_icons[? "Trigger Finger"] = spr_tf;
     global.upgrade_icons[? "Long Barrel"] = spr_long_barrel;
+    global.upgrade_icons[? "Gunpowder"] = spr_gunpowder;
 }
 
 if (!variable_global_exists("upgrade_counts"))

@@ -175,7 +175,6 @@
     {"id":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},},
     {"id":{"name":"obj_shop_music_trigger","path":"objects/obj_shop_music_trigger/obj_shop_music_trigger.yy",},},
     {"id":{"name":"obj_shopkeeper","path":"objects/obj_shopkeeper/obj_shopkeeper.yy",},},
-    {"id":{"name":"obj_slideTransition","path":"objects/obj_slideTransition/obj_slideTransition.yy",},},
     {"id":{"name":"obj_spawn_east","path":"objects/obj_spawn_east/obj_spawn_east.yy",},},
     {"id":{"name":"obj_spawn_north","path":"objects/obj_spawn_north/obj_spawn_north.yy",},},
     {"id":{"name":"obj_spawn_portal","path":"objects/obj_spawn_portal/obj_spawn_portal.yy",},},

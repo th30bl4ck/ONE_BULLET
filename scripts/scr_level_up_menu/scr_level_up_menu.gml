@@ -24,7 +24,8 @@ function open_levelup_menu()
         "Big Boy Boots",
         "Magnet Core",
         "Trigger Finger",
-        "Long Barrel"
+        "Long Barrel",
+        "Gunpowder"
     ];
 
     if (can_offer_medkit)
@@ -68,6 +69,7 @@ function scr_apply_upgrade(choice)
     if (!variable_global_exists("recall_speed")) global.recall_speed = 6;
     if (!variable_global_exists("player_bullet_speed")) global.player_bullet_speed = 10;
     if (!variable_global_exists("bullet_max_distance")) global.bullet_max_distance = 300;
+    if (!variable_global_exists("bullet_damage")) global.bullet_damage = 10;
 
     if (choice == "Medkit")
     {
@@ -105,7 +107,7 @@ function scr_apply_upgrade(choice)
         case "Medkit":
         with (obj_player)
         {
-        heal_hp(1);
+            heal_hp(1);
         }
         break;
 
@@ -113,9 +115,9 @@ function scr_apply_upgrade(choice)
         case "Stim":
         with (obj_player)
              {
-        increase_max_hp(1); // adds a new head
+            increase_max_hp(1); // adds a new head
              }
-         break;
+        break;
 
 
         case "Sticky Finger":
@@ -144,6 +146,14 @@ function scr_apply_upgrade(choice)
         
         case "Long Barrel":
             global.bullet_max_distance += 150;
+        break;
+    
+        case "Gunpowder":
+            global.bullet_damage += 5;
+            with(obj_bullet)
+            {
+                damage += 5;
+            }
         break;
     }
 }
