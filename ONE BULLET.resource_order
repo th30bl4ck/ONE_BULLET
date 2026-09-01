@@ -5,6 +5,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_enemy_shield","order":2,"path":"objects/obj_enemy_shield/obj_enemy_shield.yy",},
     {"name":"obj_enemy_shielder","order":1,"path":"objects/obj_enemy_shielder/obj_enemy_shielder.yy",},
+    {"name":"snd_area2_combat","order":2,"path":"sounds/snd_area2_combat/snd_area2_combat.yy",},
     {"name":"snd_boss1","order":1,"path":"sounds/snd_boss1/snd_boss1.yy",},
     {"name":"spr_chicken_pox","order":2,"path":"sprites/spr_chicken_pox/spr_chicken_pox.yy",},
     {"name":"Spr_cluster_bomb","order":4,"path":"sprites/Spr_cluster_bomb/Spr_cluster_bomb.yy",},

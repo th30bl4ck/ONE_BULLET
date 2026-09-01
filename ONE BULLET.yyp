@@ -256,6 +256,7 @@
     {"id":{"name":"scr_shop","path":"scripts/scr_shop/scr_shop.yy",},},
     {"id":{"name":"scr_spawn_enemy_at_edge","path":"scripts/scr_spawn_enemy_at_edge/scr_spawn_enemy_at_edge.yy",},},
     {"id":{"name":"shader_normal_room","path":"shaders/shader_normal_room/shader_normal_room.yy",},},
+    {"id":{"name":"snd_area2_combat","path":"sounds/snd_area2_combat/snd_area2_combat.yy",},},
     {"id":{"name":"snd_boss1","path":"sounds/snd_boss1/snd_boss1.yy",},},
     {"id":{"name":"snd_buy","path":"sounds/snd_buy/snd_buy.yy",},},
     {"id":{"name":"snd_coinz","path":"sounds/snd_coinz/snd_coinz.yy",},},
