@@ -25,7 +25,7 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"msc",
+    "name":"msc_sprites",
     "path":"folders/Sprites/msc_sprites.yy",
   },
   "preMultiplyAlpha":false,
