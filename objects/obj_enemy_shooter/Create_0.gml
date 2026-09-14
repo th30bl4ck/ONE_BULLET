@@ -1,6 +1,6 @@
-event_inherited();
+start = true
 
-move_speed = 0.6;
+move_speed = 1.5;
 
 shoot_range = 400;
 
@@ -19,7 +19,6 @@ orbit_timer = irandom(orbit_timer_max);
 orbit_strength = 1.0;             
 approach_strength = 0;           
 desired_orbit_dist = 380;         
-move_spd = 1.4;
 
 
 orbit_min = 140;
@@ -32,6 +31,7 @@ orbit_target = irandom_range(orbit_min, orbit_max);
 orbit_dist_timer_max = room_speed * 2;   
 orbit_dist_timer = irandom(orbit_dist_timer_max);
 
+dist = 0;
 
 orbit_dist_lerp = 0.04;
 
@@ -39,5 +39,15 @@ desired_orbit_dist = orbit_target;
 
 image_xscale = 1.5;   
 image_yscale = 1.3;
+
+event_inherited();
+
+event_inherited();
+
+path = path_add();
+
+px = obj_player.x;
+py = obj_player.y;
+shooter_dist = point_distance(x, y, px, py);
 
 hp = 15;
