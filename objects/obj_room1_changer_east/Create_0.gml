@@ -9,7 +9,7 @@ if (!variable_global_exists("DOOR_E"))
 
 door_dir = global.DOOR_E;
 
-unlocked = true;
+unlocked = false;
 
 sprite_index = side_door;
 image_speed = 0;
