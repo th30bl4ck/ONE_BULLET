@@ -53,44 +53,50 @@ desired_orbit_dist = lerp(desired_orbit_dist, orbit_target, orbit_dist_lerp);
 //------------------------------------
 // MOVEMENT
 //------------------------------------
-var ang = to_player; // default
 enter_range = desired_orbit_dist + 80;
 
-if (dist > enter_range)
+var sight_blocked = (collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, false) != noone);
+
+if (dist > enter_range || sight_blocked)
 {
-    // Walk in
-    alarm[0] = 1;
+    if (alarm[0] <= 0) {
+        alarm[0] = 1; 
+    }
 }
 else
 {
-    tangential = to_player + 90 * orbit_dir;
+    if (path_index != -1) {
+        path_end();
+    }
 
-    radial = (dist > desired_orbit_dist) ? to_player : to_player + 180;
+    var tang_dir = to_player + (90 * orbit_dir);
+    var rad_dir  = (dist > desired_orbit_dist) ? to_player : (to_player + 180);
 
-    t = clamp(abs(dist - desired_orbit_dist) / 120, 0, 1) * approach_strength;
+    var t = clamp(abs(dist - desired_orbit_dist) / 120, 0, 1) * approach_strength;
+    var move_dir = tang_dir + (angle_difference(rad_dir, tang_dir) * t);
 
-    ang = tangential + angle_difference(tangential, radial) * t;
-}
+    var hspd = lengthdir_x(enemy_speed, move_dir);
+    var vspd = lengthdir_y(enemy_speed, move_dir);
 
-var hspd = lengthdir_x(move_speed, ang);
-var vspd = lengthdir_y(move_speed, ang);
+    if (place_meeting(x + hspd, y + vspd, obj_wall))
+    {
+        orbit_dir = -orbit_dir;
+        orbit_timer = orbit_timer_max;
 
-if (place_meeting(x + hspd, y + vspd, obj_wall)){
-    orbit_dir = -orbit_dir;
-    
-    if (dist <= enter_range){
-        tangential = to_player + 90 * orbit_dir;
-        ang = tangential + angle_difference(tangential, radial) * t;
-        hspd = lengthdir_x(move_speed, ang); 
-        vspd = lengthdir_y(move_speed, ang);
+        tang_dir = to_player + (90 * orbit_dir);
+        move_dir = tang_dir + (angle_difference(rad_dir, tang_dir) * t);
+
+        hspd = lengthdir_x(enemy_speed, move_dir);
+        vspd = lengthdir_y(enemy_speed, move_dir);
+    }
+
+    if (!place_meeting(x + hspd, y, obj_wall)) {
+        x += hspd;
+    }
+    if (!place_meeting(x, y + vspd, obj_wall)) {
+        y += vspd;
     }
 }
-
-
-
-// Apply movement
-x += lengthdir_x(move_speed, ang);
-y += lengthdir_y(move_speed, ang);
 
 
 
