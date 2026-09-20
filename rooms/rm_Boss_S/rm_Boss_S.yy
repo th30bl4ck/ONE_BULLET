@@ -16,12 +16,14 @@
     {"name":"inst_31FC7E6B","path":"rooms/rm_Boss_S/rm_Boss_S.yy",},
     {"name":"inst_14F3752A","path":"rooms/rm_Boss_S/rm_Boss_S.yy",},
     {"name":"inst_4EBCBFC6","path":"rooms/rm_Boss_S/rm_Boss_S.yy",},
+    {"name":"inst_40DE9CC3","path":"rooms/rm_Boss_S/rm_Boss_S.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_61645807_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61645807_1","objectId":{"name":"obj_room1_changer_south","path":"objects/obj_room1_changer_south/obj_room1_changer_south.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":3.5,"scaleY":4.75,"x":928.0,"y":1152.0,},
         {"$GMRInstance":"v4","%Name":"inst_5E16BCEF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E16BCEF","objectId":{"name":"obj_boss_sludge","path":"objects/obj_boss_sludge/obj_boss_sludge.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":288.0,},
+        {"$GMRInstance":"v4","%Name":"inst_40DE9CC3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40DE9CC3","objectId":{"name":"obj_boss_music_trigger","path":"objects/obj_boss_music_trigger/obj_boss_music_trigger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1536.0,"y":512.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tileset","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tileset","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":72,"SerialiseWidth":119,"TileCompressedData":[
           240,805306573,805306572,805306589,805306619,805306618,1073742074,805306619,1879048427,1879048443,805306585,

@@ -112,6 +112,7 @@
     {"id":{"name":"obj_alexs_arsanal","path":"objects/obj_alexs_arsanal/obj_alexs_arsanal.yy",},},
     {"id":{"name":"obj_back_button","path":"objects/obj_back_button/obj_back_button.yy",},},
     {"id":{"name":"obj_bandage_man_kyle","path":"objects/obj_bandage_man_kyle/obj_bandage_man_kyle.yy",},},
+    {"id":{"name":"obj_boss_music_trigger","path":"objects/obj_boss_music_trigger/obj_boss_music_trigger.yy",},},
     {"id":{"name":"obj_boss_sludge","path":"objects/obj_boss_sludge/obj_boss_sludge.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
