@@ -341,6 +341,7 @@
     {"id":{"name":"spr_main_menu_backround","path":"sprites/spr_main_menu_backround/spr_main_menu_backround.yy",},},
     {"id":{"name":"spr_mole","path":"sprites/spr_mole/spr_mole.yy",},},
     {"id":{"name":"spr_mouse","path":"sprites/spr_mouse/spr_mouse.yy",},},
+    {"id":{"name":"spr_owl","path":"sprites/spr_owl/spr_owl.yy",},},
     {"id":{"name":"spr_perice","path":"sprites/spr_perice/spr_perice.yy",},},
     {"id":{"name":"spr_player_death","path":"sprites/spr_player_death/spr_player_death.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},

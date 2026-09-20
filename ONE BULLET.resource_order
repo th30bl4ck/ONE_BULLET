@@ -10,6 +10,7 @@
     {"name":"spr_chicken_pox","order":2,"path":"sprites/spr_chicken_pox/spr_chicken_pox.yy",},
     {"name":"Spr_cluster_bomb","order":4,"path":"sprites/Spr_cluster_bomb/Spr_cluster_bomb.yy",},
     {"name":"spr_fish_in_buissness_suit","order":1,"path":"sprites/spr_fish_in_buissness_suit/spr_fish_in_buissness_suit.yy",},
+    {"name":"spr_owl","order":1,"path":"sprites/spr_owl/spr_owl.yy",},
     {"name":"spr_shock_and_awe","order":3,"path":"sprites/spr_shock_and_awe/spr_shock_and_awe.yy",},
     {"name":"spr_summer_storm","order":1,"path":"sprites/spr_summer_storm/spr_summer_storm.yy",},
   ],
