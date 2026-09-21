@@ -10,13 +10,12 @@ sight = collision_line(x, y, obj_player.x, obj_player.y, obj_wall, false, false)
 if (variable_instance_exists(id, "slowed") && slowed) {
     enemy_speed *= slow_multiplier;
 }
-    // SAFETY
+    // safety
 if (global.levelup_active) exit;
 if (!instance_exists(obj_player)) exit;
 
 
 
-// TARGET DATA
 px = obj_player.x;
 py = obj_player.y;
 
@@ -24,9 +23,6 @@ dist      = point_distance(x, y, px, py);
 to_player = point_direction(x, y, px, py);
 
 
-
-
-// ORBIT DIRECTION TIMER
 orbit_timer--;
 if (orbit_timer <= 0)
 {
@@ -36,7 +32,6 @@ if (orbit_timer <= 0)
 
 
 
-// ORBIT TARGET DISTANCE 
 orbit_dist_timer--;
 if (orbit_dist_timer <= 0)
 {
