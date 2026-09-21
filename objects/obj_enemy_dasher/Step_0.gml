@@ -1,5 +1,9 @@
 if (global.note_open || global.levelup_active) exit;
 if (!instance_exists(obj_player)) exit;
+    
+event_inherited();
+
+flash_red--;
 
 var px = obj_player.x;
 var py = obj_player.y;
