@@ -304,6 +304,7 @@
     {"id":{"name":"spr_coinz","path":"sprites/spr_coinz/spr_coinz.yy",},},
     {"id":{"name":"spr_complete_coin","path":"sprites/spr_complete_coin/spr_complete_coin.yy",},},
     {"id":{"name":"spr_control_pannel","path":"sprites/spr_control_pannel/spr_control_pannel.yy",},},
+    {"id":{"name":"spr_cryo_chamber","path":"sprites/spr_cryo_chamber/spr_cryo_chamber.yy",},},
     {"id":{"name":"spr_dash_left","path":"sprites/spr_dash_left/spr_dash_left.yy",},},
     {"id":{"name":"spr_dash_right","path":"sprites/spr_dash_right/spr_dash_right.yy",},},
     {"id":{"name":"spr_deaflate_roids","path":"sprites/spr_deaflate_roids/spr_deaflate_roids.yy",},},
