@@ -155,3 +155,15 @@ global.bought_5 = false;
 global.bought_6 = false;
 global.bought_7 = false;
 global.bought_8 = false;
+
+//  =============
+//  active Items
+//  =============
+global.active_item_list = {
+   green_herb: {
+        name: "green_herb",
+        cooldown: 4,
+        sprite_index: spr_leaf
+        object_index:
+        }
+}
