@@ -106,8 +106,13 @@ function boss_die()
     hsp = 0;
     vsp = 0;
     hp = 0;
+
     boss_set_sprite(spr_boss_defeat, 0.35, true);
 
+    with (obj_music_controller)
+    {
+        play_boss_death_music();
+    }
 
     with (obj_door_parent)
     {

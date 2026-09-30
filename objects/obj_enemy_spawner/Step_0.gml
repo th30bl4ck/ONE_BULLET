@@ -69,7 +69,8 @@ if (wave_enemy_spawned < wave_enemy_total)
             obj_enemy_walker,
             obj_enemy_dasher,
             obj_enemy_shooter,
-            obj_enemy_splitter
+            obj_enemy_splitter,
+            obj_enemy_shielder
         );
 
         var spawn_pos = scr_nav_get_enemy_spawn_position(spawn_min_player_distance, spawn_attempts);
@@ -97,7 +98,8 @@ else
         instance_number(obj_enemy_shooter) == 0 &&
         instance_number(obj_enemy_splitter_kids) == 0 &&
         instance_number(obj_enemy_splitter) == 0 &&
-        instance_number(obj_spawn_portal) == 0)
+        instance_number(obj_spawn_portal) == 0 &&
+        instance_number(obj_enemy_shielder) == 0)
     {
         current_wave++;
         wave_in_progress = false;

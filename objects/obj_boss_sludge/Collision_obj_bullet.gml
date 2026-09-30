@@ -2,13 +2,14 @@ if (state == "dead") exit;
 
 if (!variable_global_exists("alexs_arsanal")) global.alexs_arsanal = false;
 if (!variable_global_exists("bullet_pierce")) global.bullet_pierce = false;
+if (!variable_global_exists("bullet_damage")) global.bullet_damage = 10;
 
 var bullet_pierces = global.bullet_pierce;
 var bullet_moving = other.state == "fired" || other.state == "recall";
 
 if (!bullet_moving) exit;
 
-hp -= other.damage;
+hp -= global.bullet_damage;
 hit_flash_timer = 8;
 
 if (global.alexs_arsanal)

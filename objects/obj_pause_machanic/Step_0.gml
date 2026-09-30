@@ -4,7 +4,7 @@ if (keyboard_check_released(vk_escape))
 
     if (game_pause)
     {
-        instance_deactivate_all(true); // deactivate everything except persistent objects
+        instance_deactivate_all(true); 
     }
     else
     {

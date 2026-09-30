@@ -6,9 +6,9 @@ var bullet_moving = other.state == "fired" || other.state == "recall";
 
 if (bullet_moving)
 {
-    var enemy_will_die = hp <= other.damage;
+    var enemy_will_die = hp <= global.bullet_damage;
 
-    hp -= other.damage;
+    hp -= global.bullet_damage;
 
     if (global.alexs_arsanal)
     {

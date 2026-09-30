@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_slideTransition",
+  "%Name":"obj_boss_music_trigger",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_slideTransition",
+  "name":"obj_boss_music_trigger",
   "overriddenProperties":[],
   "parent":{
-    "name":"universal_objects",
-    "path":"folders/Objects/universal_objects.yy",
+    "name":"boss_objects",
+    "path":"folders/Objects/boss_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

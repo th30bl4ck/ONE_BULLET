@@ -1,3 +1,5 @@
+if (global.note_open || global.levelup_active) exit;
+
 x += lengthdir_x(spd, dir);
 y += lengthdir_y(spd, dir);
 
