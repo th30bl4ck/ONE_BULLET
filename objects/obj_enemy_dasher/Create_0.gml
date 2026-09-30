@@ -34,4 +34,4 @@ target_x = obj_player.x;
 px = obj_player.x;
 py = obj_player.y;
 dasher_dist = point_distance(x, y, px, py);
-start = true;
+start = true; 
