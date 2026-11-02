@@ -62,7 +62,7 @@
   "name":"rm_W_v1",
   "parent":{
     "name":"rooms_1door",
-    "path":"folders/Rooms/rooms_1door.yy",
+    "path":"folders/Rooms/stage1/rooms_1door.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

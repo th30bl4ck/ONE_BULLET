@@ -113,7 +113,7 @@
   "name":"rm_NESW_v1",
   "parent":{
     "name":"rooms_4door",
-    "path":"folders/Rooms/rooms_4door.yy",
+    "path":"folders/Rooms/stage1/rooms_4door.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -80,7 +80,7 @@
   "name":"rm_NSW_v2",
   "parent":{
     "name":"rooms_3door",
-    "path":"folders/Rooms/rooms_3door.yy",
+    "path":"folders/Rooms/stage1/rooms_3door.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

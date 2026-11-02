@@ -136,7 +136,7 @@
   "name":"rm_shop_N",
   "parent":{
     "name":"shop_rooms",
-    "path":"folders/Rooms/shop_rooms.yy",
+    "path":"folders/Rooms/stage1/shop_rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

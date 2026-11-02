@@ -67,7 +67,7 @@
   "name":"rm_NE_v2",
   "parent":{
     "name":"rooms_2door",
-    "path":"folders/Rooms/rooms_2door.yy",
+    "path":"folders/Rooms/stage1/rooms_2door.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
