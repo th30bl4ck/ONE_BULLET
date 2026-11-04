@@ -1,11 +1,11 @@
 {
   "FolderOrderSettings":[
-    {"name":"stage2","order":2,"path":"folders/Rooms/stage2.yy",},
     {"name":"stage1","order":1,"path":"folders/Rooms/stage1.yy",},
     {"name":"rooms_1door","order":2,"path":"folders/Rooms/stage1/rooms_1door.yy",},
     {"name":"rooms_2door","order":3,"path":"folders/Rooms/stage1/rooms_2door.yy",},
     {"name":"rooms_3door","order":1,"path":"folders/Rooms/stage1/rooms_3door.yy",},
     {"name":"shop_rooms","order":4,"path":"folders/Rooms/stage1/shop_rooms.yy",},
+    {"name":"stage2","order":2,"path":"folders/Rooms/stage2.yy",},
     {"name":"area_2","order":1,"path":"folders/Sprites/Items_sprites/area_2.yy",},
   ],
   "ResourceOrderSettings":[
